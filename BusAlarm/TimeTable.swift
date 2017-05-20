@@ -11,13 +11,19 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     @IBOutlet weak var timetable: UITableView!
     
-    let table:[String] = ["10:00","11:00"]
+    let table:[String] = ["","10:00","11:00"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+//        この１文でテーブルビューセルのIDがなくてクラッシュする問題を解消できる
         timetable.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         
+        Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(ViewController.update), userInfo: nil, repeats: true)
+    }
+    
+    func update(){
+        timetable.reloadData()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -26,9 +32,27 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = timetable.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) 
-        cell.textLabel?.text = table[indexPath.row]
-        return cell
+        if indexPath.row == 0{
+            let now:NSDate = NSDate()
+            let formatter = DateFormatter()
+            
+            formatter.dateFormat = "h:mm:ss"
+            
+            formatter.locale = NSLocale.system
+//            formatter.timeStyle = .medium
+            
+            let cell = timetable.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+            cell.textLabel?.text = "現在の時間 : "+formatter.string(from: now as Date)
+            return cell
+            
+        }
+        else{
+            let cell = timetable.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+            cell.textLabel?.text = table[indexPath.row]
+            return cell
+        }
+        
+
         
     }
     
