@@ -9,25 +9,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
-        <scene sceneID="dmo-aJ-vtD">
-            <objects>
-                <tableViewController id="2gf-Jc-vad" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="rg7-2G-hAg">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <connections>
-                            <outlet property="dataSource" destination="2gf-Jc-vad" id="P2c-q3-KXa"/>
-                            <outlet property="delegate" destination="2gf-Jc-vad" id="W9v-gb-VP0"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="LCx-tX-3T7"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Nef-zH-c8w" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="516" y="398"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="InA-a7-oJ3">
             <objects>
@@ -37,12 +18,50 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="2gf-Jc-vad" kind="relationship" relationship="rootViewController" id="3bd-3e-otZ"/>
+                        <segue destination="Zdm-0J-xPl" kind="relationship" relationship="rootViewController" id="thb-dk-kaQ"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Njn-yA-CKt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-437" y="397"/>
+        </scene>
+        <!--TimeTable-->
+        <scene sceneID="M34-Sk-X8h">
+            <objects>
+                <viewController id="Zdm-0J-xPl" customClass="ViewController" customModule="BusAlarm" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wWL-bi-ABh"/>
+                        <viewControllerLayoutGuide type="bottom" id="wUV-Wz-EdY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="amg-ba-GSc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tDX-no-I9u">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Zdm-0J-xPl" id="X2b-Mb-jie"/>
+                                    <outlet property="delegate" destination="Zdm-0J-xPl" id="fJ7-NG-r8u"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tDX-no-I9u" firstAttribute="bottom" secondItem="wUV-Wz-EdY" secondAttribute="top" id="Glj-FV-mIo"/>
+                            <constraint firstItem="tDX-no-I9u" firstAttribute="top" secondItem="amg-ba-GSc" secondAttribute="top" id="LRd-Nd-Ude"/>
+                            <constraint firstAttribute="trailing" secondItem="tDX-no-I9u" secondAttribute="trailing" id="Zcg-5I-ikm"/>
+                            <constraint firstItem="tDX-no-I9u" firstAttribute="leading" secondItem="amg-ba-GSc" secondAttribute="leading" id="xtb-j3-GKA"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="TimeTable" id="5Hg-nf-lRj"/>
+                    <connections>
+                        <outlet property="timetable" destination="tDX-no-I9u" id="jAv-m9-rsP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rC7-3i-ac4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="493.60000000000002" y="394.45277361319341"/>
         </scene>
     </scenes>
 </document>
