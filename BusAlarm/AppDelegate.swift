@@ -7,15 +7,67 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    
+    var jsondata:JSON = [""]
+    var table:[String] = [""]
+    
+    //    -----------------------
+    func loadJson() -> JSON? {
+        
+        let date = NSDate()
+        let formatter = DateFormatter()
+        
+        //ロケールを設定する。
+        formatter.locale = NSLocale(localeIdentifier:"ja_JP") as Locale!
+        //フォーマットを設定する。
+        formatter.dateFormat = "E" //指定フォーマットだけど曜日だけしか指定しない
+        let what_day:String = formatter.string(from: date as Date) //曜日が漢字１文字で入る
+        
+        var filename:String = ""
+        switch what_day {
+        case "月","火","水","木","金":
+            filename = "weekday"
+        case "土","休業中":
+            filename = "satuaday"
+        default:
+            filename = "holiday"
+        }
+        
+        print(filename+".jsonが呼ばれます")
+        
+        let path = Bundle.main.path(forResource: filename, ofType: "json")
+        do{
+            let jsonStr = try String(contentsOfFile: path!)
+            let json =  JSON.parse(jsonStr)
+            return json
+        } catch{
+            return nil
+        }
+    }
+    //    -----------------------
+    
+    func getday(_ format:String) -> String!{
+        let date = NSDate()
+        let formatter = DateFormatter()
+        
+        //ロケールを設定する。
+        formatter.locale = NSLocale(localeIdentifier:"ja_JP") as Locale!
+        //フォーマットを設定する。
+        formatter.dateFormat = format //指定フォーマット
+        return formatter.string(from: date as Date) //指定フォーマットの時刻がStringで帰ってくる
+    }
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        let what_day:String = getday("E")
+        print(what_day)
+        
         return true
     }
 

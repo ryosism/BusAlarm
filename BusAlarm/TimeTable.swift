@@ -6,20 +6,28 @@
 //  Copyright © 2017年 Ryo Sobue. All rights reserved.
 //
 import UIKit
+import SwiftyJSON
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var timetable: UITableView!
     
-    let table:[String] = ["","10:00","11:00"]
-    
+    override func viewWillAppear(_ animated: Bool) {
+        let delegate = UIApplication.shared.delegate as! AppDelegate
+        delegate.jsondata = delegate.loadJson()!
+        
+        delegate.table.append(delegate.jsondata["toschool"].array!)
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
 //        この１文でテーブルビューセルのIDがなくてクラッシュする問題を解消できる
         timetable.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         
         Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(ViewController.update), userInfo: nil, repeats: true)
+        
+//        print(loadJson("weekday")!)
     }
     
     func update(){
@@ -27,7 +35,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.table.count
+        let delegate = UIApplication.shared.delegate as! AppDelegate
+        return delegate.table.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -36,32 +45,23 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             let now:NSDate = NSDate()
             let formatter = DateFormatter()
             
-            formatter.dateFormat = "h:mm:ss"
-            
-            formatter.locale = NSLocale.system
-//            formatter.timeStyle = .medium
+            formatter.dateFormat = "hh:mm:ss" //独自フォーマット
+            formatter.locale = NSLocale.system //タイムゾーン
             
             let cell = timetable.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
             cell.textLabel?.text = "現在の時間 : "+formatter.string(from: now as Date)
             return cell
-            
         }
         else{
             let cell = timetable.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-            cell.textLabel?.text = table[indexPath.row]
+            let delegate = UIApplication.shared.delegate as! AppDelegate
+            cell.textLabel?.text = delegate.table[indexPath.row]
             return cell
         }
         
-
-        
     }
-    
-    
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        
     }
-    
 }
 

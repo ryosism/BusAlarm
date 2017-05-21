@@ -14,6 +14,12 @@
 		20F628721ED08472003879C7 /* BusAlarmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F628711ED08472003879C7 /* BusAlarmTests.swift */; };
 		20F6287D1ED08472003879C7 /* BusAlarmUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F6287C1ED08472003879C7 /* BusAlarmUITests.swift */; };
 		20F6288B1ED098F5003879C7 /* TimeTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F6288A1ED098F5003879C7 /* TimeTable.swift */; };
+		20F6288D1ED1678E003879C7 /* weekday.json in Resources */ = {isa = PBXBuildFile; fileRef = 20F6288C1ED1678E003879C7 /* weekday.json */; };
+		20F6288F1ED19E39003879C7 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20F6288E1ED19E39003879C7 /* SwiftyJSON.framework */; };
+		20F628911ED1B82E003879C7 /* weekday_toschool.json in Resources */ = {isa = PBXBuildFile; fileRef = 20F628901ED1B82E003879C7 /* weekday_toschool.json */; };
+		3177B5FCCA6C4D3B38C2E860 /* Pods_BusAlarm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07EDFB528CA6CB61BFCDF109 /* Pods_BusAlarm.framework */; };
+		48393EE919A2F6DE01FCDACC /* Pods_BusAlarmUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFAC0D96F7308D10BF1121CB /* Pods_BusAlarmUITests.framework */; };
+		BF9D26CAA134526A0F3941EB /* Pods_BusAlarmTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0651048C297701402E1EEBFB /* Pods_BusAlarmTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0651048C297701402E1EEBFB /* Pods_BusAlarmTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BusAlarmTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		07EDFB528CA6CB61BFCDF109 /* Pods_BusAlarm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BusAlarm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		20F628591ED08472003879C7 /* BusAlarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusAlarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20F6285C1ED08472003879C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20F628611ED08472003879C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -47,6 +55,16 @@
 		20F6287C1ED08472003879C7 /* BusAlarmUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusAlarmUITests.swift; sourceTree = "<group>"; };
 		20F6287E1ED08472003879C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20F6288A1ED098F5003879C7 /* TimeTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeTable.swift; sourceTree = "<group>"; };
+		20F6288C1ED1678E003879C7 /* weekday.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = weekday.json; sourceTree = "<group>"; };
+		20F6288E1ED19E39003879C7 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../../../Library/Developer/Xcode/DerivedData/BusAlarm-flwhpuisinzansesuyngihyzverr/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
+		20F628901ED1B82E003879C7 /* weekday_toschool.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = weekday_toschool.json; sourceTree = "<group>"; };
+		233E3460D8316EA9496AE4D3 /* Pods-BusAlarm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BusAlarm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BusAlarm/Pods-BusAlarm.debug.xcconfig"; sourceTree = "<group>"; };
+		61429AFC5F0283E2743110A3 /* Pods-BusAlarmUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BusAlarmUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BusAlarmUITests/Pods-BusAlarmUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7EA286859023166D4946361F /* Pods-BusAlarmTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BusAlarmTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BusAlarmTests/Pods-BusAlarmTests.debug.xcconfig"; sourceTree = "<group>"; };
+		954722D079B77D82D9CFF462 /* Pods-BusAlarm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BusAlarm.release.xcconfig"; path = "Pods/Target Support Files/Pods-BusAlarm/Pods-BusAlarm.release.xcconfig"; sourceTree = "<group>"; };
+		A496A88F9763B883AA26713A /* Pods-BusAlarmUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BusAlarmUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BusAlarmUITests/Pods-BusAlarmUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A504C05955A5D972683D1E2D /* Pods-BusAlarmTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BusAlarmTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BusAlarmTests/Pods-BusAlarmTests.release.xcconfig"; sourceTree = "<group>"; };
+		CFAC0D96F7308D10BF1121CB /* Pods_BusAlarmUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BusAlarmUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +72,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20F6288F1ED19E39003879C7 /* SwiftyJSON.framework in Frameworks */,
+				3177B5FCCA6C4D3B38C2E860 /* Pods_BusAlarm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF9D26CAA134526A0F3941EB /* Pods_BusAlarmTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +89,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48393EE919A2F6DE01FCDACC /* Pods_BusAlarmUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		157B3424C7DA7F2A7AEE8DB1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				233E3460D8316EA9496AE4D3 /* Pods-BusAlarm.debug.xcconfig */,
+				954722D079B77D82D9CFF462 /* Pods-BusAlarm.release.xcconfig */,
+				7EA286859023166D4946361F /* Pods-BusAlarmTests.debug.xcconfig */,
+				A504C05955A5D972683D1E2D /* Pods-BusAlarmTests.release.xcconfig */,
+				61429AFC5F0283E2743110A3 /* Pods-BusAlarmUITests.debug.xcconfig */,
+				A496A88F9763B883AA26713A /* Pods-BusAlarmUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		20F628501ED08472003879C7 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +116,8 @@
 				20F628701ED08472003879C7 /* BusAlarmTests */,
 				20F6287B1ED08472003879C7 /* BusAlarmUITests */,
 				20F6285A1ED08472003879C7 /* Products */,
+				157B3424C7DA7F2A7AEE8DB1 /* Pods */,
+				39C459B1840EE86B2E44F0F4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +136,8 @@
 			children = (
 				20F6285C1ED08472003879C7 /* AppDelegate.swift */,
 				20F6288A1ED098F5003879C7 /* TimeTable.swift */,
+				20F6288C1ED1678E003879C7 /* weekday.json */,
+				20F628901ED1B82E003879C7 /* weekday_toschool.json */,
 				20F628601ED08472003879C7 /* Main.storyboard */,
 				20F628631ED08472003879C7 /* Assets.xcassets */,
 				20F628651ED08472003879C7 /* LaunchScreen.storyboard */,
@@ -125,6 +164,17 @@
 			path = BusAlarmUITests;
 			sourceTree = "<group>";
 		};
+		39C459B1840EE86B2E44F0F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				20F6288E1ED19E39003879C7 /* SwiftyJSON.framework */,
+				07EDFB528CA6CB61BFCDF109 /* Pods_BusAlarm.framework */,
+				0651048C297701402E1EEBFB /* Pods_BusAlarmTests.framework */,
+				CFAC0D96F7308D10BF1121CB /* Pods_BusAlarmUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +182,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 20F628811ED08472003879C7 /* Build configuration list for PBXNativeTarget "BusAlarm" */;
 			buildPhases = (
+				8F56534AAEDB86CB7CBFFF3F /* [CP] Check Pods Manifest.lock */,
 				20F628551ED08472003879C7 /* Sources */,
 				20F628561ED08472003879C7 /* Frameworks */,
 				20F628571ED08472003879C7 /* Resources */,
+				2A89BEF0EF671909CE07A3E0 /* [CP] Embed Pods Frameworks */,
+				170C0B3721F41C79F62331D6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +202,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 20F628841ED08472003879C7 /* Build configuration list for PBXNativeTarget "BusAlarmTests" */;
 			buildPhases = (
+				10105BEAB72334D9F24719A1 /* [CP] Check Pods Manifest.lock */,
 				20F628691ED08472003879C7 /* Sources */,
 				20F6286A1ED08472003879C7 /* Frameworks */,
 				20F6286B1ED08472003879C7 /* Resources */,
+				C1DA7598C715E52542F1370F /* [CP] Embed Pods Frameworks */,
+				890E7B424F7CAD752F382776 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +223,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 20F628871ED08472003879C7 /* Build configuration list for PBXNativeTarget "BusAlarmUITests" */;
 			buildPhases = (
+				B1A6C77786EA080D31A50159 /* [CP] Check Pods Manifest.lock */,
 				20F628741ED08472003879C7 /* Sources */,
 				20F628751ED08472003879C7 /* Frameworks */,
 				20F628761ED08472003879C7 /* Resources */,
+				2816DE57B8735EF06322C4D0 /* [CP] Embed Pods Frameworks */,
+				7F503735124B6D45BC887BE4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -236,7 +295,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				20F628671ED08472003879C7 /* LaunchScreen.storyboard in Resources */,
+				20F628911ED1B82E003879C7 /* weekday_toschool.json in Resources */,
 				20F628641ED08472003879C7 /* Assets.xcassets in Resources */,
+				20F6288D1ED1678E003879C7 /* weekday.json in Resources */,
 				20F628621ED08472003879C7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,6 +317,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		10105BEAB72334D9F24719A1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		170C0B3721F41C79F62331D6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BusAlarm/Pods-BusAlarm-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2816DE57B8735EF06322C4D0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BusAlarmUITests/Pods-BusAlarmUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2A89BEF0EF671909CE07A3E0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BusAlarm/Pods-BusAlarm-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F503735124B6D45BC887BE4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BusAlarmUITests/Pods-BusAlarmUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		890E7B424F7CAD752F382776 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BusAlarmTests/Pods-BusAlarmTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F56534AAEDB86CB7CBFFF3F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B1A6C77786EA080D31A50159 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C1DA7598C715E52542F1370F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BusAlarmTests/Pods-BusAlarmTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		20F628551ED08472003879C7 /* Sources */ = {
@@ -413,7 +612,9 @@
 		};
 		20F628821ED08472003879C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 233E3460D8316EA9496AE4D3 /* Pods-BusAlarm.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = WQ6E4DAU7T;
 				INFOPLIST_FILE = BusAlarm/Info.plist;
@@ -426,7 +627,9 @@
 		};
 		20F628831ED08472003879C7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 954722D079B77D82D9CFF462 /* Pods-BusAlarm.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = WQ6E4DAU7T;
 				INFOPLIST_FILE = BusAlarm/Info.plist;
@@ -439,6 +642,7 @@
 		};
 		20F628851ED08472003879C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EA286859023166D4946361F /* Pods-BusAlarmTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -454,6 +658,7 @@
 		};
 		20F628861ED08472003879C7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A504C05955A5D972683D1E2D /* Pods-BusAlarmTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -469,6 +674,7 @@
 		};
 		20F628881ED08472003879C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61429AFC5F0283E2743110A3 /* Pods-BusAlarmUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = WQ6E4DAU7T;
@@ -483,6 +689,7 @@
 		};
 		20F628891ED08472003879C7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A496A88F9763B883AA26713A /* Pods-BusAlarmUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = WQ6E4DAU7T;
@@ -514,6 +721,7 @@
 				20F628831ED08472003879C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		20F628841ED08472003879C7 /* Build configuration list for PBXNativeTarget "BusAlarmTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +730,7 @@
 				20F628861ED08472003879C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		20F628871ED08472003879C7 /* Build configuration list for PBXNativeTarget "BusAlarmUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +739,7 @@
 				20F628891ED08472003879C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
