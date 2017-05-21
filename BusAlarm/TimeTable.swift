@@ -16,7 +16,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let delegate = UIApplication.shared.delegate as! AppDelegate
         delegate.jsondata = delegate.loadJson()!
         
-        delegate.table.append(delegate.jsondata["toschool"].array!)
+        delegate.table = delegate.jsondata["toschool"].arrayValue.map({$0.stringValue})
+        print(delegate.table)
     }
 
     override func viewDidLoad() {
