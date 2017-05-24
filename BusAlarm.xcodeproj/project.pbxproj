@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20112E921ED34A3600157CC3 /* satuaday.json in Resources */ = {isa = PBXBuildFile; fileRef = 20112E911ED34A3600157CC3 /* satuaday.json */; };
+		20112E991ED4ADBD00157CC3 /* bas2_48.png in Resources */ = {isa = PBXBuildFile; fileRef = 20112E981ED4ADBD00157CC3 /* bas2_48.png */; };
+		203ECD3F1ED54CAC00C709D1 /* DepertureChanger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203ECD3E1ED54CAC00C709D1 /* DepertureChanger.swift */; };
 		20F6285D1ED08472003879C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F6285C1ED08472003879C7 /* AppDelegate.swift */; };
 		20F628621ED08472003879C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20F628601ED08472003879C7 /* Main.storyboard */; };
 		20F628641ED08472003879C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20F628631ED08472003879C7 /* Assets.xcassets */; };
@@ -16,7 +19,6 @@
 		20F6288B1ED098F5003879C7 /* TimeTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F6288A1ED098F5003879C7 /* TimeTable.swift */; };
 		20F6288D1ED1678E003879C7 /* weekday.json in Resources */ = {isa = PBXBuildFile; fileRef = 20F6288C1ED1678E003879C7 /* weekday.json */; };
 		20F6288F1ED19E39003879C7 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20F6288E1ED19E39003879C7 /* SwiftyJSON.framework */; };
-		20F628911ED1B82E003879C7 /* weekday_toschool.json in Resources */ = {isa = PBXBuildFile; fileRef = 20F628901ED1B82E003879C7 /* weekday_toschool.json */; };
 		3177B5FCCA6C4D3B38C2E860 /* Pods_BusAlarm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07EDFB528CA6CB61BFCDF109 /* Pods_BusAlarm.framework */; };
 		48393EE919A2F6DE01FCDACC /* Pods_BusAlarmUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFAC0D96F7308D10BF1121CB /* Pods_BusAlarmUITests.framework */; };
 		BF9D26CAA134526A0F3941EB /* Pods_BusAlarmTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0651048C297701402E1EEBFB /* Pods_BusAlarmTests.framework */; };
@@ -42,6 +44,9 @@
 /* Begin PBXFileReference section */
 		0651048C297701402E1EEBFB /* Pods_BusAlarmTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BusAlarmTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		07EDFB528CA6CB61BFCDF109 /* Pods_BusAlarm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BusAlarm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		20112E911ED34A3600157CC3 /* satuaday.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = satuaday.json; sourceTree = "<group>"; };
+		20112E981ED4ADBD00157CC3 /* bas2_48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bas2_48.png; sourceTree = "<group>"; };
+		203ECD3E1ED54CAC00C709D1 /* DepertureChanger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepertureChanger.swift; sourceTree = "<group>"; };
 		20F628591ED08472003879C7 /* BusAlarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusAlarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20F6285C1ED08472003879C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20F628611ED08472003879C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -57,7 +62,6 @@
 		20F6288A1ED098F5003879C7 /* TimeTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeTable.swift; sourceTree = "<group>"; };
 		20F6288C1ED1678E003879C7 /* weekday.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = weekday.json; sourceTree = "<group>"; };
 		20F6288E1ED19E39003879C7 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../../../Library/Developer/Xcode/DerivedData/BusAlarm-flwhpuisinzansesuyngihyzverr/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
-		20F628901ED1B82E003879C7 /* weekday_toschool.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = weekday_toschool.json; sourceTree = "<group>"; };
 		233E3460D8316EA9496AE4D3 /* Pods-BusAlarm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BusAlarm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BusAlarm/Pods-BusAlarm.debug.xcconfig"; sourceTree = "<group>"; };
 		61429AFC5F0283E2743110A3 /* Pods-BusAlarmUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BusAlarmUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BusAlarmUITests/Pods-BusAlarmUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7EA286859023166D4946361F /* Pods-BusAlarmTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BusAlarmTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BusAlarmTests/Pods-BusAlarmTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -109,9 +113,19 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		20112E931ED4AD6800157CC3 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				20112E981ED4ADBD00157CC3 /* bas2_48.png */,
+			);
+			name = "New Group";
+			path = BusAlarm;
+			sourceTree = "<group>";
+		};
 		20F628501ED08472003879C7 = {
 			isa = PBXGroup;
 			children = (
+				20112E931ED4AD6800157CC3 /* New Group */,
 				20F6285B1ED08472003879C7 /* BusAlarm */,
 				20F628701ED08472003879C7 /* BusAlarmTests */,
 				20F6287B1ED08472003879C7 /* BusAlarmUITests */,
@@ -136,8 +150,9 @@
 			children = (
 				20F6285C1ED08472003879C7 /* AppDelegate.swift */,
 				20F6288A1ED098F5003879C7 /* TimeTable.swift */,
+				203ECD3E1ED54CAC00C709D1 /* DepertureChanger.swift */,
 				20F6288C1ED1678E003879C7 /* weekday.json */,
-				20F628901ED1B82E003879C7 /* weekday_toschool.json */,
+				20112E911ED34A3600157CC3 /* satuaday.json */,
 				20F628601ED08472003879C7 /* Main.storyboard */,
 				20F628631ED08472003879C7 /* Assets.xcassets */,
 				20F628651ED08472003879C7 /* LaunchScreen.storyboard */,
@@ -295,10 +310,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				20F628671ED08472003879C7 /* LaunchScreen.storyboard in Resources */,
-				20F628911ED1B82E003879C7 /* weekday_toschool.json in Resources */,
+				20112E991ED4ADBD00157CC3 /* bas2_48.png in Resources */,
 				20F628641ED08472003879C7 /* Assets.xcassets in Resources */,
 				20F6288D1ED1678E003879C7 /* weekday.json in Resources */,
 				20F628621ED08472003879C7 /* Main.storyboard in Resources */,
+				20112E921ED34A3600157CC3 /* satuaday.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,6 +479,7 @@
 			files = (
 				20F6288B1ED098F5003879C7 /* TimeTable.swift in Sources */,
 				20F6285D1ED08472003879C7 /* AppDelegate.swift in Sources */,
+				203ECD3F1ED54CAC00C709D1 /* DepertureChanger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -558,7 +575,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -602,7 +619,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";

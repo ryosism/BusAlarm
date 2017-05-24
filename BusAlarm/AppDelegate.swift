@@ -14,11 +14,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     
-    var jsondata:JSON = [""]
     var table:[String] = [""]
+    var destination:String = "from_jinryo"
+    var changeTime:String = "12:00"
     
-    //    -----------------------
-    func loadJson() -> JSON? {
+    func loadJson(_ which_destination:String) -> [String] {
         
         let date = NSDate()
         let formatter = DateFormatter()
@@ -39,18 +39,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             filename = "holiday"
         }
         
-        print(filename+".jsonが呼ばれます")
-        
         let path = Bundle.main.path(forResource: filename, ofType: "json")
         do{
             let jsonStr = try String(contentsOfFile: path!)
             let json =  JSON.parse(jsonStr)
-            return json
+            
+            switch which_destination {
+            case "from_jinryo":
+                return json["from_jinryo"].arrayValue.map({$0.stringValue})
+            default:
+                return json["from_school"].arrayValue.map({$0.stringValue})
+            }
+
         } catch{
-            return nil
+            return ["nil"]
         }
     }
-    //    -----------------------
     
     func getday(_ format:String) -> String!{
         let date = NSDate()
