@@ -98,6 +98,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+//        ここにchangeTime以降か以前かで出発先を変えるスクリプト書きたいなぁ･･･
+        let formatter = DateFormatter()
+        formatter.locale = NSLocale(localeIdentifier:"en_US") as Locale!
+        formatter.dateFormat = "HH:mm"
+        formatter.timeZone = NSTimeZone(name:"GMT")! as TimeZone
+        
+        //現在時刻、TYOで取得
+        let current:NSDate = (NSDate(timeInterval: 60*60*9, since: NSDate() as Date))
+        let currentString:String = formatter.string(from: current as Date)
+        let now:NSDate = formatter.date(from: currentString)! as NSDate
+        let changeTime:NSDate = formatter.date(from: self.changeTime)! as NSDate
+        
+        let compare:ComparisonResult = now.compare(changeTime as Date)
+        if compare == .orderedAscending{
+            destination = "from_jinryo"
+        }else{
+            destination = "from_school"
+        }
     
         return true
     }

@@ -13,12 +13,19 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet weak var timetable: UITableView!
     @IBOutlet weak var selector: UISegmentedControl!
     @IBOutlet weak var nowTime: UILabel!
+    @IBOutlet weak var navigationBar: UINavigationItem!
     
     let delegate = UIApplication.shared.delegate as! AppDelegate
     
     override func viewWillAppear(_ animated: Bool) {
 //        この１文でテーブルビューセルのIDがなくてクラッシュする問題を解消できる
         timetable.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        
+        if delegate.destination == "from_jinryo"{
+            navigationBar.title = "神領発"
+        }else{
+            navigationBar.title = "中部大学発"
+        }
     }
 
     override func viewDidLoad() {
@@ -93,6 +100,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             
         }
 // -----一番近い時間にスクロールする-------------------------
+        if delegate.destination == "from_jinryo"{
+            navigationBar.title = "神領発"
+        }else{
+            navigationBar.title = "中部大学発"
+        }
     }
     
     override func didReceiveMemoryWarning() {

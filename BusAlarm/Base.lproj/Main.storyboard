@@ -289,6 +289,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="TimeTable" id="5Hg-nf-lRj"/>
                     <connections>
+                        <outlet property="navigationBar" destination="5Hg-nf-lRj" id="KeF-1P-b4z"/>
                         <outlet property="nowTime" destination="g0O-Gl-cJu" id="N5s-SS-KeB"/>
                         <outlet property="selector" destination="Xje-gF-pMT" id="Wmq-cu-Ghu"/>
                         <outlet property="timetable" destination="tDX-no-I9u" id="jAv-m9-rsP"/>
