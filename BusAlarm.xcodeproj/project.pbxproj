@@ -10,6 +10,7 @@
 		20112E921ED34A3600157CC3 /* satuaday.json in Resources */ = {isa = PBXBuildFile; fileRef = 20112E911ED34A3600157CC3 /* satuaday.json */; };
 		20112E991ED4ADBD00157CC3 /* bas2_48.png in Resources */ = {isa = PBXBuildFile; fileRef = 20112E981ED4ADBD00157CC3 /* bas2_48.png */; };
 		203ECD3F1ED54CAC00C709D1 /* DepertureChanger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203ECD3E1ED54CAC00C709D1 /* DepertureChanger.swift */; };
+		2071537B1ED915B800005070 /* CountDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2071537A1ED915B800005070 /* CountDown.swift */; };
 		20F6285D1ED08472003879C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F6285C1ED08472003879C7 /* AppDelegate.swift */; };
 		20F628621ED08472003879C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20F628601ED08472003879C7 /* Main.storyboard */; };
 		20F628641ED08472003879C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20F628631ED08472003879C7 /* Assets.xcassets */; };
@@ -47,6 +48,7 @@
 		20112E911ED34A3600157CC3 /* satuaday.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = satuaday.json; sourceTree = "<group>"; };
 		20112E981ED4ADBD00157CC3 /* bas2_48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bas2_48.png; sourceTree = "<group>"; };
 		203ECD3E1ED54CAC00C709D1 /* DepertureChanger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepertureChanger.swift; sourceTree = "<group>"; };
+		2071537A1ED915B800005070 /* CountDown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountDown.swift; sourceTree = "<group>"; };
 		20F628591ED08472003879C7 /* BusAlarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusAlarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20F6285C1ED08472003879C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20F628611ED08472003879C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 				20F6285C1ED08472003879C7 /* AppDelegate.swift */,
 				20F6288A1ED098F5003879C7 /* TimeTable.swift */,
 				203ECD3E1ED54CAC00C709D1 /* DepertureChanger.swift */,
+				2071537A1ED915B800005070 /* CountDown.swift */,
 				20F6288C1ED1678E003879C7 /* weekday.json */,
 				20112E911ED34A3600157CC3 /* satuaday.json */,
 				20F628601ED08472003879C7 /* Main.storyboard */,
@@ -480,6 +483,7 @@
 				20F6288B1ED098F5003879C7 /* TimeTable.swift in Sources */,
 				20F6285D1ED08472003879C7 /* AppDelegate.swift in Sources */,
 				203ECD3F1ED54CAC00C709D1 /* DepertureChanger.swift in Sources */,
+				2071537B1ED915B800005070 /* CountDown.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

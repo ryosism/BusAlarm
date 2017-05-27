@@ -67,34 +67,59 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return formatter.string(from: date as Date) //指定フォーマットの時刻がStringで帰ってくる
     }
     
+    func rowofRidableBusTableNumber(_ table:[String]) -> Int{
+        //フォーマットの指定
+        let formatter = DateFormatter()
+        formatter.locale = NSLocale(localeIdentifier:"en_US") as Locale!
+        formatter.dateFormat = "HH:mm"
+        formatter.timeZone = NSTimeZone(name:"GMT")! as TimeZone
+        
+        //現在時刻、TYOで取得
+        let current:NSDate = (NSDate(timeInterval: 60*60*9, since: NSDate() as Date))
+        let currentString:String = formatter.string(from: current as Date)
+        let now:NSDate = formatter.date(from: currentString)! as NSDate
+        
+        for (row, time) in table.enumerated(){ //emunerated()はfor文と同時に通し番号を発行する、今回の配列番号を返す関数にぴったり
+            
+            if time.contains(":"){
+                let gettime:NSDate = formatter.date(from: time)! as NSDate
+//                print("gettime = ",gettime)
+//                print("now     = ",now)
+                
+                let compare:ComparisonResult = now.compare(gettime as Date)
+                if compare == .orderedAscending{
+                    print("now < gettime , row = ",row)
+                    return row
+                    
+                }
+            }
+        }
+        return -1
+    }
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        
-        let what_day:String = getday("E")
-        print(what_day)
-        
+    
         return true
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
-        // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-        // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
+      
     }
 
     func applicationDidEnterBackground(_ application: UIApplication) {
-        // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-        // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+       
     }
 
     func applicationWillEnterForeground(_ application: UIApplication) {
-        // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
+       
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {
-        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+       
     }
 
     func applicationWillTerminate(_ application: UIApplication) {
-        // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+
     }
 
 
