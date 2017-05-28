@@ -17,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var table:[String] = [""]
     var destination:String = "from_jinryo"
     var changeTime:String = "12:00"
+    var filename:String = ""
     
     func loadJson(_ which_destination:String) -> [String] {
         
@@ -28,8 +29,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //フォーマットを設定する。
         formatter.dateFormat = "E" //指定フォーマットだけど曜日だけしか指定しない
         let what_day:String = formatter.string(from: date as Date) //曜日が漢字１文字で入る
-        
-        var filename:String = ""
         switch what_day {
         case "月","火","水","木","金":
             filename = "weekday"
@@ -94,11 +93,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 }
             }
         }
-        return -1
+        return 0
     }
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 //        ここにchangeTime以降か以前かで出発先を変えるスクリプト書きたいなぁ･･･
+        let ud:UserDefaults = UserDefaults.standard
+        
         let formatter = DateFormatter()
         formatter.locale = NSLocale(localeIdentifier:"en_US") as Locale!
         formatter.dateFormat = "HH:mm"
@@ -108,15 +109,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let current:NSDate = (NSDate(timeInterval: 60*60*9, since: NSDate() as Date))
         let currentString:String = formatter.string(from: current as Date)
         let now:NSDate = formatter.date(from: currentString)! as NSDate
-        let changeTime:NSDate = formatter.date(from: self.changeTime)! as NSDate
-        
-        let compare:ComparisonResult = now.compare(changeTime as Date)
-        if compare == .orderedAscending{
-            destination = "from_jinryo"
-        }else{
-            destination = "from_school"
+//      ここのchangeTimeはuserDefaultに入ってるデータを使う
+        if ud.string(forKey: "changeTime") != nil{
+            let changeTime:NSDate = formatter.date(from: ud.string(forKey: "changeTime")!)! as NSDate
+            
+            let compare:ComparisonResult = now.compare(changeTime as Date)
+            if compare == .orderedAscending{
+                destination = "from_jinryo"
+                print("from_jinryo")
+            }else{
+                destination = "from_school"
+                print("from_school")
+            }
         }
-    
         return true
     }
 

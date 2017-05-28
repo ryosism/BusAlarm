@@ -11,6 +11,11 @@
 		20112E991ED4ADBD00157CC3 /* bas2_48.png in Resources */ = {isa = PBXBuildFile; fileRef = 20112E981ED4ADBD00157CC3 /* bas2_48.png */; };
 		203ECD3F1ED54CAC00C709D1 /* DepertureChanger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203ECD3E1ED54CAC00C709D1 /* DepertureChanger.swift */; };
 		2071537B1ED915B800005070 /* CountDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2071537A1ED915B800005070 /* CountDown.swift */; };
+		2071537D1EDA677700005070 /* holiday.json in Resources */ = {isa = PBXBuildFile; fileRef = 2071537C1EDA677700005070 /* holiday.json */; };
+		207153841EDA7B1F00005070 /* nextButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 207153821EDA7B1F00005070 /* nextButton.png */; };
+		207153851EDA7B1F00005070 /* prevButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 207153831EDA7B1F00005070 /* prevButton.png */; };
+		207153881EDA7BC200005070 /* 矢印アイコン　右6.png in Resources */ = {isa = PBXBuildFile; fileRef = 207153861EDA7BC200005070 /* 矢印アイコン　右6.png */; };
+		207153891EDA7BC200005070 /* 矢印アイコン　左6.png in Resources */ = {isa = PBXBuildFile; fileRef = 207153871EDA7BC200005070 /* 矢印アイコン　左6.png */; };
 		20F6285D1ED08472003879C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F6285C1ED08472003879C7 /* AppDelegate.swift */; };
 		20F628621ED08472003879C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20F628601ED08472003879C7 /* Main.storyboard */; };
 		20F628641ED08472003879C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20F628631ED08472003879C7 /* Assets.xcassets */; };
@@ -49,6 +54,11 @@
 		20112E981ED4ADBD00157CC3 /* bas2_48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bas2_48.png; sourceTree = "<group>"; };
 		203ECD3E1ED54CAC00C709D1 /* DepertureChanger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepertureChanger.swift; sourceTree = "<group>"; };
 		2071537A1ED915B800005070 /* CountDown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountDown.swift; sourceTree = "<group>"; };
+		2071537C1EDA677700005070 /* holiday.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = holiday.json; sourceTree = "<group>"; };
+		207153821EDA7B1F00005070 /* nextButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nextButton.png; sourceTree = "<group>"; };
+		207153831EDA7B1F00005070 /* prevButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = prevButton.png; sourceTree = "<group>"; };
+		207153861EDA7BC200005070 /* 矢印アイコン　右6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "矢印アイコン　右6.png"; sourceTree = "<group>"; };
+		207153871EDA7BC200005070 /* 矢印アイコン　左6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "矢印アイコン　左6.png"; sourceTree = "<group>"; };
 		20F628591ED08472003879C7 /* BusAlarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusAlarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20F6285C1ED08472003879C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20F628611ED08472003879C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -118,6 +128,10 @@
 		20112E931ED4AD6800157CC3 /* New Group */ = {
 			isa = PBXGroup;
 			children = (
+				207153821EDA7B1F00005070 /* nextButton.png */,
+				207153831EDA7B1F00005070 /* prevButton.png */,
+				207153861EDA7BC200005070 /* 矢印アイコン　右6.png */,
+				207153871EDA7BC200005070 /* 矢印アイコン　左6.png */,
 				20112E981ED4ADBD00157CC3 /* bas2_48.png */,
 			);
 			name = "New Group";
@@ -156,6 +170,7 @@
 				2071537A1ED915B800005070 /* CountDown.swift */,
 				20F6288C1ED1678E003879C7 /* weekday.json */,
 				20112E911ED34A3600157CC3 /* satuaday.json */,
+				2071537C1EDA677700005070 /* holiday.json */,
 				20F628601ED08472003879C7 /* Main.storyboard */,
 				20F628631ED08472003879C7 /* Assets.xcassets */,
 				20F628651ED08472003879C7 /* LaunchScreen.storyboard */,
@@ -314,10 +329,15 @@
 			files = (
 				20F628671ED08472003879C7 /* LaunchScreen.storyboard in Resources */,
 				20112E991ED4ADBD00157CC3 /* bas2_48.png in Resources */,
+				2071537D1EDA677700005070 /* holiday.json in Resources */,
 				20F628641ED08472003879C7 /* Assets.xcassets in Resources */,
+				207153851EDA7B1F00005070 /* prevButton.png in Resources */,
 				20F6288D1ED1678E003879C7 /* weekday.json in Resources */,
+				207153841EDA7B1F00005070 /* nextButton.png in Resources */,
+				207153881EDA7BC200005070 /* 矢印アイコン　右6.png in Resources */,
 				20F628621ED08472003879C7 /* Main.storyboard in Resources */,
 				20112E921ED34A3600157CC3 /* satuaday.json in Resources */,
+				207153891EDA7BC200005070 /* 矢印アイコン　左6.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -23,9 +23,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         if delegate.destination == "from_jinryo"{
             navigationBar.title = "神領発"
+            selector.selectedSegmentIndex = 0
         }else{
             navigationBar.title = "中部大学発"
+            selector.selectedSegmentIndex = 1
         }
+        
     }
 
     override func viewDidLoad() {
@@ -45,15 +48,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         print("return",delegate.rowofRidableBusTableNumber(delegate.table))
         nowTime.text = delegate.getday("現在の時間 : HH:mm:ss")
         nowTime.font = UIFont(name: "Arial", size: 22)
+
         switch delegate.getday("E") {
         case "月","火","水","木","金":
-            nowTime.textColor = UIColor.black
+            nowTime.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         case "土","休業中":
-            nowTime.textColor = UIColor.black
-            nowTime.backgroundColor = UIColor.cyan
+            nowTime.backgroundColor = #colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)
         default:
-            nowTime.textColor = UIColor.black
-            nowTime.backgroundColor = UIColor.red
+            nowTime.backgroundColor = #colorLiteral(red: 1, green: 0.7692273855, blue: 0.8850077987, alpha: 1)
 // -----現在の時間を表示するラベル---------------------
         }
     }

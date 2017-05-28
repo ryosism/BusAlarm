@@ -37,13 +37,76 @@
                     <view key="view" contentMode="scaleToFill" id="cIa-dX-UDy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="◯◯行き　00:00発" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="13J-XU-f2J">
+                                <rect key="frame" x="37" y="174" width="300" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DTM-mn-Lya">
+                                <rect key="frame" x="94" y="300" width="187" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cYd-fu-xdV">
+                                <rect key="frame" x="62" y="425" width="233" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="行きと帰りを切り替える"/>
+                                <connections>
+                                    <action selector="changeDeperturePushed:" destination="VrJ-NV-imk" eventType="touchUpInside" id="odw-lR-iKo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S3C-9V-S5M">
+                                <rect key="frame" x="280" y="300" width="79" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="次発" image="nextButton.png"/>
+                                <connections>
+                                    <action selector="nextPushed:" destination="VrJ-NV-imk" eventType="touchUpInside" id="a4J-jc-ivj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="apv-vB-E14">
+                                <rect key="frame" x="16" y="300" width="79" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="prevButton.png"/>
+                                <connections>
+                                    <action selector="prevPushed:" destination="VrJ-NV-imk" eventType="touchUpInside" id="nkZ-iY-m4Q"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="発車まで残り" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="25t-KY-Npd">
+                                <rect key="frame" x="120" y="247" width="135" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="◯月◯日 (月)　◯◯ダイヤ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c46-Ra-3Qj">
+                                <rect key="frame" x="37" y="93" width="300" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="カウントダウン" id="0sJ-0A-FAZ"/>
+                    <connections>
+                        <outlet property="changeDeperture" destination="cYd-fu-xdV" id="ZfH-Dg-ecf"/>
+                        <outlet property="contDownLabel" destination="DTM-mn-Lya" id="2bM-9f-SQ4"/>
+                        <outlet property="dateLabel" destination="c46-Ra-3Qj" id="aEg-KU-E0l"/>
+                        <outlet property="nextTrain" destination="S3C-9V-S5M" id="yJE-T8-TCi"/>
+                        <outlet property="prevTrain" destination="apv-vB-E14" id="dav-XC-4eK"/>
+                        <outlet property="timeLabel" destination="13J-XU-f2J" id="QdB-N2-aNL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CnE-h3-MV3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-276" y="528"/>
+            <point key="canvasLocation" x="-276" y="527.58620689655174"/>
         </scene>
         <!--設定-->
         <scene sceneID="XSs-7J-9KE">
@@ -302,5 +365,7 @@
     </scenes>
     <resources>
         <image name="bas2_48.png" width="48" height="48"/>
+        <image name="nextButton.png" width="128" height="120"/>
+        <image name="prevButton.png" width="128" height="119"/>
     </resources>
 </document>

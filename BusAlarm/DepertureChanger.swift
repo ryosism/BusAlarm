@@ -36,6 +36,8 @@ class depertureChanger: UIViewController, UIPickerViewDelegate, UIPickerViewData
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         delegate.changeTime = time[row]
         print(delegate.changeTime)
+        let ud:UserDefaults = UserDefaults.standard
+        ud.set(delegate.changeTime, forKey: "changeTime")
     }
     
     override func didReceiveMemoryWarning() {
