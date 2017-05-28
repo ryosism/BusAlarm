@@ -13,7 +13,7 @@
         <scene sceneID="fnW-S2-rSG">
             <objects>
                 <navigationController id="m66-JG-qQg" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="カウントダウン" id="Wmz-J5-9dB"/>
+                    <tabBarItem key="tabBarItem" title="カウントダウン" image="timer.png" id="Wmz-J5-9dB"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Mbc-dw-mKh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -48,7 +48,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DTM-mn-Lya">
                                 <rect key="frame" x="94" y="300" width="187" height="67"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="50"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -92,7 +92,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.97483299846122728" green="0.99246704578399658" blue="0.92840600435852894" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" title="カウントダウン" id="0sJ-0A-FAZ"/>
                     <connections>
@@ -128,6 +128,13 @@
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="行き・帰りの切り替え時間" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XQc-SA-5iG">
                                                     <rect key="frame" x="15" y="11" width="208" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IXu-VO-u5J">
+                                                    <rect key="frame" x="292" y="11" width="42" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -249,7 +256,7 @@
         <scene sceneID="oA7-dM-R8i">
             <objects>
                 <navigationController id="O6p-Er-Icr" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="設定" id="Kfz-Pm-DLk"/>
+                    <tabBarItem key="tabBarItem" title="設定" image="setting.png" id="Kfz-Pm-DLk"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="jk0-ct-MeO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -285,7 +292,7 @@
         <scene sceneID="InA-a7-oJ3">
             <objects>
                 <navigationController id="bme-Oz-NB8" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="時刻表" image="bas2_48.png" id="FvX-J8-LDg"/>
+                    <tabBarItem key="tabBarItem" title="時刻表" image="bus.png" id="FvX-J8-LDg"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="3hm-AO-LPd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -364,8 +371,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bas2_48.png" width="48" height="48"/>
+        <image name="bus.png" width="32" height="32"/>
         <image name="nextButton.png" width="128" height="120"/>
         <image name="prevButton.png" width="128" height="119"/>
+        <image name="setting.png" width="24" height="24"/>
+        <image name="timer.png" width="24" height="24"/>
     </resources>
 </document>

@@ -71,7 +71,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
          //フォーマットの指定
         let formatter = DateFormatter()
         formatter.locale = NSLocale(localeIdentifier:"en_US") as Locale!
-        formatter.dateFormat = "HH:mm"
+        formatter.dateFormat = "HH:mm:ss"
         formatter.timeZone = NSTimeZone(name:"GMT")! as TimeZone
         
         //現在時刻、TYOで取得
@@ -98,9 +98,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 
                 let compare:ComparisonResult = now.compare(gettime as Date)
                 if compare == .orderedAscending{
-                    print("now < gettime , row = ",row)
                     return row
-                    
                 }
             }
         }

@@ -48,6 +48,33 @@ class CountDown: UIViewController{
         }else{
             timeLabel.text = "中部大学発 ,\(depertureTime)発車"
         }
+// ----------------------------------------------------
+        let now = delegate.getnow()
+        //フォーマットの指定
+        let formatter = DateFormatter()
+        formatter.locale = NSLocale(localeIdentifier:"en_US") as Locale!
+        formatter.dateFormat = "HH:mm"
+        formatter.timeZone = NSTimeZone(name:"GMT")! as TimeZone
+        let gettime:NSDate = formatter.date(from: depertureTime)! as NSDate
+        
+        let span:Int = Int(gettime.timeIntervalSince(now as Date))
+        let hour:Int = Int(floor(Double(span/3600)))
+        let minute:Int = (span-hour*3600)/60
+        let second:Int = span-(hour*3600)-(minute*60)
+        
+        print(span)
+        
+        if span >= 3600{
+            contDownLabel.text = "\(hour)時間 \(minute)分 \(second)秒"
+            contDownLabel.font = UIFont.boldSystemFont(ofSize: 22)
+        }else{
+            contDownLabel.text = "\(minute)分 \(second)秒"
+            contDownLabel.font = UIFont.boldSystemFont(ofSize: 40)
+        }
+        
+        
+        
+// ----------------------------------------------------
         
         
     }
@@ -55,6 +82,11 @@ class CountDown: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(ViewController.update), userInfo: nil, repeats: true)
+    }
+    
+    func update(){
+        viewWillAppear(true)
     }
     
     
