@@ -19,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var changeTime:String = "12:00"
     var filename:String = ""
     
+//    MARK: - 曜日判定をしてjsonを読み込む、１次元配列にしてTimeTable.swiftで活用
     func loadJson(_ which_destination:String) -> [String] {
         
         let date = NSDate()
@@ -54,7 +55,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             return ["nil"]
         }
     }
-    
+//    MARK: - 今の時間を指定フォーマットにしてString型で返す
     func getday(_ format:String) -> String!{
         let date = NSDate()
         let formatter = DateFormatter()
@@ -63,11 +64,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         formatter.locale = NSLocale(localeIdentifier:"ja_JP") as Locale!
         //フォーマットを設定する。
         formatter.dateFormat = format //指定フォーマット
-        return formatter.string(from: date as Date) //指定フォーマットの時刻がStringで帰ってくる
+        return formatter.string(from: date as Date)
     }
-    
-    func rowofRidableBusTableNumber(_ table:[String]) -> Int{
-        //フォーマットの指定
+//    MARK: - 今の時間をNSDate形式で返す
+    func getnow() -> NSDate{
+         //フォーマットの指定
         let formatter = DateFormatter()
         formatter.locale = NSLocale(localeIdentifier:"en_US") as Locale!
         formatter.dateFormat = "HH:mm"
@@ -77,13 +78,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let current:NSDate = (NSDate(timeInterval: 60*60*9, since: NSDate() as Date))
         let currentString:String = formatter.string(from: current as Date)
         let now:NSDate = formatter.date(from: currentString)! as NSDate
+
+        return now as NSDate
+    }
+    // MARK: - 次に乗れるバスの配列番号を返す
+    func rowofRidableBusTableNumber(_ table:[String]) -> Int{
+       
+        //フォーマットの指定
+        let formatter = DateFormatter()
+        formatter.locale = NSLocale(localeIdentifier:"en_US") as Locale!
+        formatter.dateFormat = "HH:mm"
+        formatter.timeZone = NSTimeZone(name:"GMT")! as TimeZone
         
+        let now:NSDate = getnow()
         for (row, time) in table.enumerated(){ //emunerated()はfor文と同時に通し番号を発行する、今回の配列番号を返す関数にぴったり
             
             if time.contains(":"){
                 let gettime:NSDate = formatter.date(from: time)! as NSDate
-//                print("gettime = ",gettime)
-//                print("now     = ",now)
                 
                 let compare:ComparisonResult = now.compare(gettime as Date)
                 if compare == .orderedAscending{
