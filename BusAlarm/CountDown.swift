@@ -69,7 +69,7 @@ class CountDown: UIViewController{
             contDownLabel.font = UIFont.boldSystemFont(ofSize: 22)
         }else{
             contDownLabel.text = "\(minute)分 \(second)秒"
-            contDownLabel.font = UIFont.boldSystemFont(ofSize: 40)
+            contDownLabel.font = UIFont.boldSystemFont(ofSize: 37)
         }
         
         
