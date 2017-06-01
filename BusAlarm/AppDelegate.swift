@@ -98,21 +98,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 let compare:ComparisonResult = now.compare(gettime as Date)
                 if compare == .orderedAscending{
                     
-                    if table[row-1].contains("約"){
+                    if row != 0 && table[row-1].contains("約"){
                         return row-1
                     }
-                    
                     return row
                 }
-            }else{
-                
             }
         }
         return 0
     }
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-//        ここにchangeTime以降か以前かで出発先を変えるスクリプト書きたいなぁ･･･
         let ud:UserDefaults = UserDefaults.standard
         
         let formatter = DateFormatter()
