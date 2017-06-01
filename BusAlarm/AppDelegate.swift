@@ -95,11 +95,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
             if time.contains(":"){
                 let gettime:NSDate = formatter.date(from: time)! as NSDate
-                
                 let compare:ComparisonResult = now.compare(gettime as Date)
                 if compare == .orderedAscending{
+                    
+                    if table[row-1].contains("約"){
+                        return row-1
+                    }
+                    
                     return row
                 }
+            }else{
+                
             }
         }
         return 0

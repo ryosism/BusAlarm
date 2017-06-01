@@ -93,13 +93,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             delegate.table = delegate.loadJson("from_school")
             timetable.reloadData()
         }
+// -----一番近い時間にスクロールする-------------------------
         let scrollIndexpath:IndexPath = IndexPath.init(row: delegate.rowofRidableBusTableNumber(delegate.table), section: 0) as IndexPath
         
-// -----一番近い時間にスクロールする-------------------------
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
             // 0.5秒後に実行したい処理
             self.timetable.scrollToRow(at: scrollIndexpath as IndexPath, at: .top, animated: true)
-            
         }
 // -----一番近い時間にスクロールする-------------------------
         if delegate.destination == "from_jinryo"{
@@ -108,7 +107,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             navigationBar.title = "中部大学発"
         }
     }
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }

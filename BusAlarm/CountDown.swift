@@ -16,17 +16,16 @@ class CountDown: UIViewController{
     @IBOutlet weak var contDownLabel: UILabel!
     
     @IBOutlet weak var nextTrain: UIButton!
-    @IBAction func nextPushed(_ sender: Any) {
-    }
+
     @IBOutlet weak var prevTrain: UIButton!
-    @IBAction func prevPushed(_ sender: Any) {
-    }
+
     @IBOutlet weak var changeDeperture: UIButton!
     @IBAction func changeDeperturePushed(_ sender: Any) {
     }
 //    ボタン定義------------------------
     
     let delegate = UIApplication.shared.delegate as! AppDelegate
+    var nextPrevCount:Int = 0
     
     override func viewWillAppear(_ animated: Bool) {
         
@@ -42,7 +41,19 @@ class CountDown: UIViewController{
             dateLabel.text = delegate.getday("M月dd日(E)")
         }
         
-        let depertureTime:String = table[delegate.rowofRidableBusTableNumber(table)]
+        let index:Int = delegate.rowofRidableBusTableNumber(table) + nextPrevCount
+        print("index",index)
+        if index == 0{
+            prevTrain.isEnabled = false
+        }else if index == table.count{
+            nextTrain.isEnabled = false
+        }else{
+            prevTrain.isEnabled = true
+            nextTrain.isEnabled = true
+        }
+
+        let depertureTime:String = table[index]
+        print("depertureTime",depertureTime)
         if delegate.destination == "from_jinryo"{
             timeLabel.text = "神領発 ,\(depertureTime)発車"
         }else{
@@ -71,12 +82,7 @@ class CountDown: UIViewController{
             contDownLabel.text = "\(minute)分 \(second)秒"
             contDownLabel.font = UIFont.boldSystemFont(ofSize: 37)
         }
-        
-        
-        
 // ----------------------------------------------------
-        
-        
     }
     
     override func viewDidLoad() {
@@ -89,6 +95,15 @@ class CountDown: UIViewController{
         viewWillAppear(true)
     }
     
+    @IBAction func nextPushed(_ sender: Any) {
+        nextPrevCount += 1
+        viewWillAppear(true)
+        
+    }
+    @IBAction func prevPushed(_ sender: Any) {
+        nextPrevCount -= 1
+        viewWillAppear(true)
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
