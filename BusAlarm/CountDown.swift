@@ -46,8 +46,10 @@ class CountDown: UIViewController{
         print("table.cont",table.count)
         if index == 0{
             prevTrain.isEnabled = false
+            nextTrain.isEnabled = true
         }else if index == table.count-1{
             nextTrain.isEnabled = false
+            prevTrain.isEnabled = true
         }else{
             prevTrain.isEnabled = true
             nextTrain.isEnabled = true
