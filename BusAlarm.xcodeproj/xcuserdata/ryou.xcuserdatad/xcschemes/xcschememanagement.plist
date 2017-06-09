@@ -9,9 +9,19 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>BusExtension.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>2085D94D1EE94725008D7AB6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>20F628581ED08472003879C7</key>
 		<dict>
 			<key>primary</key>
