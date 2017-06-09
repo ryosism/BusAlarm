@@ -87,7 +87,7 @@ class CountDown: UIViewController{
             switch span {
             case 3600...2560000:
                 contDownLabel.text = "\(hour)時間 \(minute)分 \(second)秒後"
-                contDownLabel.font = UIFont.boldSystemFont(ofSize: 33)
+                contDownLabel.font = UIFont.boldSystemFont(ofSize: 32)
             case 0...3599:
                 contDownLabel.text = "\(minute)分 \(second)秒後"
                 contDownLabel.font = UIFont.boldSystemFont(ofSize: 40)
@@ -97,7 +97,7 @@ class CountDown: UIViewController{
                 contDownLabel.textColor = UIColor.gray
             case -2560000 ... -3600:
                 contDownLabel.text = "\(-1*hour)時間 \(-1*minute)分 \(-1*second)秒前"
-                contDownLabel.font = UIFont.boldSystemFont(ofSize: 33)
+                contDownLabel.font = UIFont.boldSystemFont(ofSize: 32)
                 contDownLabel.textColor = UIColor.gray
             default:
                 break
