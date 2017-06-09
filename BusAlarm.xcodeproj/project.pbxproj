@@ -13,6 +13,19 @@
 		2071537D1EDA677700005070 /* holiday.json in Resources */ = {isa = PBXBuildFile; fileRef = 2071537C1EDA677700005070 /* holiday.json */; };
 		207153841EDA7B1F00005070 /* nextButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 207153821EDA7B1F00005070 /* nextButton.png */; };
 		207153851EDA7B1F00005070 /* prevButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 207153831EDA7B1F00005070 /* prevButton.png */; };
+		2085D9491EE08B8C008D7AB6 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2085D9481EE08B8C008D7AB6 /* Settings.swift */; };
+		2085D9501EE94725008D7AB6 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2085D94F1EE94725008D7AB6 /* NotificationCenter.framework */; };
+		2085D9531EE94725008D7AB6 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2085D9521EE94725008D7AB6 /* TodayViewController.swift */; };
+		2085D9561EE94725008D7AB6 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2085D9541EE94725008D7AB6 /* MainInterface.storyboard */; };
+		2085D95A1EE94725008D7AB6 /* BusExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2085D94E1EE94725008D7AB6 /* BusExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2085D96A1EE9B8F8008D7AB6 /* school@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2085D9681EE9B8F8008D7AB6 /* school@2x.png */; };
+		2085D96E1EE9B969008D7AB6 /* train@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2085D96C1EE9B969008D7AB6 /* train@2x.png */; };
+		2085D9741EEA5106008D7AB6 /* bluebus@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2085D9701EEA5106008D7AB6 /* bluebus@2x.png */; };
+		2085D9761EEA5106008D7AB6 /* redbus@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2085D9721EEA5106008D7AB6 /* redbus@2x.png */; };
+		208C581E1EEABE2A00AFAADF /* train.png in Resources */ = {isa = PBXBuildFile; fileRef = 208C581D1EEABE2A00AFAADF /* train.png */; };
+		208C58201EEABEA400AFAADF /* bluebus.png in Resources */ = {isa = PBXBuildFile; fileRef = 208C581F1EEABEA400AFAADF /* bluebus.png */; };
+		208C58221EEABEAB00AFAADF /* redbus.png in Resources */ = {isa = PBXBuildFile; fileRef = 208C58211EEABEAB00AFAADF /* redbus.png */; };
+		208C58241EEABEBE00AFAADF /* school.png in Resources */ = {isa = PBXBuildFile; fileRef = 208C58231EEABEBE00AFAADF /* school.png */; };
 		20DA18331EDB4C6800EDD315 /* setting@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20DA18311EDB4C6800EDD315 /* setting@2x.png */; };
 		20DA18341EDB4C6800EDD315 /* timer@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20DA18321EDB4C6800EDD315 /* timer@2x.png */; };
 		20DA18361EDB4CF400EDD315 /* bus@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20DA18351EDB4CF400EDD315 /* bus@2x.png */; };
@@ -31,6 +44,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		2085D9581EE94725008D7AB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 20F628511ED08472003879C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2085D94D1EE94725008D7AB6;
+			remoteInfo = BusExtension;
+		};
 		20F6286E1ED08472003879C7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 20F628511ED08472003879C7 /* Project object */;
@@ -47,6 +67,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		2085D95E1EE94725008D7AB6 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2085D95A1EE94725008D7AB6 /* BusExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0651048C297701402E1EEBFB /* Pods_BusAlarmTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BusAlarmTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		07EDFB528CA6CB61BFCDF109 /* Pods_BusAlarm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BusAlarm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,6 +90,22 @@
 		2071537C1EDA677700005070 /* holiday.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = holiday.json; sourceTree = "<group>"; };
 		207153821EDA7B1F00005070 /* nextButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nextButton.png; sourceTree = "<group>"; };
 		207153831EDA7B1F00005070 /* prevButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = prevButton.png; sourceTree = "<group>"; };
+		2085D9481EE08B8C008D7AB6 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		2085D94E1EE94725008D7AB6 /* BusExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BusExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		2085D94F1EE94725008D7AB6 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		2085D9521EE94725008D7AB6 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		2085D9551EE94725008D7AB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		2085D9571EE94725008D7AB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2085D9681EE9B8F8008D7AB6 /* school@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "school@2x.png"; sourceTree = "<group>"; };
+		2085D96C1EE9B969008D7AB6 /* train@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "train@2x.png"; sourceTree = "<group>"; };
+		2085D9701EEA5106008D7AB6 /* bluebus@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bluebus@2x.png"; sourceTree = "<group>"; };
+		2085D9721EEA5106008D7AB6 /* redbus@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "redbus@2x.png"; sourceTree = "<group>"; };
+		2085D9771EEABA80008D7AB6 /* BusAlarm.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BusAlarm.entitlements; sourceTree = "<group>"; };
+		2085D9781EEABA84008D7AB6 /* BusExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BusExtension.entitlements; sourceTree = "<group>"; };
+		208C581D1EEABE2A00AFAADF /* train.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = train.png; sourceTree = "<group>"; };
+		208C581F1EEABEA400AFAADF /* bluebus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bluebus.png; sourceTree = "<group>"; };
+		208C58211EEABEAB00AFAADF /* redbus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redbus.png; sourceTree = "<group>"; };
+		208C58231EEABEBE00AFAADF /* school.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = school.png; sourceTree = "<group>"; };
 		20DA18311EDB4C6800EDD315 /* setting@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "setting@2x.png"; sourceTree = "<group>"; };
 		20DA18321EDB4C6800EDD315 /* timer@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "timer@2x.png"; sourceTree = "<group>"; };
 		20DA18351EDB4CF400EDD315 /* bus@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bus@2x.png"; sourceTree = "<group>"; };
@@ -84,6 +134,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2085D94B1EE94725008D7AB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2085D9501EE94725008D7AB6 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		20F628561ED08472003879C7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -133,9 +191,28 @@
 				20DA18321EDB4C6800EDD315 /* timer@2x.png */,
 				207153821EDA7B1F00005070 /* nextButton.png */,
 				207153831EDA7B1F00005070 /* prevButton.png */,
+				208C58231EEABEBE00AFAADF /* school.png */,
+				2085D9681EE9B8F8008D7AB6 /* school@2x.png */,
+				208C581D1EEABE2A00AFAADF /* train.png */,
+				2085D96C1EE9B969008D7AB6 /* train@2x.png */,
+				208C581F1EEABEA400AFAADF /* bluebus.png */,
+				2085D9701EEA5106008D7AB6 /* bluebus@2x.png */,
+				208C58211EEABEAB00AFAADF /* redbus.png */,
+				2085D9721EEA5106008D7AB6 /* redbus@2x.png */,
 			);
 			name = Resource;
 			path = BusAlarm;
+			sourceTree = "<group>";
+		};
+		2085D9511EE94725008D7AB6 /* BusExtension */ = {
+			isa = PBXGroup;
+			children = (
+				2085D9781EEABA84008D7AB6 /* BusExtension.entitlements */,
+				2085D9521EE94725008D7AB6 /* TodayViewController.swift */,
+				2085D9541EE94725008D7AB6 /* MainInterface.storyboard */,
+				2085D9571EE94725008D7AB6 /* Info.plist */,
+			);
+			path = BusExtension;
 			sourceTree = "<group>";
 		};
 		20F628501ED08472003879C7 = {
@@ -145,6 +222,7 @@
 				20F6285B1ED08472003879C7 /* BusAlarm */,
 				20F628701ED08472003879C7 /* BusAlarmTests */,
 				20F6287B1ED08472003879C7 /* BusAlarmUITests */,
+				2085D9511EE94725008D7AB6 /* BusExtension */,
 				20F6285A1ED08472003879C7 /* Products */,
 				157B3424C7DA7F2A7AEE8DB1 /* Pods */,
 				39C459B1840EE86B2E44F0F4 /* Frameworks */,
@@ -157,6 +235,7 @@
 				20F628591ED08472003879C7 /* BusAlarm.app */,
 				20F6286D1ED08472003879C7 /* BusAlarmTests.xctest */,
 				20F628781ED08472003879C7 /* BusAlarmUITests.xctest */,
+				2085D94E1EE94725008D7AB6 /* BusExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -164,10 +243,12 @@
 		20F6285B1ED08472003879C7 /* BusAlarm */ = {
 			isa = PBXGroup;
 			children = (
+				2085D9771EEABA80008D7AB6 /* BusAlarm.entitlements */,
 				20F6285C1ED08472003879C7 /* AppDelegate.swift */,
 				20F6288A1ED098F5003879C7 /* TimeTable.swift */,
 				203ECD3E1ED54CAC00C709D1 /* DepertureChanger.swift */,
 				2071537A1ED915B800005070 /* CountDown.swift */,
+				2085D9481EE08B8C008D7AB6 /* Settings.swift */,
 				20F6288C1ED1678E003879C7 /* weekday.json */,
 				20112E911ED34A3600157CC3 /* satuaday.json */,
 				2071537C1EDA677700005070 /* holiday.json */,
@@ -204,6 +285,7 @@
 				07EDFB528CA6CB61BFCDF109 /* Pods_BusAlarm.framework */,
 				0651048C297701402E1EEBFB /* Pods_BusAlarmTests.framework */,
 				CFAC0D96F7308D10BF1121CB /* Pods_BusAlarmUITests.framework */,
+				2085D94F1EE94725008D7AB6 /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -211,6 +293,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		2085D94D1EE94725008D7AB6 /* BusExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2085D95B1EE94725008D7AB6 /* Build configuration list for PBXNativeTarget "BusExtension" */;
+			buildPhases = (
+				2085D94A1EE94725008D7AB6 /* Sources */,
+				2085D94B1EE94725008D7AB6 /* Frameworks */,
+				2085D94C1EE94725008D7AB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BusExtension;
+			productName = BusExtension;
+			productReference = 2085D94E1EE94725008D7AB6 /* BusExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		20F628581ED08472003879C7 /* BusAlarm */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 20F628811ED08472003879C7 /* Build configuration list for PBXNativeTarget "BusAlarm" */;
@@ -221,10 +320,12 @@
 				20F628571ED08472003879C7 /* Resources */,
 				2A89BEF0EF671909CE07A3E0 /* [CP] Embed Pods Frameworks */,
 				170C0B3721F41C79F62331D6 /* [CP] Copy Pods Resources */,
+				2085D95E1EE94725008D7AB6 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				2085D9591EE94725008D7AB6 /* PBXTargetDependency */,
 			);
 			name = BusAlarm;
 			productName = BusAlarm;
@@ -283,10 +384,25 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Ryo Sobue";
 				TargetAttributes = {
+					2085D94D1EE94725008D7AB6 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = WQ6E4DAU7T;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
 					20F628581ED08472003879C7 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = WQ6E4DAU7T;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					20F6286C1ED08472003879C7 = {
 						CreatedOnToolsVersion = 8.3.2;
@@ -318,26 +434,43 @@
 				20F628581ED08472003879C7 /* BusAlarm */,
 				20F6286C1ED08472003879C7 /* BusAlarmTests */,
 				20F628771ED08472003879C7 /* BusAlarmUITests */,
+				2085D94D1EE94725008D7AB6 /* BusExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2085D94C1EE94725008D7AB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2085D9561EE94725008D7AB6 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		20F628571ED08472003879C7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2085D96A1EE9B8F8008D7AB6 /* school@2x.png in Resources */,
 				20F628671ED08472003879C7 /* LaunchScreen.storyboard in Resources */,
+				208C581E1EEABE2A00AFAADF /* train.png in Resources */,
 				2071537D1EDA677700005070 /* holiday.json in Resources */,
 				20F628641ED08472003879C7 /* Assets.xcassets in Resources */,
 				207153851EDA7B1F00005070 /* prevButton.png in Resources */,
 				20DA18361EDB4CF400EDD315 /* bus@2x.png in Resources */,
+				2085D96E1EE9B969008D7AB6 /* train@2x.png in Resources */,
 				20F6288D1ED1678E003879C7 /* weekday.json in Resources */,
+				2085D9761EEA5106008D7AB6 /* redbus@2x.png in Resources */,
 				207153841EDA7B1F00005070 /* nextButton.png in Resources */,
 				20F628621ED08472003879C7 /* Main.storyboard in Resources */,
 				20112E921ED34A3600157CC3 /* satuaday.json in Resources */,
+				2085D9741EEA5106008D7AB6 /* bluebus@2x.png in Resources */,
 				20DA18341EDB4C6800EDD315 /* timer@2x.png in Resources */,
 				20DA18331EDB4C6800EDD315 /* setting@2x.png in Resources */,
+				208C58241EEABEBE00AFAADF /* school.png in Resources */,
+				208C58221EEABEAB00AFAADF /* redbus.png in Resources */,
+				208C58201EEABEA400AFAADF /* bluebus.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,6 +629,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2085D94A1EE94725008D7AB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2085D9531EE94725008D7AB6 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		20F628551ED08472003879C7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -504,6 +645,7 @@
 				20F6285D1ED08472003879C7 /* AppDelegate.swift in Sources */,
 				203ECD3F1ED54CAC00C709D1 /* DepertureChanger.swift in Sources */,
 				2071537B1ED915B800005070 /* CountDown.swift in Sources */,
+				2085D9491EE08B8C008D7AB6 /* Settings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -526,6 +668,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		2085D9591EE94725008D7AB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2085D94D1EE94725008D7AB6 /* BusExtension */;
+			targetProxy = 2085D9581EE94725008D7AB6 /* PBXContainerItemProxy */;
+		};
 		20F6286F1ED08472003879C7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 20F628581ED08472003879C7 /* BusAlarm */;
@@ -539,6 +686,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		2085D9541EE94725008D7AB6 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2085D9551EE94725008D7AB6 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		20F628601ED08472003879C7 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -558,6 +713,36 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		2085D95C1EE94725008D7AB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = BusExtension/BusExtension.entitlements;
+				DEVELOPMENT_TEAM = WQ6E4DAU7T;
+				INFOPLIST_FILE = BusExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ryosism.BusAlarm.BusExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		2085D95D1EE94725008D7AB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = BusExtension/BusExtension.entitlements;
+				DEVELOPMENT_TEAM = WQ6E4DAU7T;
+				INFOPLIST_FILE = BusExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ryosism.BusAlarm.BusExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		20F6287F1ED08472003879C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -657,6 +842,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BusAlarm/BusAlarm.entitlements;
 				DEVELOPMENT_TEAM = WQ6E4DAU7T;
 				INFOPLIST_FILE = BusAlarm/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -672,6 +858,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BusAlarm/BusAlarm.entitlements;
 				DEVELOPMENT_TEAM = WQ6E4DAU7T;
 				INFOPLIST_FILE = BusAlarm/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -746,6 +933,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2085D95B1EE94725008D7AB6 /* Build configuration list for PBXNativeTarget "BusExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2085D95C1EE94725008D7AB6 /* Debug */,
+				2085D95D1EE94725008D7AB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		20F628541ED08472003879C7 /* Build configuration list for PBXProject "BusAlarm" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
