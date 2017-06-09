@@ -36,7 +36,7 @@ class depertureChanger: UIViewController, UIPickerViewDelegate, UIPickerViewData
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         delegate.changeTime = time[row]
         print(delegate.changeTime)
-        let ud:UserDefaults = UserDefaults.standard
+        let ud:UserDefaults = UserDefaults.init(suiteName: "group.ryosism.busalarm")!
         ud.set(delegate.changeTime, forKey: "changeTime")
     }
     
