@@ -8,6 +8,7 @@
 
 import UIKit
 import NotificationCenter
+import SwiftyJSON
 
 class TodayViewController: UIViewController, NCWidgetProviding {
     

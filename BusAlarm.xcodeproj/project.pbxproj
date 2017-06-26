@@ -39,6 +39,7 @@
 		20F6288D1ED1678E003879C7 /* weekday.json in Resources */ = {isa = PBXBuildFile; fileRef = 20F6288C1ED1678E003879C7 /* weekday.json */; };
 		20F6288F1ED19E39003879C7 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20F6288E1ED19E39003879C7 /* SwiftyJSON.framework */; };
 		3177B5FCCA6C4D3B38C2E860 /* Pods_BusAlarm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07EDFB528CA6CB61BFCDF109 /* Pods_BusAlarm.framework */; };
+		32BEB21BB9128503EC5E3608 /* Pods_BusExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EB6EE6AA60832E045EDDBB3 /* Pods_BusExtension.framework */; };
 		48393EE919A2F6DE01FCDACC /* Pods_BusAlarmUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFAC0D96F7308D10BF1121CB /* Pods_BusAlarmUITests.framework */; };
 		BF9D26CAA134526A0F3941EB /* Pods_BusAlarmTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0651048C297701402E1EEBFB /* Pods_BusAlarmTests.framework */; };
 /* End PBXBuildFile section */
@@ -125,12 +126,15 @@
 		20F6288C1ED1678E003879C7 /* weekday.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = weekday.json; sourceTree = "<group>"; };
 		20F6288E1ED19E39003879C7 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../../../Library/Developer/Xcode/DerivedData/BusAlarm-flwhpuisinzansesuyngihyzverr/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
 		233E3460D8316EA9496AE4D3 /* Pods-BusAlarm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BusAlarm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BusAlarm/Pods-BusAlarm.debug.xcconfig"; sourceTree = "<group>"; };
+		2EB6EE6AA60832E045EDDBB3 /* Pods_BusExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BusExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		61429AFC5F0283E2743110A3 /* Pods-BusAlarmUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BusAlarmUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BusAlarmUITests/Pods-BusAlarmUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		698FACA79A88B3327312622F /* Pods-BusExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BusExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-BusExtension/Pods-BusExtension.release.xcconfig"; sourceTree = "<group>"; };
 		7EA286859023166D4946361F /* Pods-BusAlarmTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BusAlarmTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BusAlarmTests/Pods-BusAlarmTests.debug.xcconfig"; sourceTree = "<group>"; };
 		954722D079B77D82D9CFF462 /* Pods-BusAlarm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BusAlarm.release.xcconfig"; path = "Pods/Target Support Files/Pods-BusAlarm/Pods-BusAlarm.release.xcconfig"; sourceTree = "<group>"; };
 		A496A88F9763B883AA26713A /* Pods-BusAlarmUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BusAlarmUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BusAlarmUITests/Pods-BusAlarmUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A504C05955A5D972683D1E2D /* Pods-BusAlarmTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BusAlarmTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BusAlarmTests/Pods-BusAlarmTests.release.xcconfig"; sourceTree = "<group>"; };
 		CFAC0D96F7308D10BF1121CB /* Pods_BusAlarmUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BusAlarmUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2DCD42136ABC6899FF8AEE1 /* Pods-BusExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BusExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BusExtension/Pods-BusExtension.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2085D9501EE94725008D7AB6 /* NotificationCenter.framework in Frameworks */,
+				32BEB21BB9128503EC5E3608 /* Pods_BusExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,6 +184,8 @@
 				A504C05955A5D972683D1E2D /* Pods-BusAlarmTests.release.xcconfig */,
 				61429AFC5F0283E2743110A3 /* Pods-BusAlarmUITests.debug.xcconfig */,
 				A496A88F9763B883AA26713A /* Pods-BusAlarmUITests.release.xcconfig */,
+				D2DCD42136ABC6899FF8AEE1 /* Pods-BusExtension.debug.xcconfig */,
+				698FACA79A88B3327312622F /* Pods-BusExtension.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -286,6 +293,7 @@
 				0651048C297701402E1EEBFB /* Pods_BusAlarmTests.framework */,
 				CFAC0D96F7308D10BF1121CB /* Pods_BusAlarmUITests.framework */,
 				2085D94F1EE94725008D7AB6 /* NotificationCenter.framework */,
+				2EB6EE6AA60832E045EDDBB3 /* Pods_BusExtension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -297,9 +305,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2085D95B1EE94725008D7AB6 /* Build configuration list for PBXNativeTarget "BusExtension" */;
 			buildPhases = (
+				90E2C46486930500A2711959 /* [CP] Check Pods Manifest.lock */,
 				2085D94A1EE94725008D7AB6 /* Sources */,
 				2085D94B1EE94725008D7AB6 /* Frameworks */,
 				2085D94C1EE94725008D7AB6 /* Resources */,
+				3B762E8982BD301E3CE5CE22 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -551,6 +561,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BusAlarm/Pods-BusAlarm-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		3B762E8982BD301E3CE5CE22 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BusExtension/Pods-BusExtension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		7F503735124B6D45BC887BE4 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -582,6 +607,21 @@
 			showEnvVarsInLog = 0;
 		};
 		8F56534AAEDB86CB7CBFFF3F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		90E2C46486930500A2711959 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -715,6 +755,7 @@
 /* Begin XCBuildConfiguration section */
 		2085D95C1EE94725008D7AB6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2DCD42136ABC6899FF8AEE1 /* Pods-BusExtension.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = BusExtension/BusExtension.entitlements;
 				DEVELOPMENT_TEAM = WQ6E4DAU7T;
@@ -730,6 +771,7 @@
 		};
 		2085D95D1EE94725008D7AB6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 698FACA79A88B3327312622F /* Pods-BusExtension.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = BusExtension/BusExtension.entitlements;
 				DEVELOPMENT_TEAM = WQ6E4DAU7T;
