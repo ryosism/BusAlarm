@@ -8,14 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		20112E921ED34A3600157CC3 /* satuaday.json in Resources */ = {isa = PBXBuildFile; fileRef = 20112E911ED34A3600157CC3 /* satuaday.json */; };
-		203ECD3F1ED54CAC00C709D1 /* DepertureChanger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203ECD3E1ED54CAC00C709D1 /* DepertureChanger.swift */; };
-		2071537B1ED915B800005070 /* CountDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2071537A1ED915B800005070 /* CountDown.swift */; };
 		2071537D1EDA677700005070 /* holiday.json in Resources */ = {isa = PBXBuildFile; fileRef = 2071537C1EDA677700005070 /* holiday.json */; };
 		207153841EDA7B1F00005070 /* nextButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 207153821EDA7B1F00005070 /* nextButton.png */; };
 		207153851EDA7B1F00005070 /* prevButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 207153831EDA7B1F00005070 /* prevButton.png */; };
-		2085D9491EE08B8C008D7AB6 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2085D9481EE08B8C008D7AB6 /* Settings.swift */; };
 		2085D9501EE94725008D7AB6 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2085D94F1EE94725008D7AB6 /* NotificationCenter.framework */; };
-		2085D9531EE94725008D7AB6 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2085D9521EE94725008D7AB6 /* TodayViewController.swift */; };
 		2085D9561EE94725008D7AB6 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2085D9541EE94725008D7AB6 /* MainInterface.storyboard */; };
 		2085D95A1EE94725008D7AB6 /* BusExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2085D94E1EE94725008D7AB6 /* BusExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		2085D96A1EE9B8F8008D7AB6 /* school@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2085D9681EE9B8F8008D7AB6 /* school@2x.png */; };
@@ -29,13 +25,17 @@
 		20DA18331EDB4C6800EDD315 /* setting@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20DA18311EDB4C6800EDD315 /* setting@2x.png */; };
 		20DA18341EDB4C6800EDD315 /* timer@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20DA18321EDB4C6800EDD315 /* timer@2x.png */; };
 		20DA18361EDB4CF400EDD315 /* bus@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20DA18351EDB4CF400EDD315 /* bus@2x.png */; };
-		20F6285D1ED08472003879C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F6285C1ED08472003879C7 /* AppDelegate.swift */; };
+		20E64EE71F017A7C0080DB0C /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E64EE61F017A7C0080DB0C /* TodayViewController.swift */; };
+		20E64EEE1F017AED0080DB0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E64EE91F017AED0080DB0C /* AppDelegate.swift */; };
+		20E64EEF1F017AED0080DB0C /* CountDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E64EEA1F017AED0080DB0C /* CountDown.swift */; };
+		20E64EF01F017AED0080DB0C /* DepertureChanger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E64EEB1F017AED0080DB0C /* DepertureChanger.swift */; };
+		20E64EF11F017AED0080DB0C /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E64EEC1F017AED0080DB0C /* Settings.swift */; };
+		20E64EF21F017AED0080DB0C /* TimeTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E64EED1F017AED0080DB0C /* TimeTable.swift */; };
 		20F628621ED08472003879C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20F628601ED08472003879C7 /* Main.storyboard */; };
 		20F628641ED08472003879C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20F628631ED08472003879C7 /* Assets.xcassets */; };
 		20F628671ED08472003879C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20F628651ED08472003879C7 /* LaunchScreen.storyboard */; };
 		20F628721ED08472003879C7 /* BusAlarmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F628711ED08472003879C7 /* BusAlarmTests.swift */; };
 		20F6287D1ED08472003879C7 /* BusAlarmUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F6287C1ED08472003879C7 /* BusAlarmUITests.swift */; };
-		20F6288B1ED098F5003879C7 /* TimeTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F6288A1ED098F5003879C7 /* TimeTable.swift */; };
 		20F6288D1ED1678E003879C7 /* weekday.json in Resources */ = {isa = PBXBuildFile; fileRef = 20F6288C1ED1678E003879C7 /* weekday.json */; };
 		20F6288F1ED19E39003879C7 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20F6288E1ED19E39003879C7 /* SwiftyJSON.framework */; };
 		3177B5FCCA6C4D3B38C2E860 /* Pods_BusAlarm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07EDFB528CA6CB61BFCDF109 /* Pods_BusAlarm.framework */; };
@@ -86,15 +86,11 @@
 		0651048C297701402E1EEBFB /* Pods_BusAlarmTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BusAlarmTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		07EDFB528CA6CB61BFCDF109 /* Pods_BusAlarm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BusAlarm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		20112E911ED34A3600157CC3 /* satuaday.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = satuaday.json; sourceTree = "<group>"; };
-		203ECD3E1ED54CAC00C709D1 /* DepertureChanger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepertureChanger.swift; sourceTree = "<group>"; };
-		2071537A1ED915B800005070 /* CountDown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountDown.swift; sourceTree = "<group>"; };
 		2071537C1EDA677700005070 /* holiday.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = holiday.json; sourceTree = "<group>"; };
 		207153821EDA7B1F00005070 /* nextButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nextButton.png; sourceTree = "<group>"; };
 		207153831EDA7B1F00005070 /* prevButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = prevButton.png; sourceTree = "<group>"; };
-		2085D9481EE08B8C008D7AB6 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		2085D94E1EE94725008D7AB6 /* BusExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BusExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		2085D94F1EE94725008D7AB6 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
-		2085D9521EE94725008D7AB6 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		2085D9551EE94725008D7AB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		2085D9571EE94725008D7AB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2085D9681EE9B8F8008D7AB6 /* school@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "school@2x.png"; sourceTree = "<group>"; };
@@ -110,8 +106,15 @@
 		20DA18311EDB4C6800EDD315 /* setting@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "setting@2x.png"; sourceTree = "<group>"; };
 		20DA18321EDB4C6800EDD315 /* timer@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "timer@2x.png"; sourceTree = "<group>"; };
 		20DA18351EDB4CF400EDD315 /* bus@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bus@2x.png"; sourceTree = "<group>"; };
+		20E64EE51F017A7B0080DB0C /* BusExtension-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BusExtension-Bridging-Header.h"; sourceTree = "<group>"; };
+		20E64EE61F017A7C0080DB0C /* TodayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		20E64EE81F017AEC0080DB0C /* BusAlarm-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BusAlarm-Bridging-Header.h"; sourceTree = "<group>"; };
+		20E64EE91F017AED0080DB0C /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		20E64EEA1F017AED0080DB0C /* CountDown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountDown.swift; sourceTree = "<group>"; };
+		20E64EEB1F017AED0080DB0C /* DepertureChanger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepertureChanger.swift; sourceTree = "<group>"; };
+		20E64EEC1F017AED0080DB0C /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		20E64EED1F017AED0080DB0C /* TimeTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeTable.swift; sourceTree = "<group>"; };
 		20F628591ED08472003879C7 /* BusAlarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusAlarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		20F6285C1ED08472003879C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20F628611ED08472003879C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		20F628631ED08472003879C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20F628661ED08472003879C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -122,7 +125,6 @@
 		20F628781ED08472003879C7 /* BusAlarmUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BusAlarmUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		20F6287C1ED08472003879C7 /* BusAlarmUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusAlarmUITests.swift; sourceTree = "<group>"; };
 		20F6287E1ED08472003879C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		20F6288A1ED098F5003879C7 /* TimeTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeTable.swift; sourceTree = "<group>"; };
 		20F6288C1ED1678E003879C7 /* weekday.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = weekday.json; sourceTree = "<group>"; };
 		20F6288E1ED19E39003879C7 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../../../Library/Developer/Xcode/DerivedData/BusAlarm-flwhpuisinzansesuyngihyzverr/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
 		233E3460D8316EA9496AE4D3 /* Pods-BusAlarm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BusAlarm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BusAlarm/Pods-BusAlarm.debug.xcconfig"; sourceTree = "<group>"; };
@@ -215,9 +217,10 @@
 			isa = PBXGroup;
 			children = (
 				2085D9781EEABA84008D7AB6 /* BusExtension.entitlements */,
-				2085D9521EE94725008D7AB6 /* TodayViewController.swift */,
+				20E64EE61F017A7C0080DB0C /* TodayViewController.swift */,
 				2085D9541EE94725008D7AB6 /* MainInterface.storyboard */,
 				2085D9571EE94725008D7AB6 /* Info.plist */,
+				20E64EE51F017A7B0080DB0C /* BusExtension-Bridging-Header.h */,
 			);
 			path = BusExtension;
 			sourceTree = "<group>";
@@ -251,11 +254,11 @@
 			isa = PBXGroup;
 			children = (
 				2085D9771EEABA80008D7AB6 /* BusAlarm.entitlements */,
-				20F6285C1ED08472003879C7 /* AppDelegate.swift */,
-				20F6288A1ED098F5003879C7 /* TimeTable.swift */,
-				203ECD3E1ED54CAC00C709D1 /* DepertureChanger.swift */,
-				2071537A1ED915B800005070 /* CountDown.swift */,
-				2085D9481EE08B8C008D7AB6 /* Settings.swift */,
+				20E64EE91F017AED0080DB0C /* AppDelegate.swift */,
+				20E64EEA1F017AED0080DB0C /* CountDown.swift */,
+				20E64EEB1F017AED0080DB0C /* DepertureChanger.swift */,
+				20E64EEC1F017AED0080DB0C /* Settings.swift */,
+				20E64EED1F017AED0080DB0C /* TimeTable.swift */,
 				20F6288C1ED1678E003879C7 /* weekday.json */,
 				20112E911ED34A3600157CC3 /* satuaday.json */,
 				2071537C1EDA677700005070 /* holiday.json */,
@@ -263,6 +266,7 @@
 				20F628631ED08472003879C7 /* Assets.xcassets */,
 				20F628651ED08472003879C7 /* LaunchScreen.storyboard */,
 				20F628681ED08472003879C7 /* Info.plist */,
+				20E64EE81F017AEC0080DB0C /* BusAlarm-Bridging-Header.h */,
 			);
 			path = BusAlarm;
 			sourceTree = "<group>";
@@ -397,6 +401,7 @@
 					2085D94D1EE94725008D7AB6 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = WQ6E4DAU7T;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
@@ -407,6 +412,7 @@
 					20F628581ED08472003879C7 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = WQ6E4DAU7T;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
@@ -673,7 +679,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2085D9531EE94725008D7AB6 /* TodayViewController.swift in Sources */,
+				20E64EE71F017A7C0080DB0C /* TodayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -681,11 +687,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20F6288B1ED098F5003879C7 /* TimeTable.swift in Sources */,
-				20F6285D1ED08472003879C7 /* AppDelegate.swift in Sources */,
-				203ECD3F1ED54CAC00C709D1 /* DepertureChanger.swift in Sources */,
-				2071537B1ED915B800005070 /* CountDown.swift in Sources */,
-				2085D9491EE08B8C008D7AB6 /* Settings.swift in Sources */,
+				20E64EEE1F017AED0080DB0C /* AppDelegate.swift in Sources */,
+				20E64EF21F017AED0080DB0C /* TimeTable.swift in Sources */,
+				20E64EF01F017AED0080DB0C /* DepertureChanger.swift in Sources */,
+				20E64EF11F017AED0080DB0C /* Settings.swift in Sources */,
+				20E64EEF1F017AED0080DB0C /* CountDown.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -757,6 +763,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D2DCD42136ABC6899FF8AEE1 /* Pods-BusExtension.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = BusExtension/BusExtension.entitlements;
 				DEVELOPMENT_TEAM = WQ6E4DAU7T;
 				INFOPLIST_FILE = BusExtension/Info.plist;
@@ -765,6 +772,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ryosism.BusAlarm.BusExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "BusExtension/BusExtension-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -773,6 +782,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 698FACA79A88B3327312622F /* Pods-BusExtension.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = BusExtension/BusExtension.entitlements;
 				DEVELOPMENT_TEAM = WQ6E4DAU7T;
 				INFOPLIST_FILE = BusExtension/Info.plist;
@@ -781,6 +791,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ryosism.BusAlarm.BusExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "BusExtension/BusExtension-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -884,12 +895,15 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = BusAlarm/BusAlarm.entitlements;
 				DEVELOPMENT_TEAM = WQ6E4DAU7T;
 				INFOPLIST_FILE = BusAlarm/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ryosism.BusAlarm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BusAlarm/BusAlarm-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -900,12 +914,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = BusAlarm/BusAlarm.entitlements;
 				DEVELOPMENT_TEAM = WQ6E4DAU7T;
 				INFOPLIST_FILE = BusAlarm/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ryosism.BusAlarm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BusAlarm/BusAlarm-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
