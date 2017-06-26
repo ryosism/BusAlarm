@@ -110,6 +110,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         let ud:UserDefaults = UserDefaults.init(suiteName: "group.ryosism.busalarm")!
+        ud.set(destination, forKey: "destination")
         
         let formatter = DateFormatter()
         formatter.locale = NSLocale(localeIdentifier:"en_US") as Locale!

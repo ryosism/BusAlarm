@@ -20,4 +20,9 @@ target 'BusAlarm' do
     # Pods for testing
   end
 
+  target 'BusExtension' do
+    inherit! :search_paths
+    pod 'SwiftyJSON'
+  end
+
 end
