@@ -31,6 +31,12 @@
 		20E64EF01F017AED0080DB0C /* DepertureChanger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E64EEB1F017AED0080DB0C /* DepertureChanger.swift */; };
 		20E64EF11F017AED0080DB0C /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E64EEC1F017AED0080DB0C /* Settings.swift */; };
 		20E64EF21F017AED0080DB0C /* TimeTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E64EED1F017AED0080DB0C /* TimeTable.swift */; };
+		20E64EF31F029CDB0080DB0C /* train.png in Resources */ = {isa = PBXBuildFile; fileRef = 208C581D1EEABE2A00AFAADF /* train.png */; };
+		20E64EF41F029CDF0080DB0C /* train@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2085D96C1EE9B969008D7AB6 /* train@2x.png */; };
+		20E64EF51F029CE20080DB0C /* bluebus.png in Resources */ = {isa = PBXBuildFile; fileRef = 208C581F1EEABEA400AFAADF /* bluebus.png */; };
+		20E64EF61F029CE50080DB0C /* bluebus@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2085D9701EEA5106008D7AB6 /* bluebus@2x.png */; };
+		20E64EF71F029CEA0080DB0C /* school.png in Resources */ = {isa = PBXBuildFile; fileRef = 208C58231EEABEBE00AFAADF /* school.png */; };
+		20E64EF81F029CEC0080DB0C /* school@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2085D9681EE9B8F8008D7AB6 /* school@2x.png */; };
 		20F628621ED08472003879C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20F628601ED08472003879C7 /* Main.storyboard */; };
 		20F628641ED08472003879C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20F628631ED08472003879C7 /* Assets.xcassets */; };
 		20F628671ED08472003879C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20F628651ED08472003879C7 /* LaunchScreen.storyboard */; };
@@ -460,7 +466,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20E64EF51F029CE20080DB0C /* bluebus.png in Resources */,
+				20E64EF31F029CDB0080DB0C /* train.png in Resources */,
+				20E64EF81F029CEC0080DB0C /* school@2x.png in Resources */,
+				20E64EF41F029CDF0080DB0C /* train@2x.png in Resources */,
 				2085D9561EE94725008D7AB6 /* MainInterface.storyboard in Resources */,
+				20E64EF61F029CE50080DB0C /* bluebus@2x.png in Resources */,
+				20E64EF71F029CEA0080DB0C /* school.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

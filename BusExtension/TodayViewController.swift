@@ -12,11 +12,13 @@ import SwiftyJSON
 
 class TodayViewController: UIViewController, NCWidgetProviding {
     
-    @IBOutlet weak var busIcon: UIImageView!
     @IBOutlet weak var countDownLabel: UILabel!
     @IBOutlet weak var depertureLabel: UILabel!
+    @IBOutlet weak var busIcon: UIImageView!
     
     override func viewWillAppear(_ animated: Bool) {
+        
+        busIcon.image = UIImage(named:"bluebus.png")
         
         let ud:UserDefaults = UserDefaults.init(suiteName: "group.ryosism.busalarm")!
         let table:[String] = loadJson(ud.string(forKey: "destination")!)

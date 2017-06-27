@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="M4Y-Lb-cyx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="M4Y-Lb-cyx">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -22,41 +22,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="121"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="school.png" translatesAutoresizingMaskIntoConstraints="NO" id="aJS-sv-xDh">
-                                <rect key="frame" x="16" y="7" width="32" height="32"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="train.png" translatesAutoresizingMaskIntoConstraints="NO" id="6ne-O8-FmC">
-                                <rect key="frame" x="144" y="7" width="32" height="32"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="bluebus.png" translatesAutoresizingMaskIntoConstraints="NO" id="feJ-DC-YOM">
-                                <rect key="frame" x="80" y="7" width="32" height="32"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YJ0-u4-Bvl">
-                                <rect key="frame" x="193" y="7" width="111" height="32"/>
+                                <rect key="frame" x="255" y="7" width="49" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="KuD-J4-xwa"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10分00秒後" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0j6-R5-uXx">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10分00秒後" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0j6-R5-uXx">
                                 <rect key="frame" x="16" y="47" width="288" height="66"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WNT-Kz-agb">
+                                <rect key="frame" x="80" y="7" width="32" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="train.png" translatesAutoresizingMaskIntoConstraints="NO" id="V3H-d2-mgq">
+                                <rect key="frame" x="144" y="7" width="32" height="32"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="school.png" translatesAutoresizingMaskIntoConstraints="NO" id="bYI-f4-LDu">
+                                <rect key="frame" x="16" y="7" width="32" height="32"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="aJS-sv-xDh" firstAttribute="top" secondItem="feJ-DC-YOM" secondAttribute="top" id="7YC-Jf-u05"/>
-                            <constraint firstItem="aJS-sv-xDh" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leadingMargin" id="FBW-ve-mGp"/>
-                            <constraint firstItem="YJ0-u4-Bvl" firstAttribute="leading" secondItem="6ne-O8-FmC" secondAttribute="trailing" constant="17" id="JWI-IL-blj"/>
-                            <constraint firstItem="YJ0-u4-Bvl" firstAttribute="trailing" secondItem="S3S-Oj-5AN" secondAttribute="trailingMargin" id="MnJ-c8-FtE"/>
-                            <constraint firstItem="aJS-sv-xDh" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" constant="7" id="O3X-lP-JV1"/>
-                            <constraint firstItem="feJ-DC-YOM" firstAttribute="top" secondItem="6ne-O8-FmC" secondAttribute="top" id="QPS-f3-f5T"/>
-                            <constraint firstItem="6ne-O8-FmC" firstAttribute="bottom" secondItem="YJ0-u4-Bvl" secondAttribute="bottom" id="QbA-8t-VjF"/>
-                            <constraint firstItem="feJ-DC-YOM" firstAttribute="leading" secondItem="aJS-sv-xDh" secondAttribute="trailing" constant="32" id="W85-4n-lai"/>
-                            <constraint firstItem="6ne-O8-FmC" firstAttribute="leading" secondItem="feJ-DC-YOM" secondAttribute="trailing" constant="32" id="are-Lb-DZl"/>
-                            <constraint firstItem="6ne-O8-FmC" firstAttribute="top" secondItem="YJ0-u4-Bvl" secondAttribute="top" id="cWR-UI-0HO"/>
-                            <constraint firstItem="6ne-O8-FmC" firstAttribute="centerX" secondItem="S3S-Oj-5AN" secondAttribute="centerX" id="pm5-B1-iyA"/>
+                            <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="0j6-R5-uXx" secondAttribute="bottom" constant="8" symbolic="YES" id="7Rw-Ca-31e"/>
+                            <constraint firstItem="0j6-R5-uXx" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leadingMargin" id="Lem-5v-GWY"/>
+                            <constraint firstItem="YJ0-u4-Bvl" firstAttribute="trailing" secondItem="0j6-R5-uXx" secondAttribute="trailing" id="RXU-XU-4BM"/>
+                            <constraint firstItem="YJ0-u4-Bvl" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" constant="7" id="ZCM-5j-xXk"/>
+                            <constraint firstItem="YJ0-u4-Bvl" firstAttribute="trailing" secondItem="S3S-Oj-5AN" secondAttribute="trailingMargin" id="b1F-xr-cSn"/>
+                            <constraint firstItem="0j6-R5-uXx" firstAttribute="top" secondItem="YJ0-u4-Bvl" secondAttribute="bottom" constant="8" symbolic="YES" id="qyf-fl-Aao"/>
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
@@ -66,9 +66,9 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="121"/>
                     <connections>
-                        <outlet property="busIcon" destination="feJ-DC-YOM" id="BbQ-Kf-p6d"/>
+                        <outlet property="busIcon" destination="WNT-Kz-agb" id="x34-vh-Pt8"/>
                         <outlet property="countDownLabel" destination="0j6-R5-uXx" id="Hyn-X4-06T"/>
-                        <outlet property="depretureLabel" destination="YJ0-u4-Bvl" id="aA5-Hm-BOn"/>
+                        <outlet property="depertureLabel" destination="YJ0-u4-Bvl" id="X7h-e7-ACD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -77,7 +77,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bluebus.png" width="32" height="32"/>
         <image name="school.png" width="32" height="32"/>
         <image name="train.png" width="32" height="32"/>
     </resources>
