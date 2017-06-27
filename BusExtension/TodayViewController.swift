@@ -26,6 +26,8 @@ class TodayViewController: UIViewController, NCWidgetProviding {
             busIcon.image = UIImage(named:"bluebus.png")
         }else{
             busIcon.image = UIImage(named:"redbus.png")
+            let trans = CGAffineTransform(scaleX: -1, y: 1)
+            busIcon.transform = trans
         }
         
         let table:[String] = loadJson(ud.string(forKey: "destination")!)
