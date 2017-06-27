@@ -55,8 +55,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
                 print("from_school")
             }
         }
-        
-//        -----------------
+
         let depertureTime:String = table[index]
         print("depertureTime",depertureTime)
         
@@ -66,7 +65,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
             }else{
                 depertureLabel.text = "中部大学発"
             }
-            // ----------------------------------------------------
+
             let now = getnow()
             //フォーマットの指定
             let formatter = DateFormatter()
@@ -79,8 +78,6 @@ class TodayViewController: UIViewController, NCWidgetProviding {
             let hour:Int = Int(floor(Double(span/3600)))
             let minute:Int = (span-hour*3600)/60
             let second:Int = span-(hour*3600)-(minute*60)
-            
-            print("span",span)
             
             countDownLabel.isHidden = false
             
@@ -110,8 +107,6 @@ class TodayViewController: UIViewController, NCWidgetProviding {
             }
             countDownLabel.isHidden = true
         }
-        
-//        --------------------
     }
     
     override func viewDidLoad() {
