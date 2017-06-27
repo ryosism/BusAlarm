@@ -22,41 +22,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="121"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="school.png" translatesAutoresizingMaskIntoConstraints="NO" id="aJS-sv-xDh">
-                                <rect key="frame" x="16" y="7" width="32" height="32"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="train.png" translatesAutoresizingMaskIntoConstraints="NO" id="6ne-O8-FmC">
-                                <rect key="frame" x="144" y="7" width="32" height="32"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="bluebus.png" translatesAutoresizingMaskIntoConstraints="NO" id="feJ-DC-YOM">
-                                <rect key="frame" x="80" y="7" width="32" height="32"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="神領/大学発" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YJ0-u4-Bvl">
-                                <rect key="frame" x="193" y="7" width="111" height="32"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YJ0-u4-Bvl">
+                                <rect key="frame" x="184" y="7" width="120" height="32"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10分00秒後" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0j6-R5-uXx">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10分00秒後" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0j6-R5-uXx">
                                 <rect key="frame" x="16" y="47" width="288" height="66"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WNT-Kz-agb">
+                                <rect key="frame" x="80" y="7" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="cEs-kL-g2h"/>
+                                </constraints>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="school.png" translatesAutoresizingMaskIntoConstraints="NO" id="bYI-f4-LDu">
+                                <rect key="frame" x="16" y="7" width="32" height="32"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="train.png" translatesAutoresizingMaskIntoConstraints="NO" id="V3H-d2-mgq">
+                                <rect key="frame" x="144" y="7" width="32" height="32"/>
+                            </imageView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="aJS-sv-xDh" firstAttribute="top" secondItem="feJ-DC-YOM" secondAttribute="top" id="7YC-Jf-u05"/>
-                            <constraint firstItem="aJS-sv-xDh" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leadingMargin" id="FBW-ve-mGp"/>
-                            <constraint firstItem="YJ0-u4-Bvl" firstAttribute="leading" secondItem="6ne-O8-FmC" secondAttribute="trailing" constant="17" id="JWI-IL-blj"/>
-                            <constraint firstItem="YJ0-u4-Bvl" firstAttribute="trailing" secondItem="S3S-Oj-5AN" secondAttribute="trailingMargin" id="MnJ-c8-FtE"/>
-                            <constraint firstItem="aJS-sv-xDh" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" constant="7" id="O3X-lP-JV1"/>
-                            <constraint firstItem="feJ-DC-YOM" firstAttribute="top" secondItem="6ne-O8-FmC" secondAttribute="top" id="QPS-f3-f5T"/>
-                            <constraint firstItem="6ne-O8-FmC" firstAttribute="bottom" secondItem="YJ0-u4-Bvl" secondAttribute="bottom" id="QbA-8t-VjF"/>
-                            <constraint firstItem="feJ-DC-YOM" firstAttribute="leading" secondItem="aJS-sv-xDh" secondAttribute="trailing" constant="32" id="W85-4n-lai"/>
-                            <constraint firstItem="6ne-O8-FmC" firstAttribute="leading" secondItem="feJ-DC-YOM" secondAttribute="trailing" constant="32" id="are-Lb-DZl"/>
-                            <constraint firstItem="6ne-O8-FmC" firstAttribute="top" secondItem="YJ0-u4-Bvl" secondAttribute="top" id="cWR-UI-0HO"/>
-                            <constraint firstItem="6ne-O8-FmC" firstAttribute="centerX" secondItem="S3S-Oj-5AN" secondAttribute="centerX" id="pm5-B1-iyA"/>
+                            <constraint firstItem="bYI-f4-LDu" firstAttribute="top" secondItem="WNT-Kz-agb" secondAttribute="top" id="3Lu-Ng-qKv"/>
+                            <constraint firstItem="0j6-R5-uXx" firstAttribute="top" secondItem="WNT-Kz-agb" secondAttribute="bottom" constant="8" symbolic="YES" id="EcI-aw-2wl"/>
+                            <constraint firstItem="WNT-Kz-agb" firstAttribute="top" secondItem="V3H-d2-mgq" secondAttribute="top" id="FLc-0F-3vP"/>
+                            <constraint firstItem="0j6-R5-uXx" firstAttribute="top" secondItem="YJ0-u4-Bvl" secondAttribute="bottom" constant="8" symbolic="YES" id="H1c-wu-Tm6"/>
+                            <constraint firstItem="bYI-f4-LDu" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" constant="7" id="Lhf-RZ-H7X"/>
+                            <constraint firstItem="YJ0-u4-Bvl" firstAttribute="trailing" secondItem="0j6-R5-uXx" secondAttribute="trailing" id="Okz-kI-MVo"/>
+                            <constraint firstItem="V3H-d2-mgq" firstAttribute="top" secondItem="YJ0-u4-Bvl" secondAttribute="top" id="QJy-2B-kA5"/>
+                            <constraint firstItem="0j6-R5-uXx" firstAttribute="top" secondItem="bYI-f4-LDu" secondAttribute="bottom" constant="8" symbolic="YES" id="RIT-vO-y44"/>
+                            <constraint firstItem="WNT-Kz-agb" firstAttribute="leading" secondItem="bYI-f4-LDu" secondAttribute="trailing" constant="32" id="Wmh-4I-2up"/>
+                            <constraint firstItem="V3H-d2-mgq" firstAttribute="leading" secondItem="WNT-Kz-agb" secondAttribute="trailing" constant="32" id="blI-wn-ewJ"/>
+                            <constraint firstItem="bYI-f4-LDu" firstAttribute="leading" secondItem="0j6-R5-uXx" secondAttribute="leading" id="d9H-zN-1OX"/>
+                            <constraint firstItem="YJ0-u4-Bvl" firstAttribute="leading" secondItem="V3H-d2-mgq" secondAttribute="trailing" constant="8" symbolic="YES" id="fr6-NG-HOg"/>
+                            <constraint firstItem="bYI-f4-LDu" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leadingMargin" id="lg7-3I-CgW"/>
+                            <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="0j6-R5-uXx" secondAttribute="bottom" constant="8" symbolic="YES" id="vkg-GQ-JXI"/>
+                            <constraint firstItem="V3H-d2-mgq" firstAttribute="centerX" secondItem="0j6-R5-uXx" secondAttribute="centerX" id="wHO-5z-uOQ"/>
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
@@ -66,9 +72,9 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="121"/>
                     <connections>
-                        <outlet property="busIcon" destination="feJ-DC-YOM" id="BbQ-Kf-p6d"/>
+                        <outlet property="busIcon" destination="WNT-Kz-agb" id="x34-vh-Pt8"/>
                         <outlet property="countDownLabel" destination="0j6-R5-uXx" id="Hyn-X4-06T"/>
-                        <outlet property="depertureLabel" destination="YJ0-u4-Bvl" id="KNf-7L-mag"/>
+                        <outlet property="depertureLabel" destination="YJ0-u4-Bvl" id="X7h-e7-ACD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -77,7 +83,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bluebus.png" width="32" height="32"/>
         <image name="school.png" width="32" height="32"/>
         <image name="train.png" width="32" height="32"/>
     </resources>

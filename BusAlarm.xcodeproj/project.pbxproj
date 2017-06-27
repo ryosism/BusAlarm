@@ -8,14 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		20112E921ED34A3600157CC3 /* satuaday.json in Resources */ = {isa = PBXBuildFile; fileRef = 20112E911ED34A3600157CC3 /* satuaday.json */; };
-		203ECD3F1ED54CAC00C709D1 /* DepertureChanger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203ECD3E1ED54CAC00C709D1 /* DepertureChanger.swift */; };
-		2071537B1ED915B800005070 /* CountDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2071537A1ED915B800005070 /* CountDown.swift */; };
 		2071537D1EDA677700005070 /* holiday.json in Resources */ = {isa = PBXBuildFile; fileRef = 2071537C1EDA677700005070 /* holiday.json */; };
 		207153841EDA7B1F00005070 /* nextButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 207153821EDA7B1F00005070 /* nextButton.png */; };
 		207153851EDA7B1F00005070 /* prevButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 207153831EDA7B1F00005070 /* prevButton.png */; };
-		2085D9491EE08B8C008D7AB6 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2085D9481EE08B8C008D7AB6 /* Settings.swift */; };
 		2085D9501EE94725008D7AB6 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2085D94F1EE94725008D7AB6 /* NotificationCenter.framework */; };
-		2085D9531EE94725008D7AB6 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2085D9521EE94725008D7AB6 /* TodayViewController.swift */; };
 		2085D9561EE94725008D7AB6 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2085D9541EE94725008D7AB6 /* MainInterface.storyboard */; };
 		2085D95A1EE94725008D7AB6 /* BusExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2085D94E1EE94725008D7AB6 /* BusExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		2085D96A1EE9B8F8008D7AB6 /* school@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2085D9681EE9B8F8008D7AB6 /* school@2x.png */; };
@@ -29,19 +25,33 @@
 		20DA18331EDB4C6800EDD315 /* setting@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20DA18311EDB4C6800EDD315 /* setting@2x.png */; };
 		20DA18341EDB4C6800EDD315 /* timer@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20DA18321EDB4C6800EDD315 /* timer@2x.png */; };
 		20DA18361EDB4CF400EDD315 /* bus@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20DA18351EDB4CF400EDD315 /* bus@2x.png */; };
-		20F6285D1ED08472003879C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F6285C1ED08472003879C7 /* AppDelegate.swift */; };
+		20E64EE71F017A7C0080DB0C /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E64EE61F017A7C0080DB0C /* TodayViewController.swift */; };
+		20E64EEE1F017AED0080DB0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E64EE91F017AED0080DB0C /* AppDelegate.swift */; };
+		20E64EEF1F017AED0080DB0C /* CountDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E64EEA1F017AED0080DB0C /* CountDown.swift */; };
+		20E64EF01F017AED0080DB0C /* DepertureChanger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E64EEB1F017AED0080DB0C /* DepertureChanger.swift */; };
+		20E64EF11F017AED0080DB0C /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E64EEC1F017AED0080DB0C /* Settings.swift */; };
+		20E64EF21F017AED0080DB0C /* TimeTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E64EED1F017AED0080DB0C /* TimeTable.swift */; };
+		20E64EF31F029CDB0080DB0C /* train.png in Resources */ = {isa = PBXBuildFile; fileRef = 208C581D1EEABE2A00AFAADF /* train.png */; };
+		20E64EF41F029CDF0080DB0C /* train@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2085D96C1EE9B969008D7AB6 /* train@2x.png */; };
+		20E64EF51F029CE20080DB0C /* bluebus.png in Resources */ = {isa = PBXBuildFile; fileRef = 208C581F1EEABEA400AFAADF /* bluebus.png */; };
+		20E64EF61F029CE50080DB0C /* bluebus@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2085D9701EEA5106008D7AB6 /* bluebus@2x.png */; };
+		20E64EF71F029CEA0080DB0C /* school.png in Resources */ = {isa = PBXBuildFile; fileRef = 208C58231EEABEBE00AFAADF /* school.png */; };
+		20E64EF81F029CEC0080DB0C /* school@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2085D9681EE9B8F8008D7AB6 /* school@2x.png */; };
+		20E64EF91F02C94D0080DB0C /* weekday.json in Resources */ = {isa = PBXBuildFile; fileRef = 20F6288C1ED1678E003879C7 /* weekday.json */; };
+		20E64EFA1F02C9500080DB0C /* satuaday.json in Resources */ = {isa = PBXBuildFile; fileRef = 20112E911ED34A3600157CC3 /* satuaday.json */; };
+		20E64EFB1F02C9520080DB0C /* holiday.json in Resources */ = {isa = PBXBuildFile; fileRef = 2071537C1EDA677700005070 /* holiday.json */; };
+		20E64EFC1F02CB570080DB0C /* redbus.png in Resources */ = {isa = PBXBuildFile; fileRef = 208C58211EEABEAB00AFAADF /* redbus.png */; };
+		20E64EFD1F02CB590080DB0C /* redbus@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2085D9721EEA5106008D7AB6 /* redbus@2x.png */; };
 		20F628621ED08472003879C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20F628601ED08472003879C7 /* Main.storyboard */; };
 		20F628641ED08472003879C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20F628631ED08472003879C7 /* Assets.xcassets */; };
 		20F628671ED08472003879C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20F628651ED08472003879C7 /* LaunchScreen.storyboard */; };
 		20F628721ED08472003879C7 /* BusAlarmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F628711ED08472003879C7 /* BusAlarmTests.swift */; };
 		20F6287D1ED08472003879C7 /* BusAlarmUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F6287C1ED08472003879C7 /* BusAlarmUITests.swift */; };
-		20F6288B1ED098F5003879C7 /* TimeTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F6288A1ED098F5003879C7 /* TimeTable.swift */; };
 		20F6288D1ED1678E003879C7 /* weekday.json in Resources */ = {isa = PBXBuildFile; fileRef = 20F6288C1ED1678E003879C7 /* weekday.json */; };
 		20F6288F1ED19E39003879C7 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20F6288E1ED19E39003879C7 /* SwiftyJSON.framework */; };
 		3177B5FCCA6C4D3B38C2E860 /* Pods_BusAlarm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07EDFB528CA6CB61BFCDF109 /* Pods_BusAlarm.framework */; };
+		32BEB21BB9128503EC5E3608 /* Pods_BusExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EB6EE6AA60832E045EDDBB3 /* Pods_BusExtension.framework */; };
 		48393EE919A2F6DE01FCDACC /* Pods_BusAlarmUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFAC0D96F7308D10BF1121CB /* Pods_BusAlarmUITests.framework */; };
-		7CAC9CC37578B48542342C48 /* Pods_BusExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20FE405E7E94BCBD830DC826 /* Pods_BusExtension.framework */; };
-		8029036D12D942CEB347110F /* Pods_BusAlarm_BusExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0E151634391B45136864937 /* Pods_BusAlarm_BusExtension.framework */; };
 		BF9D26CAA134526A0F3941EB /* Pods_BusAlarmTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0651048C297701402E1EEBFB /* Pods_BusAlarmTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -87,15 +97,11 @@
 		0651048C297701402E1EEBFB /* Pods_BusAlarmTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BusAlarmTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		07EDFB528CA6CB61BFCDF109 /* Pods_BusAlarm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BusAlarm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		20112E911ED34A3600157CC3 /* satuaday.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = satuaday.json; sourceTree = "<group>"; };
-		203ECD3E1ED54CAC00C709D1 /* DepertureChanger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepertureChanger.swift; sourceTree = "<group>"; };
-		2071537A1ED915B800005070 /* CountDown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountDown.swift; sourceTree = "<group>"; };
 		2071537C1EDA677700005070 /* holiday.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = holiday.json; sourceTree = "<group>"; };
 		207153821EDA7B1F00005070 /* nextButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nextButton.png; sourceTree = "<group>"; };
 		207153831EDA7B1F00005070 /* prevButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = prevButton.png; sourceTree = "<group>"; };
-		2085D9481EE08B8C008D7AB6 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		2085D94E1EE94725008D7AB6 /* BusExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BusExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		2085D94F1EE94725008D7AB6 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
-		2085D9521EE94725008D7AB6 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		2085D9551EE94725008D7AB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		2085D9571EE94725008D7AB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2085D9681EE9B8F8008D7AB6 /* school@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "school@2x.png"; sourceTree = "<group>"; };
@@ -111,8 +117,15 @@
 		20DA18311EDB4C6800EDD315 /* setting@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "setting@2x.png"; sourceTree = "<group>"; };
 		20DA18321EDB4C6800EDD315 /* timer@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "timer@2x.png"; sourceTree = "<group>"; };
 		20DA18351EDB4CF400EDD315 /* bus@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bus@2x.png"; sourceTree = "<group>"; };
+		20E64EE51F017A7B0080DB0C /* BusExtension-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BusExtension-Bridging-Header.h"; sourceTree = "<group>"; };
+		20E64EE61F017A7C0080DB0C /* TodayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		20E64EE81F017AEC0080DB0C /* BusAlarm-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BusAlarm-Bridging-Header.h"; sourceTree = "<group>"; };
+		20E64EE91F017AED0080DB0C /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		20E64EEA1F017AED0080DB0C /* CountDown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountDown.swift; sourceTree = "<group>"; };
+		20E64EEB1F017AED0080DB0C /* DepertureChanger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepertureChanger.swift; sourceTree = "<group>"; };
+		20E64EEC1F017AED0080DB0C /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		20E64EED1F017AED0080DB0C /* TimeTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeTable.swift; sourceTree = "<group>"; };
 		20F628591ED08472003879C7 /* BusAlarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusAlarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		20F6285C1ED08472003879C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20F628611ED08472003879C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		20F628631ED08472003879C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20F628661ED08472003879C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -123,22 +136,18 @@
 		20F628781ED08472003879C7 /* BusAlarmUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BusAlarmUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		20F6287C1ED08472003879C7 /* BusAlarmUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusAlarmUITests.swift; sourceTree = "<group>"; };
 		20F6287E1ED08472003879C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		20F6288A1ED098F5003879C7 /* TimeTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeTable.swift; sourceTree = "<group>"; };
 		20F6288C1ED1678E003879C7 /* weekday.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = weekday.json; sourceTree = "<group>"; };
 		20F6288E1ED19E39003879C7 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../../../Library/Developer/Xcode/DerivedData/BusAlarm-flwhpuisinzansesuyngihyzverr/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
-		20FE405E7E94BCBD830DC826 /* Pods_BusExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BusExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		233E3460D8316EA9496AE4D3 /* Pods-BusAlarm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BusAlarm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BusAlarm/Pods-BusAlarm.debug.xcconfig"; sourceTree = "<group>"; };
-		342F030834D7CD2CDBA432C9 /* Pods-BusAlarm-BusExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BusAlarm-BusExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BusAlarm-BusExtension/Pods-BusAlarm-BusExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		2EB6EE6AA60832E045EDDBB3 /* Pods_BusExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BusExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		61429AFC5F0283E2743110A3 /* Pods-BusAlarmUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BusAlarmUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BusAlarmUITests/Pods-BusAlarmUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		698FACA79A88B3327312622F /* Pods-BusExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BusExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-BusExtension/Pods-BusExtension.release.xcconfig"; sourceTree = "<group>"; };
 		7EA286859023166D4946361F /* Pods-BusAlarmTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BusAlarmTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BusAlarmTests/Pods-BusAlarmTests.debug.xcconfig"; sourceTree = "<group>"; };
-		8514F449F487F76449F83E22 /* Pods-BusAlarm-BusExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BusAlarm-BusExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-BusAlarm-BusExtension/Pods-BusAlarm-BusExtension.release.xcconfig"; sourceTree = "<group>"; };
 		954722D079B77D82D9CFF462 /* Pods-BusAlarm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BusAlarm.release.xcconfig"; path = "Pods/Target Support Files/Pods-BusAlarm/Pods-BusAlarm.release.xcconfig"; sourceTree = "<group>"; };
-		9F7D02EA338A4A302B2E2214 /* Pods-BusExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BusExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-BusExtension/Pods-BusExtension.release.xcconfig"; sourceTree = "<group>"; };
 		A496A88F9763B883AA26713A /* Pods-BusAlarmUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BusAlarmUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BusAlarmUITests/Pods-BusAlarmUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A504C05955A5D972683D1E2D /* Pods-BusAlarmTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BusAlarmTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BusAlarmTests/Pods-BusAlarmTests.release.xcconfig"; sourceTree = "<group>"; };
-		B0E151634391B45136864937 /* Pods_BusAlarm_BusExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BusAlarm_BusExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFAC0D96F7308D10BF1121CB /* Pods_BusAlarmUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BusAlarmUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E7A977F6F1233F1E3F41CC8A /* Pods-BusExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BusExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BusExtension/Pods-BusExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		D2DCD42136ABC6899FF8AEE1 /* Pods-BusExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BusExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BusExtension/Pods-BusExtension.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,8 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2085D9501EE94725008D7AB6 /* NotificationCenter.framework in Frameworks */,
-				8029036D12D942CEB347110F /* Pods_BusAlarm_BusExtension.framework in Frameworks */,
-				7CAC9CC37578B48542342C48 /* Pods_BusExtension.framework in Frameworks */,
+				32BEB21BB9128503EC5E3608 /* Pods_BusExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,10 +197,8 @@
 				A504C05955A5D972683D1E2D /* Pods-BusAlarmTests.release.xcconfig */,
 				61429AFC5F0283E2743110A3 /* Pods-BusAlarmUITests.debug.xcconfig */,
 				A496A88F9763B883AA26713A /* Pods-BusAlarmUITests.release.xcconfig */,
-				342F030834D7CD2CDBA432C9 /* Pods-BusAlarm-BusExtension.debug.xcconfig */,
-				8514F449F487F76449F83E22 /* Pods-BusAlarm-BusExtension.release.xcconfig */,
-				E7A977F6F1233F1E3F41CC8A /* Pods-BusExtension.debug.xcconfig */,
-				9F7D02EA338A4A302B2E2214 /* Pods-BusExtension.release.xcconfig */,
+				D2DCD42136ABC6899FF8AEE1 /* Pods-BusExtension.debug.xcconfig */,
+				698FACA79A88B3327312622F /* Pods-BusExtension.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -222,9 +228,10 @@
 			isa = PBXGroup;
 			children = (
 				2085D9781EEABA84008D7AB6 /* BusExtension.entitlements */,
-				2085D9521EE94725008D7AB6 /* TodayViewController.swift */,
+				20E64EE61F017A7C0080DB0C /* TodayViewController.swift */,
 				2085D9541EE94725008D7AB6 /* MainInterface.storyboard */,
 				2085D9571EE94725008D7AB6 /* Info.plist */,
+				20E64EE51F017A7B0080DB0C /* BusExtension-Bridging-Header.h */,
 			);
 			path = BusExtension;
 			sourceTree = "<group>";
@@ -258,11 +265,11 @@
 			isa = PBXGroup;
 			children = (
 				2085D9771EEABA80008D7AB6 /* BusAlarm.entitlements */,
-				20F6285C1ED08472003879C7 /* AppDelegate.swift */,
-				20F6288A1ED098F5003879C7 /* TimeTable.swift */,
-				203ECD3E1ED54CAC00C709D1 /* DepertureChanger.swift */,
-				2071537A1ED915B800005070 /* CountDown.swift */,
-				2085D9481EE08B8C008D7AB6 /* Settings.swift */,
+				20E64EE91F017AED0080DB0C /* AppDelegate.swift */,
+				20E64EEA1F017AED0080DB0C /* CountDown.swift */,
+				20E64EEB1F017AED0080DB0C /* DepertureChanger.swift */,
+				20E64EEC1F017AED0080DB0C /* Settings.swift */,
+				20E64EED1F017AED0080DB0C /* TimeTable.swift */,
 				20F6288C1ED1678E003879C7 /* weekday.json */,
 				20112E911ED34A3600157CC3 /* satuaday.json */,
 				2071537C1EDA677700005070 /* holiday.json */,
@@ -270,6 +277,7 @@
 				20F628631ED08472003879C7 /* Assets.xcassets */,
 				20F628651ED08472003879C7 /* LaunchScreen.storyboard */,
 				20F628681ED08472003879C7 /* Info.plist */,
+				20E64EE81F017AEC0080DB0C /* BusAlarm-Bridging-Header.h */,
 			);
 			path = BusAlarm;
 			sourceTree = "<group>";
@@ -300,8 +308,7 @@
 				0651048C297701402E1EEBFB /* Pods_BusAlarmTests.framework */,
 				CFAC0D96F7308D10BF1121CB /* Pods_BusAlarmUITests.framework */,
 				2085D94F1EE94725008D7AB6 /* NotificationCenter.framework */,
-				B0E151634391B45136864937 /* Pods_BusAlarm_BusExtension.framework */,
-				20FE405E7E94BCBD830DC826 /* Pods_BusExtension.framework */,
+				2EB6EE6AA60832E045EDDBB3 /* Pods_BusExtension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -313,11 +320,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2085D95B1EE94725008D7AB6 /* Build configuration list for PBXNativeTarget "BusExtension" */;
 			buildPhases = (
-				3C9F947832CF386DE887DAA1 /* [CP] Check Pods Manifest.lock */,
+				90E2C46486930500A2711959 /* [CP] Check Pods Manifest.lock */,
 				2085D94A1EE94725008D7AB6 /* Sources */,
 				2085D94B1EE94725008D7AB6 /* Frameworks */,
 				2085D94C1EE94725008D7AB6 /* Resources */,
-				4B0E7036A942EB894000033E /* [CP] Copy Pods Resources */,
+				3B762E8982BD301E3CE5CE22 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -405,6 +412,7 @@
 					2085D94D1EE94725008D7AB6 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = WQ6E4DAU7T;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
@@ -415,6 +423,7 @@
 					20F628581ED08472003879C7 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = WQ6E4DAU7T;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
@@ -462,7 +471,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20E64EFB1F02C9520080DB0C /* holiday.json in Resources */,
+				20E64EFC1F02CB570080DB0C /* redbus.png in Resources */,
+				20E64EF51F029CE20080DB0C /* bluebus.png in Resources */,
+				20E64EFD1F02CB590080DB0C /* redbus@2x.png in Resources */,
+				20E64EF31F029CDB0080DB0C /* train.png in Resources */,
+				20E64EF81F029CEC0080DB0C /* school@2x.png in Resources */,
+				20E64EF41F029CDF0080DB0C /* train@2x.png in Resources */,
 				2085D9561EE94725008D7AB6 /* MainInterface.storyboard in Resources */,
+				20E64EF61F029CE50080DB0C /* bluebus@2x.png in Resources */,
+				20E64EF91F02C94D0080DB0C /* weekday.json in Resources */,
+				20E64EFA1F02C9500080DB0C /* satuaday.json in Resources */,
+				20E64EF71F029CEA0080DB0C /* school.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -569,22 +589,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BusAlarm/Pods-BusAlarm-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		3C9F947832CF386DE887DAA1 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		4B0E7036A942EB894000033E /* [CP] Copy Pods Resources */ = {
+		3B762E8982BD301E3CE5CE22 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -644,6 +649,21 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		90E2C46486930500A2711959 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		B1A6C77786EA080D31A50159 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -681,7 +701,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2085D9531EE94725008D7AB6 /* TodayViewController.swift in Sources */,
+				20E64EE71F017A7C0080DB0C /* TodayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -689,11 +709,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20F6288B1ED098F5003879C7 /* TimeTable.swift in Sources */,
-				20F6285D1ED08472003879C7 /* AppDelegate.swift in Sources */,
-				203ECD3F1ED54CAC00C709D1 /* DepertureChanger.swift in Sources */,
-				2071537B1ED915B800005070 /* CountDown.swift in Sources */,
-				2085D9491EE08B8C008D7AB6 /* Settings.swift in Sources */,
+				20E64EEE1F017AED0080DB0C /* AppDelegate.swift in Sources */,
+				20E64EF21F017AED0080DB0C /* TimeTable.swift in Sources */,
+				20E64EF01F017AED0080DB0C /* DepertureChanger.swift in Sources */,
+				20E64EF11F017AED0080DB0C /* Settings.swift in Sources */,
+				20E64EEF1F017AED0080DB0C /* CountDown.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -763,34 +783,37 @@
 /* Begin XCBuildConfiguration section */
 		2085D95C1EE94725008D7AB6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E7A977F6F1233F1E3F41CC8A /* Pods-BusExtension.debug.xcconfig */;
+			baseConfigurationReference = D2DCD42136ABC6899FF8AEE1 /* Pods-BusExtension.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = BusExtension/BusExtension.entitlements;
 				DEVELOPMENT_TEAM = WQ6E4DAU7T;
-				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = BusExtension/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ryosism.BusAlarm.BusExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "BusExtension/BusExtension-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		2085D95D1EE94725008D7AB6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9F7D02EA338A4A302B2E2214 /* Pods-BusExtension.release.xcconfig */;
+			baseConfigurationReference = 698FACA79A88B3327312622F /* Pods-BusExtension.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = BusExtension/BusExtension.entitlements;
 				DEVELOPMENT_TEAM = WQ6E4DAU7T;
-				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = BusExtension/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ryosism.BusAlarm.BusExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "BusExtension/BusExtension-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -820,7 +843,6 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_BITCODE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -871,7 +893,6 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_BITCODE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -896,13 +917,15 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = BusAlarm/BusAlarm.entitlements;
 				DEVELOPMENT_TEAM = WQ6E4DAU7T;
-				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = BusAlarm/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ryosism.BusAlarm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BusAlarm/BusAlarm-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -913,13 +936,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = BusAlarm/BusAlarm.entitlements;
 				DEVELOPMENT_TEAM = WQ6E4DAU7T;
-				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = BusAlarm/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ryosism.BusAlarm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BusAlarm/BusAlarm-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

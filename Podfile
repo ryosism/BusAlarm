@@ -21,8 +21,9 @@ target 'BusAlarm' do
   end
 
   target 'BusExtension' do
-    inherit! :search_paths
-    pod 'SwiftyJSON'
+      inherit! :search_paths
+      pod 'SwiftyJSON'
   end
+
 
 end

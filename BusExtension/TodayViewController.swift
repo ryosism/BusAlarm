@@ -12,18 +12,27 @@ import SwiftyJSON
 
 class TodayViewController: UIViewController, NCWidgetProviding {
     
-    @IBOutlet weak var busIcon: UIImageView!
     @IBOutlet weak var countDownLabel: UILabel!
     @IBOutlet weak var depertureLabel: UILabel!
+    @IBOutlet weak var busIcon: UIImageView!
+    
+    var destination:String = "from_jinryo"
+    let ud:UserDefaults = UserDefaults.init(suiteName: "group.ryosism.busalarm")!
+    let formatter = DateFormatter()
     
     override func viewWillAppear(_ animated: Bool) {
         
-        let ud:UserDefaults = UserDefaults.init(suiteName: "group.ryosism.busalarm")!
+        if destination == "from_jinryo"{
+            busIcon.image = UIImage(named:"bluebus.png")
+        }else{
+            busIcon.image = UIImage(named:"redbus.png")
+            let trans = CGAffineTransform(scaleX: -1, y: 1)
+            busIcon.transform = trans
+        }
+        
         let table:[String] = loadJson(ud.string(forKey: "destination")!)
         let index:Int = rowofRidableBusTableNumber(table)
-        var destination:String = "from_jinryo"
         
-        let formatter = DateFormatter()
         formatter.locale = NSLocale(localeIdentifier:"en_US") as Locale!
         formatter.dateFormat = "HH:mm"
         formatter.timeZone = NSTimeZone(name:"GMT")! as TimeZone
@@ -46,8 +55,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
                 print("from_school")
             }
         }
-        
-//        -----------------
+
         let depertureTime:String = table[index]
         print("depertureTime",depertureTime)
         
@@ -57,7 +65,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
             }else{
                 depertureLabel.text = "中部大学発"
             }
-            // ----------------------------------------------------
+
             let now = getnow()
             //フォーマットの指定
             let formatter = DateFormatter()
@@ -71,24 +79,22 @@ class TodayViewController: UIViewController, NCWidgetProviding {
             let minute:Int = (span-hour*3600)/60
             let second:Int = span-(hour*3600)-(minute*60)
             
-            print("span",span)
-            
             countDownLabel.isHidden = false
             
             switch span {
             case 3600...2560000:
                 countDownLabel.text = "\(hour)時間 \(minute)分 \(second)秒後"
-                countDownLabel.font = UIFont.boldSystemFont(ofSize: 20)
+                countDownLabel.font = UIFont.boldSystemFont(ofSize: 32)
             case 0...3599:
                 countDownLabel.text = "\(minute)分 \(second)秒後"
-                countDownLabel.font = UIFont.boldSystemFont(ofSize: 30)
+                countDownLabel.font = UIFont.boldSystemFont(ofSize: 40)
             case -3599 ... -1:
                 countDownLabel.text = "\(-1*minute)分 \(-1*second)秒前"
-                countDownLabel.font = UIFont.boldSystemFont(ofSize: 30)
+                countDownLabel.font = UIFont.boldSystemFont(ofSize: 40)
                 countDownLabel.textColor = UIColor.gray
             case -2560000 ... -3600:
                 countDownLabel.text = "\(-1*hour)時間 \(-1*minute)分 \(-1*second)秒前"
-                countDownLabel.font = UIFont.boldSystemFont(ofSize: 20)
+                countDownLabel.font = UIFont.boldSystemFont(ofSize: 32)
                 countDownLabel.textColor = UIColor.gray
             default:
                 break
@@ -101,8 +107,6 @@ class TodayViewController: UIViewController, NCWidgetProviding {
             }
             countDownLabel.isHidden = true
         }
-        
-//        --------------------
     }
     
     override func viewDidLoad() {
@@ -204,8 +208,6 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         }
         return 0
     }
-    
-    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
