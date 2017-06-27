@@ -16,16 +16,21 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     @IBOutlet weak var depertureLabel: UILabel!
     @IBOutlet weak var busIcon: UIImageView!
     
+    var destination:String = "from_jinryo"
+    let ud:UserDefaults = UserDefaults.init(suiteName: "group.ryosism.busalarm")!
+    let formatter = DateFormatter()
+    
     override func viewWillAppear(_ animated: Bool) {
         
-        busIcon.image = UIImage(named:"bluebus.png")
+        if destination == "from_jinryo"{
+            busIcon.image = UIImage(named:"bluebus.png")
+        }else{
+            busIcon.image = UIImage(named:"redbus.png")
+        }
         
-        let ud:UserDefaults = UserDefaults.init(suiteName: "group.ryosism.busalarm")!
         let table:[String] = loadJson(ud.string(forKey: "destination")!)
         let index:Int = rowofRidableBusTableNumber(table)
-        var destination:String = "from_jinryo"
         
-        let formatter = DateFormatter()
         formatter.locale = NSLocale(localeIdentifier:"en_US") as Locale!
         formatter.dateFormat = "HH:mm"
         formatter.timeZone = NSTimeZone(name:"GMT")! as TimeZone

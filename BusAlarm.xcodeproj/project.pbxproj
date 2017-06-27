@@ -40,6 +40,8 @@
 		20E64EF91F02C94D0080DB0C /* weekday.json in Resources */ = {isa = PBXBuildFile; fileRef = 20F6288C1ED1678E003879C7 /* weekday.json */; };
 		20E64EFA1F02C9500080DB0C /* satuaday.json in Resources */ = {isa = PBXBuildFile; fileRef = 20112E911ED34A3600157CC3 /* satuaday.json */; };
 		20E64EFB1F02C9520080DB0C /* holiday.json in Resources */ = {isa = PBXBuildFile; fileRef = 2071537C1EDA677700005070 /* holiday.json */; };
+		20E64EFC1F02CB570080DB0C /* redbus.png in Resources */ = {isa = PBXBuildFile; fileRef = 208C58211EEABEAB00AFAADF /* redbus.png */; };
+		20E64EFD1F02CB590080DB0C /* redbus@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2085D9721EEA5106008D7AB6 /* redbus@2x.png */; };
 		20F628621ED08472003879C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20F628601ED08472003879C7 /* Main.storyboard */; };
 		20F628641ED08472003879C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20F628631ED08472003879C7 /* Assets.xcassets */; };
 		20F628671ED08472003879C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20F628651ED08472003879C7 /* LaunchScreen.storyboard */; };
@@ -470,7 +472,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				20E64EFB1F02C9520080DB0C /* holiday.json in Resources */,
+				20E64EFC1F02CB570080DB0C /* redbus.png in Resources */,
 				20E64EF51F029CE20080DB0C /* bluebus.png in Resources */,
+				20E64EFD1F02CB590080DB0C /* redbus@2x.png in Resources */,
 				20E64EF31F029CDB0080DB0C /* train.png in Resources */,
 				20E64EF81F029CEC0080DB0C /* school@2x.png in Resources */,
 				20E64EF41F029CDF0080DB0C /* train@2x.png in Resources */,
