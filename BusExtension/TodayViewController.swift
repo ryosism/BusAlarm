@@ -14,21 +14,19 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     
     @IBOutlet weak var countDownLabel: UILabel!
     @IBOutlet weak var depertureLabel: UILabel!
-    @IBOutlet weak var busIcon: UIImageView!
+    
+    @IBOutlet weak var icon1: UIImageView!
+    @IBOutlet weak var icon2: UIImageView!
+    @IBOutlet weak var icon3: UIImageView!
+    @IBOutlet weak var icon4: UIImageView!
+    @IBOutlet weak var icon5: UIImageView!
+    
     
     var destination:String = "from_jinryo"
     let ud:UserDefaults = UserDefaults.init(suiteName: "group.ryosism.busalarm")!
     let formatter = DateFormatter()
     
     override func viewWillAppear(_ animated: Bool) {
-        
-        if destination == "from_jinryo"{
-            busIcon.image = UIImage(named:"bluebus.png")
-        }else{
-            busIcon.image = UIImage(named:"redbus.png")
-            let trans = CGAffineTransform(scaleX: -1, y: 1)
-            busIcon.transform = trans
-        }
         
         let table:[String] = loadJson(ud.string(forKey: "destination")!)
         let index:Int = rowofRidableBusTableNumber(table)
@@ -99,6 +97,66 @@ class TodayViewController: UIViewController, NCWidgetProviding {
             default:
                 break
             }
+            
+            print("span",span)
+            
+            //バスアイコンの設定
+            if destination == "from_jinryo"{
+                icon5.image = UIImage(named:"bluebus.png")
+                icon1.image = UIImage(named:"school.png")
+                icon2.image = UIImage(named:"blue.png")
+                icon3.image = UIImage(named:"blue.png")
+                icon4.image = UIImage(named:"blue.png")
+                switch span%4 {
+                case 3:
+                    icon3.isHidden = true
+                    icon2.isHidden = true
+                    icon4.isHidden = true
+                case 2:
+                    icon4.isHidden = false
+                    icon3.isHidden = true
+                    icon2.isHidden = true
+                case 1:
+                    icon3.isHidden = false
+                    icon2.isHidden = true
+                    icon4.isHidden = true
+                default:
+                    icon2.isHidden = false
+                    icon3.isHidden = true
+                    icon4.isHidden = true
+                }
+            }else{
+                let trans = CGAffineTransform(scaleX: -1, y: 1)
+                icon1.image = UIImage(named:"redbus.png")
+                icon1.transform = trans
+                icon5.image = UIImage(named:"train.png")
+                icon2.image = UIImage(named:"red.png")
+                icon3.image = UIImage(named:"red.png")
+                icon4.image = UIImage(named:"red.png")
+                icon2.transform = trans
+                icon3.transform = trans
+                icon4.transform = trans
+                switch span%4 {
+                case 3:
+                    icon3.isHidden = true
+                    icon2.isHidden = true
+                    icon4.isHidden = true
+                case 2:
+                    icon4.isHidden = false
+                    icon3.isHidden = true
+                    icon2.isHidden = true
+                case 1:
+                    icon3.isHidden = false
+                    icon2.isHidden = true
+                    icon4.isHidden = true
+                default:
+                    icon2.isHidden = false
+                    icon3.isHidden = true
+                    icon4.isHidden = true
+                }
+
+            }
+            
         }else{ //約3~5分間隔で運行の表示なら
             if destination == "from_jinryo"{
                 depertureLabel.text = "神領発"

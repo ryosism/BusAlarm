@@ -7,6 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		200239051F0362DE00C7771D /* red.png in Resources */ = {isa = PBXBuildFile; fileRef = 200239031F0362DE00C7771D /* red.png */; };
+		200239061F0362DE00C7771D /* red@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 200239041F0362DE00C7771D /* red@2x.png */; };
+		200239091F0362E800C7771D /* blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 200239071F0362E800C7771D /* blue.png */; };
+		2002390A1F0362E800C7771D /* blue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 200239081F0362E800C7771D /* blue@2x.png */; };
+		2002390F1F03644900C7771D /* blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 200239071F0362E800C7771D /* blue.png */; };
+		200239101F03644900C7771D /* blue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 200239081F0362E800C7771D /* blue@2x.png */; };
+		200239111F03644900C7771D /* bluebus.png in Resources */ = {isa = PBXBuildFile; fileRef = 208C581F1EEABEA400AFAADF /* bluebus.png */; };
+		200239121F03644900C7771D /* bluebus@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2085D9701EEA5106008D7AB6 /* bluebus@2x.png */; };
+		200239131F03644900C7771D /* red.png in Resources */ = {isa = PBXBuildFile; fileRef = 200239031F0362DE00C7771D /* red.png */; };
+		200239141F03644900C7771D /* red@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 200239041F0362DE00C7771D /* red@2x.png */; };
+		200239151F03644900C7771D /* redbus.png in Resources */ = {isa = PBXBuildFile; fileRef = 208C58211EEABEAB00AFAADF /* redbus.png */; };
+		200239161F03644900C7771D /* redbus@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2085D9721EEA5106008D7AB6 /* redbus@2x.png */; };
+		200239171F03645500C7771D /* bus@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20DA18351EDB4CF400EDD315 /* bus@2x.png */; };
+		200239181F03645500C7771D /* setting@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20DA18311EDB4C6800EDD315 /* setting@2x.png */; };
+		200239191F03645500C7771D /* timer@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20DA18321EDB4C6800EDD315 /* timer@2x.png */; };
+		2002391A1F03645500C7771D /* nextButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 207153821EDA7B1F00005070 /* nextButton.png */; };
+		2002391B1F03645500C7771D /* prevButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 207153831EDA7B1F00005070 /* prevButton.png */; };
 		20112E921ED34A3600157CC3 /* satuaday.json in Resources */ = {isa = PBXBuildFile; fileRef = 20112E911ED34A3600157CC3 /* satuaday.json */; };
 		2071537D1EDA677700005070 /* holiday.json in Resources */ = {isa = PBXBuildFile; fileRef = 2071537C1EDA677700005070 /* holiday.json */; };
 		207153841EDA7B1F00005070 /* nextButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 207153821EDA7B1F00005070 /* nextButton.png */; };
@@ -33,15 +50,11 @@
 		20E64EF21F017AED0080DB0C /* TimeTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E64EED1F017AED0080DB0C /* TimeTable.swift */; };
 		20E64EF31F029CDB0080DB0C /* train.png in Resources */ = {isa = PBXBuildFile; fileRef = 208C581D1EEABE2A00AFAADF /* train.png */; };
 		20E64EF41F029CDF0080DB0C /* train@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2085D96C1EE9B969008D7AB6 /* train@2x.png */; };
-		20E64EF51F029CE20080DB0C /* bluebus.png in Resources */ = {isa = PBXBuildFile; fileRef = 208C581F1EEABEA400AFAADF /* bluebus.png */; };
-		20E64EF61F029CE50080DB0C /* bluebus@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2085D9701EEA5106008D7AB6 /* bluebus@2x.png */; };
 		20E64EF71F029CEA0080DB0C /* school.png in Resources */ = {isa = PBXBuildFile; fileRef = 208C58231EEABEBE00AFAADF /* school.png */; };
 		20E64EF81F029CEC0080DB0C /* school@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2085D9681EE9B8F8008D7AB6 /* school@2x.png */; };
 		20E64EF91F02C94D0080DB0C /* weekday.json in Resources */ = {isa = PBXBuildFile; fileRef = 20F6288C1ED1678E003879C7 /* weekday.json */; };
 		20E64EFA1F02C9500080DB0C /* satuaday.json in Resources */ = {isa = PBXBuildFile; fileRef = 20112E911ED34A3600157CC3 /* satuaday.json */; };
 		20E64EFB1F02C9520080DB0C /* holiday.json in Resources */ = {isa = PBXBuildFile; fileRef = 2071537C1EDA677700005070 /* holiday.json */; };
-		20E64EFC1F02CB570080DB0C /* redbus.png in Resources */ = {isa = PBXBuildFile; fileRef = 208C58211EEABEAB00AFAADF /* redbus.png */; };
-		20E64EFD1F02CB590080DB0C /* redbus@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2085D9721EEA5106008D7AB6 /* redbus@2x.png */; };
 		20F628621ED08472003879C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20F628601ED08472003879C7 /* Main.storyboard */; };
 		20F628641ED08472003879C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20F628631ED08472003879C7 /* Assets.xcassets */; };
 		20F628671ED08472003879C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20F628651ED08472003879C7 /* LaunchScreen.storyboard */; };
@@ -96,6 +109,10 @@
 /* Begin PBXFileReference section */
 		0651048C297701402E1EEBFB /* Pods_BusAlarmTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BusAlarmTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		07EDFB528CA6CB61BFCDF109 /* Pods_BusAlarm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BusAlarm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		200239031F0362DE00C7771D /* red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red.png; sourceTree = "<group>"; };
+		200239041F0362DE00C7771D /* red@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "red@2x.png"; sourceTree = "<group>"; };
+		200239071F0362E800C7771D /* blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blue.png; sourceTree = "<group>"; };
+		200239081F0362E800C7771D /* blue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blue@2x.png"; sourceTree = "<group>"; };
 		20112E911ED34A3600157CC3 /* satuaday.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = satuaday.json; sourceTree = "<group>"; };
 		2071537C1EDA677700005070 /* holiday.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = holiday.json; sourceTree = "<group>"; };
 		207153821EDA7B1F00005070 /* nextButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nextButton.png; sourceTree = "<group>"; };
@@ -215,8 +232,12 @@
 				2085D9681EE9B8F8008D7AB6 /* school@2x.png */,
 				208C581D1EEABE2A00AFAADF /* train.png */,
 				2085D96C1EE9B969008D7AB6 /* train@2x.png */,
+				200239071F0362E800C7771D /* blue.png */,
+				200239081F0362E800C7771D /* blue@2x.png */,
 				208C581F1EEABEA400AFAADF /* bluebus.png */,
 				2085D9701EEA5106008D7AB6 /* bluebus@2x.png */,
+				200239031F0362DE00C7771D /* red.png */,
+				200239041F0362DE00C7771D /* red@2x.png */,
 				208C58211EEABEAB00AFAADF /* redbus.png */,
 				2085D9721EEA5106008D7AB6 /* redbus@2x.png */,
 			);
@@ -472,17 +493,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				20E64EFB1F02C9520080DB0C /* holiday.json in Resources */,
-				20E64EFC1F02CB570080DB0C /* redbus.png in Resources */,
-				20E64EF51F029CE20080DB0C /* bluebus.png in Resources */,
-				20E64EFD1F02CB590080DB0C /* redbus@2x.png in Resources */,
+				200239121F03644900C7771D /* bluebus@2x.png in Resources */,
 				20E64EF31F029CDB0080DB0C /* train.png in Resources */,
+				2002390F1F03644900C7771D /* blue.png in Resources */,
+				200239131F03644900C7771D /* red.png in Resources */,
+				200239111F03644900C7771D /* bluebus.png in Resources */,
 				20E64EF81F029CEC0080DB0C /* school@2x.png in Resources */,
+				200239171F03645500C7771D /* bus@2x.png in Resources */,
 				20E64EF41F029CDF0080DB0C /* train@2x.png in Resources */,
+				2002391B1F03645500C7771D /* prevButton.png in Resources */,
+				200239141F03644900C7771D /* red@2x.png in Resources */,
 				2085D9561EE94725008D7AB6 /* MainInterface.storyboard in Resources */,
-				20E64EF61F029CE50080DB0C /* bluebus@2x.png in Resources */,
+				200239151F03644900C7771D /* redbus.png in Resources */,
 				20E64EF91F02C94D0080DB0C /* weekday.json in Resources */,
 				20E64EFA1F02C9500080DB0C /* satuaday.json in Resources */,
+				200239101F03644900C7771D /* blue@2x.png in Resources */,
 				20E64EF71F029CEA0080DB0C /* school.png in Resources */,
+				2002391A1F03645500C7771D /* nextButton.png in Resources */,
+				200239161F03644900C7771D /* redbus@2x.png in Resources */,
+				200239191F03645500C7771D /* timer@2x.png in Resources */,
+				200239181F03645500C7771D /* setting@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,11 +521,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				2085D96A1EE9B8F8008D7AB6 /* school@2x.png in Resources */,
+				200239061F0362DE00C7771D /* red@2x.png in Resources */,
 				20F628671ED08472003879C7 /* LaunchScreen.storyboard in Resources */,
 				208C581E1EEABE2A00AFAADF /* train.png in Resources */,
 				2071537D1EDA677700005070 /* holiday.json in Resources */,
 				20F628641ED08472003879C7 /* Assets.xcassets in Resources */,
 				207153851EDA7B1F00005070 /* prevButton.png in Resources */,
+				200239091F0362E800C7771D /* blue.png in Resources */,
 				20DA18361EDB4CF400EDD315 /* bus@2x.png in Resources */,
 				2085D96E1EE9B969008D7AB6 /* train@2x.png in Resources */,
 				20F6288D1ED1678E003879C7 /* weekday.json in Resources */,
@@ -503,8 +535,10 @@
 				207153841EDA7B1F00005070 /* nextButton.png in Resources */,
 				20F628621ED08472003879C7 /* Main.storyboard in Resources */,
 				20112E921ED34A3600157CC3 /* satuaday.json in Resources */,
+				200239051F0362DE00C7771D /* red.png in Resources */,
 				2085D9741EEA5106008D7AB6 /* bluebus@2x.png in Resources */,
 				20DA18341EDB4C6800EDD315 /* timer@2x.png in Resources */,
+				2002390A1F0362E800C7771D /* blue@2x.png in Resources */,
 				20DA18331EDB4C6800EDD315 /* setting@2x.png in Resources */,
 				208C58241EEABEBE00AFAADF /* school.png in Resources */,
 				208C58221EEABEAB00AFAADF /* redbus.png in Resources */,
