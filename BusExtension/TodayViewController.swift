@@ -25,6 +25,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     var destination:String = "from_jinryo"
     let ud:UserDefaults = UserDefaults.init(suiteName: "group.ryosism.busalarm")!
     let formatter = DateFormatter()
+    var changeTime:NSDate = NSDate(timeIntervalSinceReferenceDate: 43200)
     
     override func viewWillAppear(_ animated: Bool) {
         
@@ -43,6 +44,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         //      ここのchangeTimeはuserDefaultに入ってるデータを使う
         if ud.string(forKey: "changeTime") != nil{
             let changeTime:NSDate = formatter.date(from: ud.string(forKey: "changeTime")!)! as NSDate
+            print("changeTime",changeTime)
             
             let compare:ComparisonResult = now.compare(changeTime as Date)
             if compare == .orderedAscending{
