@@ -29,8 +29,9 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     
     override func viewWillAppear(_ animated: Bool) {
         
-        let table:[String] = loadJson(ud.string(forKey: "destination")!)
+        let table:[String] = loadJson(destination)
         let index:Int = rowofRidableBusTableNumber(table)
+        print("index",index)
         
         formatter.locale = NSLocale(localeIdentifier:"en_US") as Locale!
         formatter.dateFormat = "HH:mm"
@@ -44,18 +45,17 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         //      ここのchangeTimeはuserDefaultに入ってるデータを使う
         if ud.string(forKey: "changeTime") != nil{
             let changeTime:NSDate = formatter.date(from: ud.string(forKey: "changeTime")!)! as NSDate
-            print("changeTime",changeTime)
             
             let compare:ComparisonResult = now.compare(changeTime as Date)
             if compare == .orderedAscending{
                 destination = "from_jinryo"
-                print("from_jinryo")
+                print("destination",destination)
             }else{
                 destination = "from_school"
-                print("from_school")
+                print("destination",destination)
             }
         }
-
+        
         let depertureTime:String = table[index]
         print("depertureTime",depertureTime)
         
@@ -144,7 +144,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
                 icon3.transform = trans
                 icon4.transform = trans
                 switch span%4 {
-                case 3:
+                case 1:
                     icon3.isHidden = true
                     icon2.isHidden = true
                     icon4.isHidden = true
@@ -152,7 +152,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
                     icon4.isHidden = false
                     icon3.isHidden = true
                     icon2.isHidden = true
-                case 1:
+                case 3:
                     icon3.isHidden = false
                     icon2.isHidden = true
                     icon4.isHidden = true
@@ -261,6 +261,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
             
             if time.contains(":"){
                 let gettime:NSDate = formatter.date(from: time)! as NSDate
+                print("row",row,"now",now,"gettime",gettime)
                 let compare:ComparisonResult = now.compare(gettime as Date)
                 if compare == .orderedAscending{
                     
@@ -271,7 +272,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
                 }
             }
         }
-        return 0
+        return table.count-1
     }
     
     override func didReceiveMemoryWarning() {
