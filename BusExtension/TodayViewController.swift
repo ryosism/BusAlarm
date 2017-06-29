@@ -60,6 +60,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         print("depertureTime",depertureTime)
         
         if depertureTime.contains(":") {
+            depertureLabel.adjustsFontSizeToFitWidth = true
             if destination == "from_jinryo"{
                 depertureLabel.text = "神領発"
             }else{
@@ -85,17 +86,21 @@ class TodayViewController: UIViewController, NCWidgetProviding {
             case 3600...2560000:
                 countDownLabel.text = "\(hour)時間 \(minute)分 \(second)秒後"
                 countDownLabel.font = UIFont.boldSystemFont(ofSize: 32)
+                countDownLabel.adjustsFontSizeToFitWidth = true
             case 0...3599:
                 countDownLabel.text = "\(minute)分 \(second)秒後"
                 countDownLabel.font = UIFont.boldSystemFont(ofSize: 40)
+                countDownLabel.adjustsFontSizeToFitWidth = true
             case -3599 ... -1:
                 countDownLabel.text = "\(-1*minute)分 \(-1*second)秒前"
                 countDownLabel.font = UIFont.boldSystemFont(ofSize: 40)
                 countDownLabel.textColor = UIColor.gray
+                countDownLabel.adjustsFontSizeToFitWidth = true
             case -2560000 ... -3600:
                 countDownLabel.text = "\(-1*hour)時間 \(-1*minute)分 \(-1*second)秒前"
                 countDownLabel.font = UIFont.boldSystemFont(ofSize: 32)
                 countDownLabel.textColor = UIColor.gray
+                countDownLabel.adjustsFontSizeToFitWidth = true
             default:
                 break
             }
