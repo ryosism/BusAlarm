@@ -29,7 +29,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     
     override func viewWillAppear(_ animated: Bool) {
         
-        let table:[String] = loadJson(destination)
+        let table:[String] = ud.object(forKey: "loadJson") as! [String]
         let index:Int = rowofRidableBusTableNumber(table)
         print("index",index)
         
@@ -210,8 +210,10 @@ class TodayViewController: UIViewController, NCWidgetProviding {
             
             switch which_destination {
             case "from_jinryo":
+                print("loadJson",json["from_jinryo"].arrayValue.map({$0.stringValue}))
                 return json["from_jinryo"].arrayValue.map({$0.stringValue})
             default:
+                print("loadJson",json["from_school"].arrayValue.map({$0.stringValue}))
                 return json["from_school"].arrayValue.map({$0.stringValue})
             }
             
@@ -286,6 +288,9 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         // If an error is encountered, use NCUpdateResult.Failed
         // If there's no update required, use NCUpdateResult.NoData
         // If there's an update, use NCUpdateResult.NewData
+        
+        let ud:UserDefaults = UserDefaults.init(suiteName: "group.ryosism.busalarm")!
+        ud.set(loadJson(destination), forKey: "loadJson")
         
         completionHandler(NCUpdateResult.newData)
     }
