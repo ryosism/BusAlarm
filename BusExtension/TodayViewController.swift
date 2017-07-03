@@ -30,7 +30,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     override func viewWillAppear(_ animated: Bool) {
         
         let table:[String] = ud.object(forKey: "loadJson") as! [String]
-        let index:Int = rowofRidableBusTableNumber(table)
+        let index:Int = ud.integer(forKey: "rowof")
         print("index",index)
         
         formatter.locale = NSLocale(localeIdentifier:"en_US") as Locale!
@@ -291,6 +291,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         
         let ud:UserDefaults = UserDefaults.init(suiteName: "group.ryosism.busalarm")!
         ud.set(loadJson(destination), forKey: "loadJson")
+        ud.set(rowofRidableBusTableNumber(ud.object(forKey: "loadJson") as! [String]), forKey: "rowof")
         
         completionHandler(NCUpdateResult.newData)
     }
