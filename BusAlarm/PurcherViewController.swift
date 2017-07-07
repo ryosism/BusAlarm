@@ -8,8 +8,7 @@
 
 import UIKit
 
-class PurcherVuewController: UITableViewController {
-    @IBOutlet weak var previewGifView: UIWebView!
+class PurcherViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
        
@@ -19,7 +18,7 @@ class PurcherVuewController: UITableViewController {
         super.viewDidLoad()
         let gifurl = URL(string: Bundle.main.path(forResource: "previewgif", ofType: "gif")!)
         let req = URLRequest(url:gifurl!)
-        previewGifView.loadRequest(req)
+
     }
     
     override func didReceiveMemoryWarning() {

@@ -161,7 +161,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DXl-0b-hwz" id="xxj-F5-fcq">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IXu-VO-u5J">
@@ -310,10 +310,11 @@
             </objects>
             <point key="canvasLocation" x="1303" y="850"/>
         </scene>
-        <!--Purcher Vuew Controller-->
+        <!--Purcher View Controller-->
         <scene sceneID="fYQ-6Z-eoI">
             <objects>
-                <viewController id="EGl-4f-i3p" customClass="PurcherVuewController" customModule="BusAlarm" customModuleProvider="target" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t0F-hq-eNF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="EGl-4f-i3p" customClass="PurcherViewController" customModule="BusAlarm" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="eVU-rM-7Yg"/>
                         <viewControllerLayoutGuide type="bottom" id="QvV-FJ-sw0"/>
@@ -321,25 +322,9 @@
                     <view key="view" contentMode="scaleToFill" id="Od8-e1-jQp">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zlh-tD-gtl">
-                                <rect key="frame" x="0.0" y="72" width="320" height="128"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </webView>
-                        </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="Zlh-tD-gtl" firstAttribute="top" secondItem="eVU-rM-7Yg" secondAttribute="bottom" constant="8" symbolic="YES" id="7y8-lQ-qaW"/>
-                            <constraint firstItem="QvV-FJ-sw0" firstAttribute="top" secondItem="Zlh-tD-gtl" secondAttribute="bottom" constant="319" id="DIN-8C-Yc6"/>
-                            <constraint firstItem="Zlh-tD-gtl" firstAttribute="leading" secondItem="Od8-e1-jQp" secondAttribute="leading" id="gqa-Pp-uIO"/>
-                            <constraint firstAttribute="trailing" secondItem="Zlh-tD-gtl" secondAttribute="trailing" id="wcE-Kz-uLZ"/>
-                        </constraints>
                     </view>
-                    <connections>
-                        <outlet property="previewGifView" destination="Zlh-tD-gtl" id="PRm-6k-WQS"/>
-                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="t0F-hq-eNF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1299.375" y="1594.0140845070423"/>
         </scene>
