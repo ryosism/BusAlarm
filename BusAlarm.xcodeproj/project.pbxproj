@@ -823,7 +823,7 @@
 				CODE_SIGN_ENTITLEMENTS = BusExtension/BusExtension.entitlements;
 				DEVELOPMENT_TEAM = WQ6E4DAU7T;
 				INFOPLIST_FILE = BusExtension/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ryosism.BusAlarm.BusExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -842,7 +842,7 @@
 				CODE_SIGN_ENTITLEMENTS = BusExtension/BusExtension.entitlements;
 				DEVELOPMENT_TEAM = WQ6E4DAU7T;
 				INFOPLIST_FILE = BusExtension/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ryosism.BusAlarm.BusExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
