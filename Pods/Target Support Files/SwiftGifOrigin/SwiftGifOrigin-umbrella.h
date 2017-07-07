@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_BusExtensionVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_BusExtensionVersionString[];
+FOUNDATION_EXPORT double SwiftGifOriginVersionNumber;
+FOUNDATION_EXPORT const unsigned char SwiftGifOriginVersionString[];
 

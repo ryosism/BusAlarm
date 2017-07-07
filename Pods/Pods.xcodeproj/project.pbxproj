@@ -7,103 +7,122 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01D4CD769275F695477D298A2F61ABA4 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B9BBA8F5B33E56C38F5546432F66B7 /* SwiftyJSON-dummy.m */; };
-		02C986EFF2975A70B81E0FCA0B8A10D1 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE506ECE97701EBA44FDBFF401C1A04 /* SwiftyJSON.swift */; };
-		0ACE4AE2E35EAF156051BD803D978307 /* Pods-BusAlarm-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0824EA5B0FEB1753F40DB368C79BD721 /* Pods-BusAlarm-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		15C864C1587A009DF4D01DE7BD135151 /* Pods-BusAlarmUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AA08DC7A8F3437E0F194388BC6E771 /* Pods-BusAlarmUITests-dummy.m */; };
+		297974F4C066938D3E3A296D0EAD59D4 /* Pods-BusAlarm-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D2E99E87A68AB5FDA42B7B9E165FC34 /* Pods-BusAlarm-dummy.m */; };
 		2B2C8080B6A07C1B357F544DF246D661 /* Pods-BusAlarmUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 088BF0048E51B74F6BCCDAF7547D1965 /* Pods-BusAlarmUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		33994139BA20777A9A66D71D06F84D7A /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 05CA09B061E193906653AC21FD3A94F1 /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3312685A97233DC7FFB8273B40E2479A /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EA6E91007836E8576D2F47A6FDF41C /* SwiftyJSON.swift */; };
+		40C8A01988B7AE59775800D6FBE6E104 /* Pods-BusAlarm-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0824EA5B0FEB1753F40DB368C79BD721 /* Pods-BusAlarm-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		429591B94A31263016748A1AA3FC7178 /* Pods-BusAlarmTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A6A33C715C10D2F5F2560C8FC4A249FB /* Pods-BusAlarmTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		435F502BADC408077421AA1E8AB2F7A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		57403C3C82B828C36C1989CC209BCCD2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		584F469BEC07A52F34889BC1194CA24A /* Pods-BusExtension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E4CDBC47EDB90B3F742663DDC5276CDE /* Pods-BusExtension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		65AB45B22D66A3C7CCF691BFD080DEC3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		6A898C0C7B94B5AB8AA69D6D9AC7A4AB /* Pods-BusAlarm-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D2E99E87A68AB5FDA42B7B9E165FC34 /* Pods-BusAlarm-dummy.m */; };
-		7AA6240903C53BB29ABE3EE98BEE4ECA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		5DA0CE34B6F429DB7167F6CD16DDAFAF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		6FC522A9D77F6D47957B0A9B9FE5F1A4 /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FA5B18F2CB4D05C97B8A21400E4EC4 /* UIImage+Gif.swift */; };
+		7CB7D948715ECDE3B7396B4F67898205 /* SwiftGifOrigin-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CE541C4BB84DC86FAD1C16BA0DDFE695 /* SwiftGifOrigin-dummy.m */; };
+		7D43EDDBC33A28E65370F6EEA8D6F638 /* SwiftGifOrigin-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7999CC0928D6E551BA527219CCA96FC6 /* SwiftGifOrigin-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8375B29D8679E9D92D48426DF9D024A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		8730902A8764255540AE8841DB521610 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		982320319046A6557134D3D725F861C2 /* Pods-BusAlarmTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F32C32B8BDB2BE43CBD240B38DE3375E /* Pods-BusAlarmTests-dummy.m */; };
-		DAAD36335C4B8AA859E1A33FCB13E8F0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		E936AC95B4636184AD427E671A62D692 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		AE1DFB67D39B43642FE1E19C2C839BFE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		B34257F790EEB1AEE1BA46E9BE5D7266 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5901E0E00252A7104DC86F9E3E01A44F /* SwiftyJSON-dummy.m */; };
+		BE585A2E1ADBC9AEC126936DDD2B5944 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		D82B0F162822DC0770ADCFF50BBA455B /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 63FEA3BF21B15E4A9FCF2DE241033331 /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F4B89D98202BAD0502B7BE76A526E246 /* Pods-BusExtension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A3DDE0008BF751C8BB8203A6C1286F /* Pods-BusExtension-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		8DB0DDBDEFCA3101DF9E4F58A8D1C130 /* PBXContainerItemProxy */ = {
+		3FE41AC3CE22F3C8501BBFFA41EC723B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 62A3735FD2B3F71219D5D1C9DE7DB589;
+			remoteGlobalIDString = 9321FF573DA35667A79DF30664AACA85;
 			remoteInfo = SwiftyJSON;
+		};
+		8BFEC8753907BD0270D68DE0699115A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 62B1F92402B7145D85EF0D6B88D23ACC;
+			remoteInfo = SwiftGifOrigin;
 		};
 		CC19A97D6C11C893C6CCDB878D7D5648 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 62A3735FD2B3F71219D5D1C9DE7DB589;
+			remoteGlobalIDString = 9321FF573DA35667A79DF30664AACA85;
 			remoteInfo = SwiftyJSON;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		00BB04A3E74214F14D9FB2BEB66312BF /* Pods-BusExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BusExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		0221C96DEE0848D6A899E433CC3F6991 /* SwiftGifOrigin-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftGifOrigin-prefix.pch"; sourceTree = "<group>"; };
 		02881AA5E923F74A8089A286BA82A696 /* Pods-BusAlarm-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BusAlarm-acknowledgements.markdown"; sourceTree = "<group>"; };
 		05BEA48E65BFE37E8C1B0CE3187A6C98 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		05CA09B061E193906653AC21FD3A94F1 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
 		0824EA5B0FEB1753F40DB368C79BD721 /* Pods-BusAlarm-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BusAlarm-umbrella.h"; sourceTree = "<group>"; };
 		088BF0048E51B74F6BCCDAF7547D1965 /* Pods-BusAlarmUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BusAlarmUITests-umbrella.h"; sourceTree = "<group>"; };
 		0B53446913C2B572B3AA212BD00991B6 /* Pods-BusAlarmUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BusAlarmUITests.release.xcconfig"; sourceTree = "<group>"; };
 		0D863D368057DBA1829C9698AB881397 /* Pods-BusAlarmTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BusAlarmTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0F007EFB2BE58F475D25589BFFB588E6 /* SwiftGifOrigin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftGifOrigin.framework; path = SwiftGifOrigin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		11C47AB892A2833FBCDA6B50017C0EDC /* SwiftGifOrigin.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftGifOrigin.modulemap; sourceTree = "<group>"; };
 		1E0A96AFB97F150F639E34AD6EBC015F /* Pods-BusAlarmUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-BusAlarmUITests.modulemap"; sourceTree = "<group>"; };
 		1E8592CDEB265D6C7E4995C61572A07A /* Pods-BusExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BusExtension.release.xcconfig"; sourceTree = "<group>"; };
 		24D4EA7D299F500811670441DAB4ABBE /* Pods-BusAlarmTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-BusAlarmTests.modulemap"; sourceTree = "<group>"; };
 		24FEFA2BC03437D5514635B8438261B6 /* Pods-BusExtension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-BusExtension.modulemap"; sourceTree = "<group>"; };
 		28B7AED7A3C0C88F1D2990C87D4F97C4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E165950288B8E0CE79D0776B2C51C2D /* Pods-BusExtension-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BusExtension-acknowledgements.markdown"; sourceTree = "<group>"; };
-		2E7F7C62EE34D2D271E6E1234A2002B2 /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
-		31AE1C5414A271C32B8F083BF25B5DBD /* Pods_BusExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BusExtension.framework; path = "Pods-BusExtension.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		32B9BBA8F5B33E56C38F5546432F66B7 /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
+		3385997AB3538C986B174FB49DD1A388 /* Pods_BusAlarmTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BusAlarmTests.framework; path = "Pods-BusAlarmTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		36374F0BB1D3740797805377D89CBD58 /* Pods-BusAlarm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BusAlarm.debug.xcconfig"; sourceTree = "<group>"; };
 		3C6CE0D249FF58A40E830A0AA8FBD0EF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		44F1C87729803A5052DE38DEE59EE451 /* Pods_BusAlarm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BusAlarm.framework; path = "Pods-BusAlarm.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4657388616C3CE72ECF91077BBC9D38D /* Pods-BusAlarm-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BusAlarm-resources.sh"; sourceTree = "<group>"; };
 		4A13CACDE83C4B69598C319FEAC33843 /* Pods-BusAlarmUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BusAlarmUITests-frameworks.sh"; sourceTree = "<group>"; };
 		4B766373348824EAE7D2DCCBA9FF8B64 /* Pods-BusAlarmUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BusAlarmUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		51FA5B18F2CB4D05C97B8A21400E4EC4 /* UIImage+Gif.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+Gif.swift"; path = "SwiftGifCommon/UIImage+Gif.swift"; sourceTree = "<group>"; };
+		5901E0E00252A7104DC86F9E3E01A44F /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
 		5D2E99E87A68AB5FDA42B7B9E165FC34 /* Pods-BusAlarm-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BusAlarm-dummy.m"; sourceTree = "<group>"; };
 		5FC1A299F443219F7ACC254E8F4AA3E0 /* Pods-BusAlarmTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BusAlarmTests.release.xcconfig"; sourceTree = "<group>"; };
+		60F459A4A05045140107F7CC8D9FBA15 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63FEA3BF21B15E4A9FCF2DE241033331 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		74078BFC77005C566DDE8611E23C3F36 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		837A311357A3208454B1A6B366B19039 /* Pods_BusAlarmTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BusAlarmTests.framework; path = "Pods-BusAlarmTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		79893353C4260806CFC4E7A6DF903ECE /* Pods_BusAlarmUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BusAlarmUITests.framework; path = "Pods-BusAlarmUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7999CC0928D6E551BA527219CCA96FC6 /* SwiftGifOrigin-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftGifOrigin-umbrella.h"; sourceTree = "<group>"; };
+		7A131B240E2BB90A61804BEF4545CCC3 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
+		850444C449E2BED425F7AD353DC474C9 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CF437EECC267E5714E83C1C3555AD54 /* Pods-BusExtension-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BusExtension-resources.sh"; sourceTree = "<group>"; };
+		925F6DE856F9DBC90AE7E3DA4DF5A8A5 /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
 		939FEA3ABCF5B5AB1383016FBC4ACC11 /* Pods-BusAlarmUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BusAlarmUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9724781B940B056893527A171C73645F /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
+		97CB8203FAD2F30F3EB691CD0603E451 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9AC57E2CA06660327FC6E8AB792E7C90 /* Pods-BusAlarm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BusAlarm.release.xcconfig"; sourceTree = "<group>"; };
+		A16B7C0309A129FADB5C3AFD30297F5F /* Pods_BusExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BusExtension.framework; path = "Pods-BusExtension.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4DD2ECC36121CF5002B21D8F60BDC24 /* Pods_BusAlarm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BusAlarm.framework; path = "Pods-BusAlarm.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5B178FEF7AA7759419CAEF90CAA35D0 /* Pods-BusAlarmUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BusAlarmUITests-resources.sh"; sourceTree = "<group>"; };
 		A6A33C715C10D2F5F2560C8FC4A249FB /* Pods-BusAlarmTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BusAlarmTests-umbrella.h"; sourceTree = "<group>"; };
-		ABA5E0D630EFBAC8E1B72EEC9F5D8C13 /* Pods_BusAlarmUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BusAlarmUITests.framework; path = "Pods-BusAlarmUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE08BB28F38E7E246CDA06C994252BB7 /* SwiftGifOrigin.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftGifOrigin.xcconfig; sourceTree = "<group>"; };
 		B83B276D304BBD969FEC1AD7E616D7FF /* Pods-BusAlarmTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BusAlarmTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		BBF610E40BDF6E542FA21FF7E5491205 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
-		BDE506ECE97701EBA44FDBFF401C1A04 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
 		BF57D00596035B73F3189BFB70C53E1A /* Pods-BusAlarmTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BusAlarmTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		C3F2E5EB56B82866596DDF36ABF98236 /* Pods-BusExtension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BusExtension-acknowledgements.plist"; sourceTree = "<group>"; };
-		C4A9A658C966F6BB111BEDBDEA1F874A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C79381EE049EFDC49236394907835BA2 /* Pods-BusAlarm-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BusAlarm-acknowledgements.plist"; sourceTree = "<group>"; };
 		CBAA4681964858691AE8EF595D2E8925 /* Pods-BusAlarmUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BusAlarmUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		D032A29E584B77AE187E586922267CF5 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
+		CE541C4BB84DC86FAD1C16BA0DDFE695 /* SwiftGifOrigin-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftGifOrigin-dummy.m"; sourceTree = "<group>"; };
 		D2A3DDE0008BF751C8BB8203A6C1286F /* Pods-BusExtension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BusExtension-dummy.m"; sourceTree = "<group>"; };
 		D6AA08DC7A8F3437E0F194388BC6E771 /* Pods-BusAlarmUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BusAlarmUITests-dummy.m"; sourceTree = "<group>"; };
-		D9530E8D8A662FB26ABED813F4D4D9A7 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D99AB4FB0118E42C2FA15F27509F4F22 /* Pods-BusAlarmTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BusAlarmTests-resources.sh"; sourceTree = "<group>"; };
 		E4CDBC47EDB90B3F742663DDC5276CDE /* Pods-BusExtension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BusExtension-umbrella.h"; sourceTree = "<group>"; };
 		E550ACE1332A3A91BA87D306C227B43B /* Pods-BusAlarm.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-BusAlarm.modulemap"; sourceTree = "<group>"; };
 		F32C32B8BDB2BE43CBD240B38DE3375E /* Pods-BusAlarmTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BusAlarmTests-dummy.m"; sourceTree = "<group>"; };
 		F3481A03849AA3C75B1F50B181D66771 /* Pods-BusAlarmTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BusAlarmTests-frameworks.sh"; sourceTree = "<group>"; };
 		F6EEB7BFF43FF11A7591681F6ECB0CEC /* Pods-BusAlarm-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BusAlarm-frameworks.sh"; sourceTree = "<group>"; };
+		F9EA6E91007836E8576D2F47A6FDF41C /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1F9BFF257D9DDE55352A236432938644 /* Frameworks */ = {
+		229180D8C6EC1556C10C63FCC23DD5A8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAAD36335C4B8AA859E1A33FCB13E8F0 /* Foundation.framework in Frameworks */,
+				BE585A2E1ADBC9AEC126936DDD2B5944 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,15 +130,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65AB45B22D66A3C7CCF691BFD080DEC3 /* Foundation.framework in Frameworks */,
+				AE1DFB67D39B43642FE1E19C2C839BFE /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		46E42DF05B774C7D0B3EEFC02B3F5AC0 /* Frameworks */ = {
+		7A3D0CB5C9DD0A30A50E36E41456FE42 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				435F502BADC408077421AA1E8AB2F7A8 /* Foundation.framework in Frameworks */,
+				8375B29D8679E9D92D48426DF9D024A5 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,7 +146,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E936AC95B4636184AD427E671A62D692 /* Foundation.framework in Frameworks */,
+				5DA0CE34B6F429DB7167F6CD16DDAFAF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AFE36E0E268030C1FABA320B50BB8ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8730902A8764255540AE8841DB521610 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,13 +162,60 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7AA6240903C53BB29ABE3EE98BEE4ECA /* Foundation.framework in Frameworks */,
+				57403C3C82B828C36C1989CC209BCCD2 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D40972606EBA850D47CE326CC81F2B7 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				60F459A4A05045140107F7CC8D9FBA15 /* Info.plist */,
+				11C47AB892A2833FBCDA6B50017C0EDC /* SwiftGifOrigin.modulemap */,
+				AE08BB28F38E7E246CDA06C994252BB7 /* SwiftGifOrigin.xcconfig */,
+				CE541C4BB84DC86FAD1C16BA0DDFE695 /* SwiftGifOrigin-dummy.m */,
+				0221C96DEE0848D6A899E433CC3F6991 /* SwiftGifOrigin-prefix.pch */,
+				7999CC0928D6E551BA527219CCA96FC6 /* SwiftGifOrigin-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftGifOrigin";
+			sourceTree = "<group>";
+		};
+		1F664809B0C0A2F9CD626A0CFDCEE209 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				97CB8203FAD2F30F3EB691CD0603E451 /* Info.plist */,
+				7A131B240E2BB90A61804BEF4545CCC3 /* SwiftyJSON.modulemap */,
+				925F6DE856F9DBC90AE7E3DA4DF5A8A5 /* SwiftyJSON.xcconfig */,
+				5901E0E00252A7104DC86F9E3E01A44F /* SwiftyJSON-dummy.m */,
+				9724781B940B056893527A171C73645F /* SwiftyJSON-prefix.pch */,
+				63FEA3BF21B15E4A9FCF2DE241033331 /* SwiftyJSON-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyJSON";
+			sourceTree = "<group>";
+		};
+		2C35D96A8C502AAFEC62FF65CB75E88F /* SwiftGifOrigin */ = {
+			isa = PBXGroup;
+			children = (
+				51FA5B18F2CB4D05C97B8A21400E4EC4 /* UIImage+Gif.swift */,
+				1D40972606EBA850D47CE326CC81F2B7 /* Support Files */,
+			);
+			name = SwiftGifOrigin;
+			path = SwiftGifOrigin;
+			sourceTree = "<group>";
+		};
+		2DA6E8DEF5A1A022CAB9FEA1DC82A188 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2C35D96A8C502AAFEC62FF65CB75E88F /* SwiftGifOrigin */,
+				9C9FE61AFB9F84BE406DCF803718E272 /* SwiftyJSON */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		2F4A12B6506A040F8FF9A2F8476DB555 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -153,75 +227,33 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		70A8E4D3C62B6C203D238581DA091C21 /* SwiftyJSON */ = {
-			isa = PBXGroup;
-			children = (
-				BDE506ECE97701EBA44FDBFF401C1A04 /* SwiftyJSON.swift */,
-				8EC39E1DC11846207722B71AAFE40F98 /* Support Files */,
-			);
-			name = SwiftyJSON;
-			path = SwiftyJSON;
-			sourceTree = "<group>";
-		};
-		748830EF66938FC5F81D08BCC9603B8F /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				44F1C87729803A5052DE38DEE59EE451 /* Pods_BusAlarm.framework */,
-				837A311357A3208454B1A6B366B19039 /* Pods_BusAlarmTests.framework */,
-				ABA5E0D630EFBAC8E1B72EEC9F5D8C13 /* Pods_BusAlarmUITests.framework */,
-				31AE1C5414A271C32B8F083BF25B5DBD /* Pods_BusExtension.framework */,
-				D9530E8D8A662FB26ABED813F4D4D9A7 /* SwiftyJSON.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				BD1E3C710F12F4B4C092FC8E2AD22110 /* Pods */,
-				748830EF66938FC5F81D08BCC9603B8F /* Products */,
+				2DA6E8DEF5A1A022CAB9FEA1DC82A188 /* Pods */,
+				FF7E073BEBE9D840F0BB08758D223C5E /* Products */,
 				2F4A12B6506A040F8FF9A2F8476DB555 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		8EC39E1DC11846207722B71AAFE40F98 /* Support Files */ = {
+		9C9FE61AFB9F84BE406DCF803718E272 /* SwiftyJSON */ = {
 			isa = PBXGroup;
 			children = (
-				C4A9A658C966F6BB111BEDBDEA1F874A /* Info.plist */,
-				D032A29E584B77AE187E586922267CF5 /* SwiftyJSON.modulemap */,
-				2E7F7C62EE34D2D271E6E1234A2002B2 /* SwiftyJSON.xcconfig */,
-				32B9BBA8F5B33E56C38F5546432F66B7 /* SwiftyJSON-dummy.m */,
-				BBF610E40BDF6E542FA21FF7E5491205 /* SwiftyJSON-prefix.pch */,
-				05CA09B061E193906653AC21FD3A94F1 /* SwiftyJSON-umbrella.h */,
+				F9EA6E91007836E8576D2F47A6FDF41C /* SwiftyJSON.swift */,
+				1F664809B0C0A2F9CD626A0CFDCEE209 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/SwiftyJSON";
+			name = SwiftyJSON;
+			path = SwiftyJSON;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		BD1E3C710F12F4B4C092FC8E2AD22110 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				70A8E4D3C62B6C203D238581DA091C21 /* SwiftyJSON */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		C504FCC566F77DF98B01BE1EE6C0B8D4 /* Pods-BusExtension */ = {
@@ -277,6 +309,14 @@
 			path = "Target Support Files/Pods-BusAlarmTests";
 			sourceTree = "<group>";
 		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
 		D976A13EDB09C205DAE1D34A6AB3C331 /* Pods-BusAlarm */ = {
 			isa = PBXGroup;
 			children = (
@@ -295,6 +335,19 @@
 			path = "Target Support Files/Pods-BusAlarm";
 			sourceTree = "<group>";
 		};
+		FF7E073BEBE9D840F0BB08758D223C5E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A4DD2ECC36121CF5002B21D8F60BDC24 /* Pods_BusAlarm.framework */,
+				3385997AB3538C986B174FB49DD1A388 /* Pods_BusAlarmTests.framework */,
+				79893353C4260806CFC4E7A6DF903ECE /* Pods_BusAlarmUITests.framework */,
+				A16B7C0309A129FADB5C3AFD30297F5F /* Pods_BusExtension.framework */,
+				0F007EFB2BE58F475D25589BFFB588E6 /* SwiftGifOrigin.framework */,
+				850444C449E2BED425F7AD353DC474C9 /* SwiftyJSON.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -306,19 +359,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		235F990C3A69AE0C6F41869060BD43D5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D43EDDBC33A28E65370F6EEA8D6F638 /* SwiftGifOrigin-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		282DA27780D939513DFF271637A2F8C8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D82B0F162822DC0770ADCFF50BBA455B /* SwiftyJSON-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3F63B2245DF99B086EA3F726CA74C74D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				2B2C8080B6A07C1B357F544DF246D661 /* Pods-BusAlarmUITests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		48C5F9953E879DDC3FF14D6F56669CC8 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0ACE4AE2E35EAF156051BD803D978307 /* Pods-BusAlarm-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,11 +391,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C6716E01F0C7702F6EB85102E46E8860 /* Headers */ = {
+		CC3C3A777DC040FEB32C3BEDE01C333D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33994139BA20777A9A66D71D06F84D7A /* SwiftyJSON-umbrella.h in Headers */,
+				40C8A01988B7AE59775800D6FBE6E104 /* Pods-BusAlarm-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,24 +417,43 @@
 			);
 			name = "Pods-BusExtension";
 			productName = "Pods-BusExtension";
-			productReference = 31AE1C5414A271C32B8F083BF25B5DBD /* Pods_BusExtension.framework */;
+			productReference = A16B7C0309A129FADB5C3AFD30297F5F /* Pods_BusExtension.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		62A3735FD2B3F71219D5D1C9DE7DB589 /* SwiftyJSON */ = {
+		62B1F92402B7145D85EF0D6B88D23ACC /* SwiftGifOrigin */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BD410633FC9FD8629FC5FDC0F3DA3082 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
+			buildConfigurationList = 78DC8324983EEF2423399291DE8A6FE8 /* Build configuration list for PBXNativeTarget "SwiftGifOrigin" */;
 			buildPhases = (
-				C2A8C5128354B56E59358DD08010BE30 /* Sources */,
-				1F9BFF257D9DDE55352A236432938644 /* Frameworks */,
-				C6716E01F0C7702F6EB85102E46E8860 /* Headers */,
+				E3913FB02D04EE9909D29B795290751E /* Sources */,
+				9AFE36E0E268030C1FABA320B50BB8ED /* Frameworks */,
+				235F990C3A69AE0C6F41869060BD43D5 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = SwiftyJSON;
-			productName = SwiftyJSON;
-			productReference = D9530E8D8A662FB26ABED813F4D4D9A7 /* SwiftyJSON.framework */;
+			name = SwiftGifOrigin;
+			productName = SwiftGifOrigin;
+			productReference = 0F007EFB2BE58F475D25589BFFB588E6 /* SwiftGifOrigin.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		758D32B7E599A0AC9A04A11199A13FC8 /* Pods-BusAlarm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D635C462A08D1D31D44CBED33018DE05 /* Build configuration list for PBXNativeTarget "Pods-BusAlarm" */;
+			buildPhases = (
+				6A4057192C65E03F298E710A1466174E /* Sources */,
+				7A3D0CB5C9DD0A30A50E36E41456FE42 /* Frameworks */,
+				CC3C3A777DC040FEB32C3BEDE01C333D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BFC5DC0C9830EDA86BF93100C0F29962 /* PBXTargetDependency */,
+				68ED089443704B961924749FFA66B149 /* PBXTargetDependency */,
+			);
+			name = "Pods-BusAlarm";
+			productName = "Pods-BusAlarm";
+			productReference = A4DD2ECC36121CF5002B21D8F60BDC24 /* Pods_BusAlarm.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		798F002DDCE6AC88C7EDB965F688F6C8 /* Pods-BusAlarmUITests */ = {
@@ -390,7 +470,24 @@
 			);
 			name = "Pods-BusAlarmUITests";
 			productName = "Pods-BusAlarmUITests";
-			productReference = ABA5E0D630EFBAC8E1B72EEC9F5D8C13 /* Pods_BusAlarmUITests.framework */;
+			productReference = 79893353C4260806CFC4E7A6DF903ECE /* Pods_BusAlarmUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9321FF573DA35667A79DF30664AACA85 /* SwiftyJSON */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07FF5D72F460054352CF89E88DCE40BD /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
+			buildPhases = (
+				F6D8E4970216A43A0B135A2B79127FA8 /* Sources */,
+				229180D8C6EC1556C10C63FCC23DD5A8 /* Frameworks */,
+				282DA27780D939513DFF271637A2F8C8 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftyJSON;
+			productName = SwiftyJSON;
+			productReference = 850444C449E2BED425F7AD353DC474C9 /* SwiftyJSON.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		A4E765DC5DFEFC7429E65FAF98902833 /* Pods-BusAlarmTests */ = {
@@ -407,25 +504,7 @@
 			);
 			name = "Pods-BusAlarmTests";
 			productName = "Pods-BusAlarmTests";
-			productReference = 837A311357A3208454B1A6B366B19039 /* Pods_BusAlarmTests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		C9FDBD60A6A7D9219AB462608F3D334E /* Pods-BusAlarm */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E798FA6BAFBE22621654EDC23A5AEC44 /* Build configuration list for PBXNativeTarget "Pods-BusAlarm" */;
-			buildPhases = (
-				9F28C47D3FFB01A6C62A15A3BD5B6666 /* Sources */,
-				46E42DF05B774C7D0B3EEFC02B3F5AC0 /* Frameworks */,
-				48C5F9953E879DDC3FF14D6F56669CC8 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				8270DECF2E9E4366D578AEB44E78D587 /* PBXTargetDependency */,
-			);
-			name = "Pods-BusAlarm";
-			productName = "Pods-BusAlarm";
-			productReference = 44F1C87729803A5052DE38DEE59EE451 /* Pods_BusAlarm.framework */;
+			productReference = 3385997AB3538C986B174FB49DD1A388 /* Pods_BusAlarmTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -434,7 +513,7 @@
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0730;
+				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0700;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
@@ -445,15 +524,16 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 748830EF66938FC5F81D08BCC9603B8F /* Products */;
+			productRefGroup = FF7E073BEBE9D840F0BB08758D223C5E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C9FDBD60A6A7D9219AB462608F3D334E /* Pods-BusAlarm */,
+				758D32B7E599A0AC9A04A11199A13FC8 /* Pods-BusAlarm */,
 				A4E765DC5DFEFC7429E65FAF98902833 /* Pods-BusAlarmTests */,
 				798F002DDCE6AC88C7EDB965F688F6C8 /* Pods-BusAlarmUITests */,
 				029305B18A531971FCDF080C75396B53 /* Pods-BusExtension */,
-				62A3735FD2B3F71219D5D1C9DE7DB589 /* SwiftyJSON */,
+				62B1F92402B7145D85EF0D6B88D23ACC /* SwiftGifOrigin */,
+				9321FF573DA35667A79DF30664AACA85 /* SwiftyJSON */,
 			);
 		};
 /* End PBXProject section */
@@ -475,6 +555,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6A4057192C65E03F298E710A1466174E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				297974F4C066938D3E3A296D0EAD59D4 /* Pods-BusAlarm-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		71F1453592F84014AE7CA2B63FD1D7CD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -483,81 +571,54 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9F28C47D3FFB01A6C62A15A3BD5B6666 /* Sources */ = {
+		E3913FB02D04EE9909D29B795290751E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A898C0C7B94B5AB8AA69D6D9AC7A4AB /* Pods-BusAlarm-dummy.m in Sources */,
+				7CB7D948715ECDE3B7396B4F67898205 /* SwiftGifOrigin-dummy.m in Sources */,
+				6FC522A9D77F6D47957B0A9B9FE5F1A4 /* UIImage+Gif.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C2A8C5128354B56E59358DD08010BE30 /* Sources */ = {
+		F6D8E4970216A43A0B135A2B79127FA8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01D4CD769275F695477D298A2F61ABA4 /* SwiftyJSON-dummy.m in Sources */,
-				02C986EFF2975A70B81E0FCA0B8A10D1 /* SwiftyJSON.swift in Sources */,
+				B34257F790EEB1AEE1BA46E9BE5D7266 /* SwiftyJSON-dummy.m in Sources */,
+				3312685A97233DC7FFB8273B40E2479A /* SwiftyJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		8270DECF2E9E4366D578AEB44E78D587 /* PBXTargetDependency */ = {
+		68ED089443704B961924749FFA66B149 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftyJSON;
-			target = 62A3735FD2B3F71219D5D1C9DE7DB589 /* SwiftyJSON */;
-			targetProxy = 8DB0DDBDEFCA3101DF9E4F58A8D1C130 /* PBXContainerItemProxy */;
+			target = 9321FF573DA35667A79DF30664AACA85 /* SwiftyJSON */;
+			targetProxy = 3FE41AC3CE22F3C8501BBFFA41EC723B /* PBXContainerItemProxy */;
 		};
 		873EA39E94E5BCB2DB6B41A51E832484 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftyJSON;
-			target = 62A3735FD2B3F71219D5D1C9DE7DB589 /* SwiftyJSON */;
+			target = 9321FF573DA35667A79DF30664AACA85 /* SwiftyJSON */;
 			targetProxy = CC19A97D6C11C893C6CCDB878D7D5648 /* PBXContainerItemProxy */;
+		};
+		BFC5DC0C9830EDA86BF93100C0F29962 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftGifOrigin;
+			target = 62B1F92402B7145D85EF0D6B88D23ACC /* SwiftGifOrigin */;
+			targetProxy = 8BFEC8753907BD0270D68DE0699115A8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0EC7FE8F6119BBA1AF1D09FA2DE41A0C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5FC1A299F443219F7ACC254E8F4AA3E0 /* Pods-BusAlarmTests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-BusAlarmTests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-BusAlarmTests/Pods-BusAlarmTests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_BusAlarmTests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		12E940EE363E4F879FC82D02BE6E61BD /* Release */ = {
+		1254C0CDFE170CFBB81D6807812CF189 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1E8592CDEB265D6C7E4995C61572A07A /* Pods-BusExtension.release.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -583,52 +644,20 @@
 				PRODUCT_NAME = Pods_BusExtension;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		2447C6D762674FD567CE89F8C9DD9898 /* Release */ = {
+		2A18E3E71C0791A212B6DBAD44445D13 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9AC57E2CA06660327FC6E8AB792E7C90 /* Pods-BusAlarm.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-BusAlarm/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-BusAlarm/Pods-BusAlarm.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_BusAlarm;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		342618D0517F06FA02F07571BA43CA7B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2E7F7C62EE34D2D271E6E1234A2002B2 /* SwiftyJSON.xcconfig */;
+			baseConfigurationReference = 925F6DE856F9DBC90AE7E3DA4DF5A8A5 /* SwiftyJSON.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -650,6 +679,7 @@
 				PRODUCT_NAME = SwiftyJSON;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -657,10 +687,11 @@
 			};
 			name = Release;
 		};
-		580C4ADFABFECA8E3DB2A26A055FB809 /* Release */ = {
+		2D3F697D426C46C51EC87B77F761623F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0B53446913C2B572B3AA212BD00991B6 /* Pods-BusAlarmUITests.release.xcconfig */;
+			baseConfigurationReference = AE08BB28F38E7E246CDA06C994252BB7 /* SwiftGifOrigin.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -672,31 +703,66 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-BusAlarmUITests/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftGifOrigin/SwiftGifOrigin-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftGifOrigin/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-BusAlarmUITests/Pods-BusAlarmUITests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/SwiftGifOrigin/SwiftGifOrigin.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_BusAlarmUITests;
+				PRODUCT_NAME = SwiftGifOrigin;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		59B042A655B7C20CBAB90E385BF4E4C7 /* Debug */ = {
+		33B3CEE9F371015FC30C338FE4A7962C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 925F6DE856F9DBC90AE7E3DA4DF5A8A5 /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4E487F173E6C9664F4E9E26B9635D23C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -704,10 +770,13 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
@@ -736,48 +805,47 @@
 			};
 			name = Debug;
 		};
-		62E61E688F6E7606C82B5BB966482AA7 /* Debug */ = {
+		5649411FCF65E76FF18C6A78A27A6F45 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 00BB04A3E74214F14D9FB2BEB66312BF /* Pods-BusExtension.debug.xcconfig */;
+			baseConfigurationReference = 0B53446913C2B572B3AA212BD00991B6 /* Pods-BusAlarmUITests.release.xcconfig */;
 			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-BusExtension/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-BusAlarmUITests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-BusExtension/Pods-BusExtension.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MODULEMAP_FILE = "Target Support Files/Pods-BusAlarmUITests/Pods-BusAlarmUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_BusExtension;
+				PRODUCT_NAME = Pods_BusAlarmUITests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		8FC58355EF099295FF9325206030E87F /* Debug */ = {
+		5DC995A93DD337A84733661A11405AD6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2E7F7C62EE34D2D271E6E1234A2002B2 /* SwiftyJSON.xcconfig */;
+			baseConfigurationReference = AE08BB28F38E7E246CDA06C994252BB7 /* SwiftGifOrigin.xcconfig */;
 			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -789,16 +857,17 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftGifOrigin/SwiftGifOrigin-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftGifOrigin/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				MODULEMAP_FILE = "Target Support Files/SwiftGifOrigin/SwiftGifOrigin.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SwiftyJSON;
+				PRODUCT_NAME = SwiftGifOrigin;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -807,11 +876,125 @@
 			};
 			name = Debug;
 		};
-		B7324857C38B065FEB1EEE3105C2367A /* Release */ = {
+		849EFA3783DC234D8CB6BC4FCC49064A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FC1A299F443219F7ACC254E8F4AA3E0 /* Pods-BusAlarmTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-BusAlarmTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BusAlarmTests/Pods-BusAlarmTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_BusAlarmTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8B8BDC95245D828CDD8D5D444C575186 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36374F0BB1D3740797805377D89CBD58 /* Pods-BusAlarm.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-BusAlarm/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BusAlarm/Pods-BusAlarm.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_BusAlarm;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A1EA4E5ADCE7E90E22F26D39BC9F2DC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AC57E2CA06660327FC6E8AB792E7C90 /* Pods-BusAlarm.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-BusAlarm/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BusAlarm/Pods-BusAlarm.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_BusAlarm;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BDD0139D6EB93FA375F887ABD62DAB2E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -819,10 +1002,13 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
@@ -847,45 +1033,11 @@
 			};
 			name = Release;
 		};
-		B7348E6CEB34BFF1DFF5A3FD7EA95023 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0D863D368057DBA1829C9698AB881397 /* Pods-BusAlarmTests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-BusAlarmTests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-BusAlarmTests/Pods-BusAlarmTests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_BusAlarmTests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		C2400C4A5C067165FC1071EE3BFC5DF5 /* Debug */ = {
+		C3961CE4DA754B9F7844AC1F193EC699 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4B766373348824EAE7D2DCCBA9FF8B64 /* Pods-BusAlarmUITests.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -917,10 +1069,11 @@
 			};
 			name = Debug;
 		};
-		DBF0943F79281C30EF3B6F01D79C51A0 /* Debug */ = {
+		EC6C8B175F897AFD678D0536AB0B9CFF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 36374F0BB1D3740797805377D89CBD58 /* Pods-BusAlarm.debug.xcconfig */;
+			baseConfigurationReference = 0D863D368057DBA1829C9698AB881397 /* Pods-BusAlarmTests.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -932,21 +1085,60 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-BusAlarm/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-BusAlarmTests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-BusAlarm/Pods-BusAlarm.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-BusAlarmTests/Pods-BusAlarmTests.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_BusAlarm;
+				PRODUCT_NAME = Pods_BusAlarmTests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F7800847DD332B4937512DC0F47C3874 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00BB04A3E74214F14D9FB2BEB66312BF /* Pods-BusExtension.debug.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-BusExtension/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BusExtension/Pods-BusExtension.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_BusExtension;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -959,8 +1151,17 @@
 		074A90F8EDDAD0F4804CC01CED809808 /* Build configuration list for PBXNativeTarget "Pods-BusAlarmUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C2400C4A5C067165FC1071EE3BFC5DF5 /* Debug */,
-				580C4ADFABFECA8E3DB2A26A055FB809 /* Release */,
+				C3961CE4DA754B9F7844AC1F193EC699 /* Debug */,
+				5649411FCF65E76FF18C6A78A27A6F45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07FF5D72F460054352CF89E88DCE40BD /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33B3CEE9F371015FC30C338FE4A7962C /* Debug */,
+				2A18E3E71C0791A212B6DBAD44445D13 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -968,8 +1169,8 @@
 		139A7CEBEB1A09C061233E603ACE239B /* Build configuration list for PBXNativeTarget "Pods-BusExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				62E61E688F6E7606C82B5BB966482AA7 /* Debug */,
-				12E940EE363E4F879FC82D02BE6E61BD /* Release */,
+				F7800847DD332B4937512DC0F47C3874 /* Debug */,
+				1254C0CDFE170CFBB81D6807812CF189 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -977,8 +1178,8 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				59B042A655B7C20CBAB90E385BF4E4C7 /* Debug */,
-				B7324857C38B065FEB1EEE3105C2367A /* Release */,
+				4E487F173E6C9664F4E9E26B9635D23C /* Debug */,
+				BDD0139D6EB93FA375F887ABD62DAB2E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -986,26 +1187,26 @@
 		5517625E16F88BA3503E11595A10094A /* Build configuration list for PBXNativeTarget "Pods-BusAlarmTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B7348E6CEB34BFF1DFF5A3FD7EA95023 /* Debug */,
-				0EC7FE8F6119BBA1AF1D09FA2DE41A0C /* Release */,
+				EC6C8B175F897AFD678D0536AB0B9CFF /* Debug */,
+				849EFA3783DC234D8CB6BC4FCC49064A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BD410633FC9FD8629FC5FDC0F3DA3082 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
+		78DC8324983EEF2423399291DE8A6FE8 /* Build configuration list for PBXNativeTarget "SwiftGifOrigin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8FC58355EF099295FF9325206030E87F /* Debug */,
-				342618D0517F06FA02F07571BA43CA7B /* Release */,
+				5DC995A93DD337A84733661A11405AD6 /* Debug */,
+				2D3F697D426C46C51EC87B77F761623F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E798FA6BAFBE22621654EDC23A5AEC44 /* Build configuration list for PBXNativeTarget "Pods-BusAlarm" */ = {
+		D635C462A08D1D31D44CBED33018DE05 /* Build configuration list for PBXNativeTarget "Pods-BusAlarm" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DBF0943F79281C30EF3B6F01D79C51A0 /* Debug */,
-				2447C6D762674FD567CE89F8C9DD9898 /* Release */,
+				8B8BDC95245D828CDD8D5D444C575186 /* Debug */,
+				A1EA4E5ADCE7E90E22F26D39BC9F2DC1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

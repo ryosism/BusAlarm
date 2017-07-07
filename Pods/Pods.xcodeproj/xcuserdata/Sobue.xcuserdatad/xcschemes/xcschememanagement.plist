@@ -6,28 +6,33 @@
 	<dict>
 		<key>Pods-BusAlarm.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>2</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-BusAlarmTests.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>3</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-BusAlarmUITests.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>4</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-BusExtension.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>5</integer>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SwiftGifOrigin.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>SwiftyJSON.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>6</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
@@ -37,7 +42,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>62A3735FD2B3F71219D5D1C9DE7DB589</key>
+		<key>62B1F92402B7145D85EF0D6B88D23ACC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>758D32B7E599A0AC9A04A11199A13FC8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -47,12 +57,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A4E765DC5DFEFC7429E65FAF98902833</key>
+		<key>9321FF573DA35667A79DF30664AACA85</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C9FDBD60A6A7D9219AB462608F3D334E</key>
+		<key>A4E765DC5DFEFC7429E65FAF98902833</key>
 		<dict>
 			<key>primary</key>
 			<true/>

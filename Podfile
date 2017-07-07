@@ -4,6 +4,7 @@
 target 'BusAlarm' do
 
   pod 'SwiftyJSON'
+  pod 'SwiftGifOrigin' #imageViewでgifを表示させる
 
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
