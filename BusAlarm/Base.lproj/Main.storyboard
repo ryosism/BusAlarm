@@ -222,8 +222,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="ウィジェットの設定" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="piF-eL-LYE">
-                                                    <rect key="frame" x="15" y="12" width="156" height="20.5"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="ウィジェット機能" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="piF-eL-LYE">
+                                                    <rect key="frame" x="15" y="12" width="139" height="20.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -239,7 +239,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="EGl-4f-i3p" kind="show" id="ULm-gi-LOd"/>
+                                            <segue destination="EGl-4f-i3p" kind="show" identifier="" id="ULm-gi-LOd"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -310,11 +310,10 @@
             </objects>
             <point key="canvasLocation" x="1303" y="850"/>
         </scene>
-        <!--Purcher View Controller-->
+        <!--ウィジェット機能-->
         <scene sceneID="fYQ-6Z-eoI">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="t0F-hq-eNF" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="EGl-4f-i3p" customClass="PurcherViewController" customModule="BusAlarm" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="ウィジェット機能" id="EGl-4f-i3p" customClass="PurcherViewController" customModule="BusAlarm" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="eVU-rM-7Yg"/>
                         <viewControllerLayoutGuide type="bottom" id="QvV-FJ-sw0"/>
@@ -325,22 +324,99 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8Uv-kr-CDh">
                                 <rect key="frame" x="0.0" y="72" width="320" height="151"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="151" id="yk7-fN-rAs"/>
+                                </constraints>
                             </imageView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FT7-iv-iMT">
+                                <rect key="frame" x="0.0" y="231" width="320" height="87"/>
+                                <connections>
+                                    <segue destination="YPs-7D-wi7" kind="embed" id="KcJ-QN-mKz"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="QvV-FJ-sw0" firstAttribute="top" secondItem="8Uv-kr-CDh" secondAttribute="bottom" constant="296" id="ieK-SO-brc"/>
-                            <constraint firstAttribute="trailing" secondItem="8Uv-kr-CDh" secondAttribute="trailing" id="r9y-1B-4kZ"/>
-                            <constraint firstItem="8Uv-kr-CDh" firstAttribute="top" secondItem="eVU-rM-7Yg" secondAttribute="bottom" constant="8" symbolic="YES" id="rG6-5d-WMk"/>
-                            <constraint firstItem="8Uv-kr-CDh" firstAttribute="leading" secondItem="Od8-e1-jQp" secondAttribute="leading" id="t3G-Qp-8c6"/>
+                            <constraint firstItem="8Uv-kr-CDh" firstAttribute="trailing" secondItem="FT7-iv-iMT" secondAttribute="trailing" id="3es-hF-cLE"/>
+                            <constraint firstItem="8Uv-kr-CDh" firstAttribute="top" secondItem="eVU-rM-7Yg" secondAttribute="bottom" constant="8" symbolic="YES" id="C3h-YS-ppP"/>
+                            <constraint firstItem="8Uv-kr-CDh" firstAttribute="leading" secondItem="Od8-e1-jQp" secondAttribute="leading" id="DFy-fh-BdL"/>
+                            <constraint firstItem="QvV-FJ-sw0" firstAttribute="top" secondItem="FT7-iv-iMT" secondAttribute="bottom" constant="201" id="Scf-2X-H1L"/>
+                            <constraint firstItem="FT7-iv-iMT" firstAttribute="top" secondItem="8Uv-kr-CDh" secondAttribute="bottom" constant="8" symbolic="YES" id="blm-k0-j9z"/>
+                            <constraint firstAttribute="trailing" secondItem="8Uv-kr-CDh" secondAttribute="trailing" id="d0d-cC-Oih"/>
+                            <constraint firstItem="8Uv-kr-CDh" firstAttribute="leading" secondItem="FT7-iv-iMT" secondAttribute="leading" id="qXQ-53-X5m"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="previewGifView" destination="8Uv-kr-CDh" id="H2b-Bl-30m"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t0F-hq-eNF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1299.375" y="1594.0140845070423"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="bf2-pF-w4J">
+            <objects>
+                <tableViewController id="YPs-7D-wi7" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="x12-g4-fiO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="87"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="yPM-9s-t3h">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="grY-wz-RP1">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="grY-wz-RP1" id="RYO-Hv-Udv">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ウィジェット機能" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LAw-fc-5KA">
+                                                    <rect key="frame" x="15" y="12" width="139" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="LAw-fc-5KA" firstAttribute="centerY" secondItem="RYO-Hv-Udv" secondAttribute="centerY" id="OCU-Gv-FXq"/>
+                                                <constraint firstItem="LAw-fc-5KA" firstAttribute="leading" secondItem="RYO-Hv-Udv" secondAttribute="leadingMargin" constant="7" id="TK8-Uh-ZvS"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="vZJ-Mo-n9J">
+                                        <rect key="frame" x="0.0" y="44" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vZJ-Mo-n9J" id="Ai3-9b-bhx">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="購入情報を復元する" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jpx-CE-JkG">
+                                                    <rect key="frame" x="15" y="12" width="156" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="jpx-CE-JkG" firstAttribute="centerY" secondItem="Ai3-9b-bhx" secondAttribute="centerY" id="apv-b9-7Mr"/>
+                                                <constraint firstItem="jpx-CE-JkG" firstAttribute="leading" secondItem="Ai3-9b-bhx" secondAttribute="leadingMargin" constant="7" id="bFm-N8-gnu"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="YPs-7D-wi7" id="VAS-kg-6cO"/>
+                            <outlet property="delegate" destination="YPs-7D-wi7" id="rSq-rB-1Ta"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ker-jm-8j6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1299" y="2164"/>
         </scene>
         <!--設定-->
         <scene sceneID="oA7-dM-R8i">
