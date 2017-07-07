@@ -322,8 +322,22 @@
                     <view key="view" contentMode="scaleToFill" id="Od8-e1-jQp">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8Uv-kr-CDh">
+                                <rect key="frame" x="0.0" y="72" width="320" height="151"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="QvV-FJ-sw0" firstAttribute="top" secondItem="8Uv-kr-CDh" secondAttribute="bottom" constant="296" id="ieK-SO-brc"/>
+                            <constraint firstAttribute="trailing" secondItem="8Uv-kr-CDh" secondAttribute="trailing" id="r9y-1B-4kZ"/>
+                            <constraint firstItem="8Uv-kr-CDh" firstAttribute="top" secondItem="eVU-rM-7Yg" secondAttribute="bottom" constant="8" symbolic="YES" id="rG6-5d-WMk"/>
+                            <constraint firstItem="8Uv-kr-CDh" firstAttribute="leading" secondItem="Od8-e1-jQp" secondAttribute="leading" id="t3G-Qp-8c6"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="previewGifView" destination="8Uv-kr-CDh" id="H2b-Bl-30m"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="1299.375" y="1594.0140845070423"/>

@@ -67,6 +67,7 @@
 		3177B5FCCA6C4D3B38C2E860 /* Pods_BusAlarm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07EDFB528CA6CB61BFCDF109 /* Pods_BusAlarm.framework */; };
 		32BEB21BB9128503EC5E3608 /* Pods_BusExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EB6EE6AA60832E045EDDBB3 /* Pods_BusExtension.framework */; };
 		48393EE919A2F6DE01FCDACC /* Pods_BusAlarmUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFAC0D96F7308D10BF1121CB /* Pods_BusAlarmUITests.framework */; };
+		9D0AB2801F0FE67700944250 /* SwiftGifOrigin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D0AB27F1F0FE67700944250 /* SwiftGifOrigin.framework */; };
 		BF9D26CAA134526A0F3941EB /* Pods_BusAlarmTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0651048C297701402E1EEBFB /* Pods_BusAlarmTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -165,6 +166,7 @@
 		698FACA79A88B3327312622F /* Pods-BusExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BusExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-BusExtension/Pods-BusExtension.release.xcconfig"; sourceTree = "<group>"; };
 		7EA286859023166D4946361F /* Pods-BusAlarmTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BusAlarmTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BusAlarmTests/Pods-BusAlarmTests.debug.xcconfig"; sourceTree = "<group>"; };
 		954722D079B77D82D9CFF462 /* Pods-BusAlarm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BusAlarm.release.xcconfig"; path = "Pods/Target Support Files/Pods-BusAlarm/Pods-BusAlarm.release.xcconfig"; sourceTree = "<group>"; };
+		9D0AB27F1F0FE67700944250 /* SwiftGifOrigin.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftGifOrigin.framework; path = "../../../Library/Developer/Xcode/DerivedData/BusAlarm-cudlodboertmurfirhnlekuspjnv/Build/Products/Debug-iphonesimulator/SwiftGifOrigin/SwiftGifOrigin.framework"; sourceTree = "<group>"; };
 		A496A88F9763B883AA26713A /* Pods-BusAlarmUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BusAlarmUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BusAlarmUITests/Pods-BusAlarmUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A504C05955A5D972683D1E2D /* Pods-BusAlarmTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BusAlarmTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BusAlarmTests/Pods-BusAlarmTests.release.xcconfig"; sourceTree = "<group>"; };
 		CFAC0D96F7308D10BF1121CB /* Pods_BusAlarmUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BusAlarmUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -185,6 +187,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D0AB2801F0FE67700944250 /* SwiftGifOrigin.framework in Frameworks */,
 				20F6288F1ED19E39003879C7 /* SwiftyJSON.framework in Frameworks */,
 				3177B5FCCA6C4D3B38C2E860 /* Pods_BusAlarm.framework in Frameworks */,
 			);
@@ -330,6 +333,7 @@
 		39C459B1840EE86B2E44F0F4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9D0AB27F1F0FE67700944250 /* SwiftGifOrigin.framework */,
 				20F6288E1ED19E39003879C7 /* SwiftyJSON.framework */,
 				07EDFB528CA6CB61BFCDF109 /* Pods_BusAlarm.framework */,
 				0651048C297701402E1EEBFB /* Pods_BusAlarmTests.framework */,
