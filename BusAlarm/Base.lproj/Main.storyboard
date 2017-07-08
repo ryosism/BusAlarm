@@ -354,10 +354,10 @@
             </objects>
             <point key="canvasLocation" x="1299.375" y="1594.0140845070423"/>
         </scene>
-        <!--Purcher View Controller-->
+        <!--Table View Controller-->
         <scene sceneID="bf2-pF-w4J">
             <objects>
-                <tableViewController id="YPs-7D-wi7" customClass="PurcherViewController" customModule="BusAlarm" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="YPs-7D-wi7" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="x12-g4-fiO">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="87"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -418,10 +418,6 @@
                                 </cells>
                             </tableViewSection>
                         </sections>
-                        <connections>
-                            <outlet property="dataSource" destination="YPs-7D-wi7" id="VAS-kg-6cO"/>
-                            <outlet property="delegate" destination="YPs-7D-wi7" id="rSq-rB-1Ta"/>
-                        </connections>
                     </tableView>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ker-jm-8j6" userLabel="First Responder" sceneMemberID="firstResponder"/>
