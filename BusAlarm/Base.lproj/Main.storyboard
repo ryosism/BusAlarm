@@ -379,7 +379,8 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4lz-hq-JpF">
-                                                    <rect key="frame" x="242" y="11" width="70" height="22"/>
+                                                    <rect key="frame" x="228" y="7" width="84" height="30"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <state key="normal" title="¥ 240"/>
                                                     <connections>
                                                         <action selector="yen240Pushed:" destination="YPs-7D-wi7" eventType="touchUpInside" id="yck-Ge-dfT"/>
@@ -387,12 +388,11 @@
                                                 </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="LAw-fc-5KA" firstAttribute="leading" secondItem="RYO-Hv-Udv" secondAttribute="leadingMargin" constant="7" id="7x0-ug-7hV"/>
-                                                <constraint firstItem="4lz-hq-JpF" firstAttribute="trailing" secondItem="RYO-Hv-Udv" secondAttribute="trailingMargin" id="Jhj-3w-KSh"/>
-                                                <constraint firstItem="LAw-fc-5KA" firstAttribute="centerY" secondItem="4lz-hq-JpF" secondAttribute="centerY" id="OmJ-fy-6Xq"/>
-                                                <constraint firstItem="LAw-fc-5KA" firstAttribute="centerY" secondItem="RYO-Hv-Udv" secondAttribute="centerY" id="SVK-60-u0O"/>
-                                                <constraint firstItem="4lz-hq-JpF" firstAttribute="top" secondItem="RYO-Hv-Udv" secondAttribute="topMargin" constant="3" id="nPM-sd-q1G"/>
-                                                <constraint firstItem="4lz-hq-JpF" firstAttribute="leading" secondItem="LAw-fc-5KA" secondAttribute="trailing" constant="88" id="ynY-5A-kC8"/>
+                                                <constraint firstItem="LAw-fc-5KA" firstAttribute="leading" secondItem="RYO-Hv-Udv" secondAttribute="leadingMargin" constant="7" id="JRl-yD-eod"/>
+                                                <constraint firstItem="4lz-hq-JpF" firstAttribute="leading" secondItem="LAw-fc-5KA" secondAttribute="trailing" constant="74" id="O0M-Wt-sX2"/>
+                                                <constraint firstItem="4lz-hq-JpF" firstAttribute="trailing" secondItem="RYO-Hv-Udv" secondAttribute="trailingMargin" id="cdQ-Mj-ySt"/>
+                                                <constraint firstItem="LAw-fc-5KA" firstAttribute="centerY" secondItem="RYO-Hv-Udv" secondAttribute="centerY" id="ghc-bz-7Oz"/>
+                                                <constraint firstItem="LAw-fc-5KA" firstAttribute="centerY" secondItem="4lz-hq-JpF" secondAttribute="centerY" id="vSL-y3-zzE"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -410,10 +410,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NwG-tx-tZW">
-                                                    <rect key="frame" x="242" y="7" width="70" height="30"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="70" id="xwJ-l0-iPn"/>
-                                                    </constraints>
+                                                    <rect key="frame" x="228" y="7" width="84" height="30"/>
                                                     <state key="normal" title="復元する"/>
                                                     <connections>
                                                         <action selector="restoreButtonPushed:" destination="YPs-7D-wi7" eventType="touchUpInside" id="XYM-GE-6Bt"/>
@@ -421,10 +418,11 @@
                                                 </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="jpx-CE-JkG" firstAttribute="leading" secondItem="Ai3-9b-bhx" secondAttribute="leadingMargin" constant="7" id="GWm-bJ-sZy"/>
-                                                <constraint firstItem="jpx-CE-JkG" firstAttribute="centerY" secondItem="NwG-tx-tZW" secondAttribute="centerY" id="iIo-Hl-BLt"/>
-                                                <constraint firstItem="NwG-tx-tZW" firstAttribute="trailing" secondItem="Ai3-9b-bhx" secondAttribute="trailingMargin" id="uqu-Rd-gtf"/>
-                                                <constraint firstItem="jpx-CE-JkG" firstAttribute="centerY" secondItem="Ai3-9b-bhx" secondAttribute="centerY" id="yrB-rC-2C0"/>
+                                                <constraint firstItem="NwG-tx-tZW" firstAttribute="leading" secondItem="jpx-CE-JkG" secondAttribute="trailing" constant="91" id="5sm-Qm-LTp"/>
+                                                <constraint firstItem="jpx-CE-JkG" firstAttribute="centerY" secondItem="Ai3-9b-bhx" secondAttribute="centerY" id="DXQ-LR-C3z"/>
+                                                <constraint firstItem="NwG-tx-tZW" firstAttribute="trailing" secondItem="Ai3-9b-bhx" secondAttribute="trailingMargin" id="hyh-w5-8sk"/>
+                                                <constraint firstItem="jpx-CE-JkG" firstAttribute="centerY" secondItem="NwG-tx-tZW" secondAttribute="centerY" id="iLW-6M-y1A"/>
+                                                <constraint firstItem="jpx-CE-JkG" firstAttribute="leading" secondItem="Ai3-9b-bhx" secondAttribute="leadingMargin" constant="7" id="mmP-kN-MFZ"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
