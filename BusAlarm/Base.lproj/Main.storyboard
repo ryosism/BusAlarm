@@ -354,10 +354,10 @@
             </objects>
             <point key="canvasLocation" x="1299.375" y="1594.0140845070423"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Purcher Action-->
         <scene sceneID="bf2-pF-w4J">
             <objects>
-                <tableViewController id="YPs-7D-wi7" sceneMemberID="viewController">
+                <tableViewController id="YPs-7D-wi7" customClass="PurcherAction" customModule="BusAlarm" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="x12-g4-fiO">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="87"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -378,15 +378,21 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4lz-hq-JpF">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4lz-hq-JpF">
                                                     <rect key="frame" x="242" y="11" width="70" height="22"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <state key="normal" title="¥ 240"/>
+                                                    <connections>
+                                                        <action selector="yen240Pushed:" destination="YPs-7D-wi7" eventType="touchUpInside" id="yck-Ge-dfT"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="LAw-fc-5KA" firstAttribute="centerY" secondItem="RYO-Hv-Udv" secondAttribute="centerY" id="OCU-Gv-FXq"/>
-                                                <constraint firstItem="LAw-fc-5KA" firstAttribute="leading" secondItem="RYO-Hv-Udv" secondAttribute="leadingMargin" constant="7" id="TK8-Uh-ZvS"/>
+                                                <constraint firstItem="LAw-fc-5KA" firstAttribute="leading" secondItem="RYO-Hv-Udv" secondAttribute="leadingMargin" constant="7" id="7x0-ug-7hV"/>
+                                                <constraint firstItem="4lz-hq-JpF" firstAttribute="trailing" secondItem="RYO-Hv-Udv" secondAttribute="trailingMargin" id="Jhj-3w-KSh"/>
+                                                <constraint firstItem="LAw-fc-5KA" firstAttribute="centerY" secondItem="4lz-hq-JpF" secondAttribute="centerY" id="OmJ-fy-6Xq"/>
+                                                <constraint firstItem="LAw-fc-5KA" firstAttribute="centerY" secondItem="RYO-Hv-Udv" secondAttribute="centerY" id="SVK-60-u0O"/>
+                                                <constraint firstItem="4lz-hq-JpF" firstAttribute="top" secondItem="RYO-Hv-Udv" secondAttribute="topMargin" constant="3" id="nPM-sd-q1G"/>
+                                                <constraint firstItem="4lz-hq-JpF" firstAttribute="leading" secondItem="LAw-fc-5KA" secondAttribute="trailing" constant="88" id="ynY-5A-kC8"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -403,15 +409,22 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NwG-tx-tZW">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NwG-tx-tZW">
                                                     <rect key="frame" x="242" y="7" width="70" height="30"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="70" id="xwJ-l0-iPn"/>
+                                                    </constraints>
                                                     <state key="normal" title="復元する"/>
+                                                    <connections>
+                                                        <action selector="restoreButtonPushed:" destination="YPs-7D-wi7" eventType="touchUpInside" id="XYM-GE-6Bt"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="jpx-CE-JkG" firstAttribute="centerY" secondItem="Ai3-9b-bhx" secondAttribute="centerY" id="apv-b9-7Mr"/>
-                                                <constraint firstItem="jpx-CE-JkG" firstAttribute="leading" secondItem="Ai3-9b-bhx" secondAttribute="leadingMargin" constant="7" id="bFm-N8-gnu"/>
+                                                <constraint firstItem="jpx-CE-JkG" firstAttribute="leading" secondItem="Ai3-9b-bhx" secondAttribute="leadingMargin" constant="7" id="GWm-bJ-sZy"/>
+                                                <constraint firstItem="jpx-CE-JkG" firstAttribute="centerY" secondItem="NwG-tx-tZW" secondAttribute="centerY" id="iIo-Hl-BLt"/>
+                                                <constraint firstItem="NwG-tx-tZW" firstAttribute="trailing" secondItem="Ai3-9b-bhx" secondAttribute="trailingMargin" id="uqu-Rd-gtf"/>
+                                                <constraint firstItem="jpx-CE-JkG" firstAttribute="centerY" secondItem="Ai3-9b-bhx" secondAttribute="centerY" id="yrB-rC-2C0"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -419,6 +432,10 @@
                             </tableViewSection>
                         </sections>
                     </tableView>
+                    <connections>
+                        <outlet property="restoreButton" destination="NwG-tx-tZW" id="bRU-TP-smS"/>
+                        <outlet property="yen240" destination="4lz-hq-JpF" id="a8J-tY-6gt"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ker-jm-8j6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
