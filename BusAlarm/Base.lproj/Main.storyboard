@@ -331,7 +331,7 @@
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FT7-iv-iMT">
                                 <rect key="frame" x="0.0" y="231" width="320" height="87"/>
                                 <connections>
-                                    <segue destination="YPs-7D-wi7" kind="embed" id="KcJ-QN-mKz"/>
+                                    <segue destination="YPs-7D-wi7" kind="embed" id="ZsP-6q-dMP"/>
                                 </connections>
                             </containerView>
                         </subviews>
@@ -354,10 +354,10 @@
             </objects>
             <point key="canvasLocation" x="1299.375" y="1594.0140845070423"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Purcher View Controller-->
         <scene sceneID="bf2-pF-w4J">
             <objects>
-                <tableViewController id="YPs-7D-wi7" sceneMemberID="viewController">
+                <tableViewController id="YPs-7D-wi7" customClass="PurcherViewController" customModule="BusAlarm" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="x12-g4-fiO">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="87"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -378,6 +378,11 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4lz-hq-JpF">
+                                                    <rect key="frame" x="242" y="11" width="70" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="¥ 240"/>
+                                                </button>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="LAw-fc-5KA" firstAttribute="centerY" secondItem="RYO-Hv-Udv" secondAttribute="centerY" id="OCU-Gv-FXq"/>
@@ -392,12 +397,17 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="購入情報を復元する" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jpx-CE-JkG">
-                                                    <rect key="frame" x="15" y="12" width="156" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="購入情報の復元" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jpx-CE-JkG">
+                                                    <rect key="frame" x="15" y="12" width="122" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NwG-tx-tZW">
+                                                    <rect key="frame" x="242" y="7" width="70" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="復元する"/>
+                                                </button>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="jpx-CE-JkG" firstAttribute="centerY" secondItem="Ai3-9b-bhx" secondAttribute="centerY" id="apv-b9-7Mr"/>
@@ -416,7 +426,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ker-jm-8j6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1299" y="2164"/>
+            <point key="canvasLocation" x="1297.5" y="2163.9084507042253"/>
         </scene>
         <!--設定-->
         <scene sceneID="oA7-dM-R8i">
