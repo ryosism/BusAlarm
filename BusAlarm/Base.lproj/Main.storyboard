@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="2Y5-yl-1fl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="2Y5-yl-1fl">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -161,7 +161,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DXl-0b-hwz" id="xxj-F5-fcq">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IXu-VO-u5J">
@@ -271,8 +271,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UIL-hh-Tn7">
-                                <rect key="frame" x="16" y="72" width="288" height="117"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UIL-hh-Tn7">
+                                <rect key="frame" x="16" y="64" width="288" height="117"/>
                                 <string key="text">行き・帰りの切り替え時刻について
 
 この時刻表アプリは時間帯によって「行き」と「帰り」のどちらを表示するかを変更することができます。
@@ -281,8 +281,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <pickerView contentMode="scaleToFill" verticalHuggingPriority="252" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NIy-sr-LuN">
-                                <rect key="frame" x="0.0" y="194" width="320" height="216"/>
+                            <pickerView contentMode="scaleToFill" verticalHuggingPriority="252" translatesAutoresizingMaskIntoConstraints="NO" id="NIy-sr-LuN">
+                                <rect key="frame" x="0.0" y="186" width="320" height="216"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <outlet property="dataSource" destination="rKs-mI-w2f" id="WWU-5t-Hge"/>
@@ -292,12 +292,11 @@
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="UIL-hh-Tn7" firstAttribute="top" secondItem="0r7-hg-kUa" secondAttribute="bottom" id="0wa-ys-khu"/>
                             <constraint firstItem="NIy-sr-LuN" firstAttribute="leading" secondItem="CNl-06-5f2" secondAttribute="leading" id="DEX-AF-4mB"/>
                             <constraint firstItem="UIL-hh-Tn7" firstAttribute="trailing" secondItem="CNl-06-5f2" secondAttribute="trailingMargin" id="K3H-zT-5JA"/>
                             <constraint firstItem="NIy-sr-LuN" firstAttribute="top" secondItem="UIL-hh-Tn7" secondAttribute="bottom" constant="5" id="OQz-hh-K04"/>
-                            <constraint firstItem="UIL-hh-Tn7" firstAttribute="top" secondItem="0r7-hg-kUa" secondAttribute="bottom" constant="8" id="Tug-zP-WEs"/>
                             <constraint firstAttribute="trailing" secondItem="NIy-sr-LuN" secondAttribute="trailing" id="Vm9-Vc-m6E"/>
-                            <constraint firstItem="u9y-ZB-qLM" firstAttribute="top" secondItem="NIy-sr-LuN" secondAttribute="bottom" constant="208" id="dvK-IR-MrR"/>
                             <constraint firstItem="NIy-sr-LuN" firstAttribute="top" secondItem="UIL-hh-Tn7" secondAttribute="bottom" constant="5" id="kqp-47-llv"/>
                             <constraint firstItem="UIL-hh-Tn7" firstAttribute="leading" secondItem="CNl-06-5f2" secondAttribute="leadingMargin" id="u0V-KX-eaN"/>
                         </constraints>
@@ -369,7 +368,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="grY-wz-RP1" id="RYO-Hv-Udv">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ウィジェット機能" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LAw-fc-5KA">
@@ -379,7 +378,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4lz-hq-JpF">
-                                                    <rect key="frame" x="228" y="7" width="84" height="30"/>
+                                                    <rect key="frame" x="228" y="7" width="139" height="30"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <state key="normal" title="¥ 240"/>
                                                     <connections>
@@ -400,7 +399,7 @@
                                         <rect key="frame" x="0.0" y="44" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vZJ-Mo-n9J" id="Ai3-9b-bhx">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="購入情報の復元" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jpx-CE-JkG">
@@ -410,7 +409,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NwG-tx-tZW">
-                                                    <rect key="frame" x="228" y="7" width="84" height="30"/>
+                                                    <rect key="frame" x="228" y="7" width="139" height="30"/>
                                                     <state key="normal" title="復元する"/>
                                                     <connections>
                                                         <action selector="restoreButtonPushed:" destination="YPs-7D-wi7" eventType="touchUpInside" id="XYM-GE-6Bt"/>
