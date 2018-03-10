@@ -62,15 +62,15 @@
 		088BF0048E51B74F6BCCDAF7547D1965 /* Pods-BusAlarmUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BusAlarmUITests-umbrella.h"; sourceTree = "<group>"; };
 		0B53446913C2B572B3AA212BD00991B6 /* Pods-BusAlarmUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BusAlarmUITests.release.xcconfig"; sourceTree = "<group>"; };
 		0D863D368057DBA1829C9698AB881397 /* Pods-BusAlarmTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BusAlarmTests.debug.xcconfig"; sourceTree = "<group>"; };
-		0F007EFB2BE58F475D25589BFFB588E6 /* SwiftGifOrigin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftGifOrigin.framework; path = SwiftGifOrigin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		11C47AB892A2833FBCDA6B50017C0EDC /* SwiftGifOrigin.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftGifOrigin.modulemap; sourceTree = "<group>"; };
-		1E0A96AFB97F150F639E34AD6EBC015F /* Pods-BusAlarmUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-BusAlarmUITests.modulemap"; sourceTree = "<group>"; };
+		0F007EFB2BE58F475D25589BFFB588E6 /* SwiftGifOrigin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftGifOrigin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		11C47AB892A2833FBCDA6B50017C0EDC /* SwiftGifOrigin.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftGifOrigin.modulemap; sourceTree = "<group>"; };
+		1E0A96AFB97F150F639E34AD6EBC015F /* Pods-BusAlarmUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-BusAlarmUITests.modulemap"; sourceTree = "<group>"; };
 		1E8592CDEB265D6C7E4995C61572A07A /* Pods-BusExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BusExtension.release.xcconfig"; sourceTree = "<group>"; };
-		24D4EA7D299F500811670441DAB4ABBE /* Pods-BusAlarmTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-BusAlarmTests.modulemap"; sourceTree = "<group>"; };
-		24FEFA2BC03437D5514635B8438261B6 /* Pods-BusExtension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-BusExtension.modulemap"; sourceTree = "<group>"; };
+		24D4EA7D299F500811670441DAB4ABBE /* Pods-BusAlarmTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-BusAlarmTests.modulemap"; sourceTree = "<group>"; };
+		24FEFA2BC03437D5514635B8438261B6 /* Pods-BusExtension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-BusExtension.modulemap"; sourceTree = "<group>"; };
 		28B7AED7A3C0C88F1D2990C87D4F97C4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E165950288B8E0CE79D0776B2C51C2D /* Pods-BusExtension-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BusExtension-acknowledgements.markdown"; sourceTree = "<group>"; };
-		3385997AB3538C986B174FB49DD1A388 /* Pods_BusAlarmTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BusAlarmTests.framework; path = "Pods-BusAlarmTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3385997AB3538C986B174FB49DD1A388 /* Pods_BusAlarmTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BusAlarmTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		36374F0BB1D3740797805377D89CBD58 /* Pods-BusAlarm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BusAlarm.debug.xcconfig"; sourceTree = "<group>"; };
 		3C6CE0D249FF58A40E830A0AA8FBD0EF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4657388616C3CE72ECF91077BBC9D38D /* Pods-BusAlarm-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BusAlarm-resources.sh"; sourceTree = "<group>"; };
@@ -84,19 +84,19 @@
 		63FEA3BF21B15E4A9FCF2DE241033331 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		74078BFC77005C566DDE8611E23C3F36 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		79893353C4260806CFC4E7A6DF903ECE /* Pods_BusAlarmUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BusAlarmUITests.framework; path = "Pods-BusAlarmUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		79893353C4260806CFC4E7A6DF903ECE /* Pods_BusAlarmUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BusAlarmUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7999CC0928D6E551BA527219CCA96FC6 /* SwiftGifOrigin-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftGifOrigin-umbrella.h"; sourceTree = "<group>"; };
-		7A131B240E2BB90A61804BEF4545CCC3 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
-		850444C449E2BED425F7AD353DC474C9 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A131B240E2BB90A61804BEF4545CCC3 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
+		850444C449E2BED425F7AD353DC474C9 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CF437EECC267E5714E83C1C3555AD54 /* Pods-BusExtension-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BusExtension-resources.sh"; sourceTree = "<group>"; };
 		925F6DE856F9DBC90AE7E3DA4DF5A8A5 /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
 		939FEA3ABCF5B5AB1383016FBC4ACC11 /* Pods-BusAlarmUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BusAlarmUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9724781B940B056893527A171C73645F /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
 		97CB8203FAD2F30F3EB691CD0603E451 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9AC57E2CA06660327FC6E8AB792E7C90 /* Pods-BusAlarm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BusAlarm.release.xcconfig"; sourceTree = "<group>"; };
-		A16B7C0309A129FADB5C3AFD30297F5F /* Pods_BusExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BusExtension.framework; path = "Pods-BusExtension.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A4DD2ECC36121CF5002B21D8F60BDC24 /* Pods_BusAlarm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BusAlarm.framework; path = "Pods-BusAlarm.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A16B7C0309A129FADB5C3AFD30297F5F /* Pods_BusExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BusExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4DD2ECC36121CF5002B21D8F60BDC24 /* Pods_BusAlarm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BusAlarm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5B178FEF7AA7759419CAEF90CAA35D0 /* Pods-BusAlarmUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BusAlarmUITests-resources.sh"; sourceTree = "<group>"; };
 		A6A33C715C10D2F5F2560C8FC4A249FB /* Pods-BusAlarmTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BusAlarmTests-umbrella.h"; sourceTree = "<group>"; };
 		AE08BB28F38E7E246CDA06C994252BB7 /* SwiftGifOrigin.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftGifOrigin.xcconfig; sourceTree = "<group>"; };
@@ -110,7 +110,7 @@
 		D6AA08DC7A8F3437E0F194388BC6E771 /* Pods-BusAlarmUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BusAlarmUITests-dummy.m"; sourceTree = "<group>"; };
 		D99AB4FB0118E42C2FA15F27509F4F22 /* Pods-BusAlarmTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BusAlarmTests-resources.sh"; sourceTree = "<group>"; };
 		E4CDBC47EDB90B3F742663DDC5276CDE /* Pods-BusExtension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BusExtension-umbrella.h"; sourceTree = "<group>"; };
-		E550ACE1332A3A91BA87D306C227B43B /* Pods-BusAlarm.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-BusAlarm.modulemap"; sourceTree = "<group>"; };
+		E550ACE1332A3A91BA87D306C227B43B /* Pods-BusAlarm.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-BusAlarm.modulemap"; sourceTree = "<group>"; };
 		F32C32B8BDB2BE43CBD240B38DE3375E /* Pods-BusAlarmTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BusAlarmTests-dummy.m"; sourceTree = "<group>"; };
 		F3481A03849AA3C75B1F50B181D66771 /* Pods-BusAlarmTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BusAlarmTests-frameworks.sh"; sourceTree = "<group>"; };
 		F6EEB7BFF43FF11A7591681F6ECB0CEC /* Pods-BusAlarm-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BusAlarm-frameworks.sh"; sourceTree = "<group>"; };
@@ -203,7 +203,6 @@
 				51FA5B18F2CB4D05C97B8A21400E4EC4 /* UIImage+Gif.swift */,
 				1D40972606EBA850D47CE326CC81F2B7 /* Support Files */,
 			);
-			name = SwiftGifOrigin;
 			path = SwiftGifOrigin;
 			sourceTree = "<group>";
 		};
@@ -244,7 +243,6 @@
 				F9EA6E91007836E8576D2F47A6FDF41C /* SwiftyJSON.swift */,
 				1F664809B0C0A2F9CD626A0CFDCEE209 /* Support Files */,
 			);
-			name = SwiftyJSON;
 			path = SwiftyJSON;
 			sourceTree = "<group>";
 		};
@@ -514,7 +512,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0920;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -767,7 +765,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -775,15 +775,21 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_DEBUG=1",
@@ -999,7 +1005,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -1007,14 +1015,20 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_RELEASE=1",
 					"$(inherited)",
@@ -1028,6 +1042,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SYMROOT = "${SRCROOT}/../build";
 				VALIDATE_PRODUCT = YES;
 			};
