@@ -13,7 +13,7 @@ class CountDown: UIViewController{
 //    ボタン定義------------------------
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var timeLabel: UILabel!
-    @IBOutlet weak var contDownLabel: UILabel!
+    @IBOutlet weak var countDownLabel: UILabel!
     @IBOutlet weak var 発車まで残り: UILabel!
     
     @IBOutlet weak var nextTrain: UIButton!
@@ -82,23 +82,24 @@ class CountDown: UIViewController{
             発車まで残り.text = "発車まで残り"
             発車まで残り.font = UIFont.boldSystemFont(ofSize: 25)
 
-            contDownLabel.isHidden = false
+            countDownLabel.isHidden = false
             
             switch span {
             case 3600...2560000:
-                contDownLabel.text = "\(hour)時間 \(minute)分 \(second)秒後"
-                contDownLabel.font = UIFont.boldSystemFont(ofSize: 32)
+                countDownLabel.text = "\(hour)時間 \(minute)分 \(second)秒後"
+                countDownLabel.font = UIFont.boldSystemFont(ofSize: 32)
+                
             case 0...3599:
-                contDownLabel.text = "\(minute)分 \(second)秒後"
-                contDownLabel.font = UIFont.boldSystemFont(ofSize: 40)
+                countDownLabel.text = "\(minute)分 \(second)秒後"
+                countDownLabel.font = UIFont.boldSystemFont(ofSize: 40)
             case -3599 ... -1:
-                contDownLabel.text = "\(-1*minute)分 \(-1*second)秒前"
-                contDownLabel.font = UIFont.boldSystemFont(ofSize: 40)
-                contDownLabel.textColor = UIColor.gray
+                countDownLabel.text = "\(-1*minute)分 \(-1*second)秒前"
+                countDownLabel.font = UIFont.boldSystemFont(ofSize: 40)
+                countDownLabel.textColor = UIColor.gray
             case -2560000 ... -3600:
-                contDownLabel.text = "\(-1*hour)時間 \(-1*minute)分 \(-1*second)秒前"
-                contDownLabel.font = UIFont.boldSystemFont(ofSize: 32)
-                contDownLabel.textColor = UIColor.gray
+                countDownLabel.text = "\(-1*hour)時間 \(-1*minute)分 \(-1*second)秒前"
+                countDownLabel.font = UIFont.boldSystemFont(ofSize: 32)
+                countDownLabel.textColor = UIColor.gray
             default:
                 break
             }
@@ -110,7 +111,7 @@ class CountDown: UIViewController{
             }
             発車まで残り.text = depertureTime
             発車まで残り.font = UIFont.boldSystemFont(ofSize: 30)
-            contDownLabel.isHidden = true
+            countDownLabel.isHidden = true
         }
     }
     

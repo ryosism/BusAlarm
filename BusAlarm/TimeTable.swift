@@ -22,13 +22,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         timetable.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         
         if delegate.destination == "from_jinryo"{
-            navigationBar.title = "神領発"
             selector.selectedSegmentIndex = 0
         }else{
-            navigationBar.title = "中部大学発"
             selector.selectedSegmentIndex = 1
         }
         
+        SetnavigationBar()
     }
 
     override func viewDidLoad() {
@@ -46,23 +45,24 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
 // -----現在の時間を表示するラベル---------------------
         print("return",delegate.rowofRidableBusTableNumber(delegate.table))
-        nowTime.text = delegate.getday("現在の時間 : HH:mm:ss")
-        nowTime.font = UIFont(name: "Arial", size: 22)
+        nowTime.font = UIFont(name: "Arial", size: 21)
 
         switch delegate.getday("E") {
         case "月","火","水","木","金":
             nowTime.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+            nowTime.text = "本日は平日ダイヤです"
         case "土","休業中":
-            nowTime.backgroundColor = #colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)
+            nowTime.backgroundColor = #colorLiteral(red: 0.4903988242, green: 0.8657205701, blue: 1, alpha: 1)
+            nowTime.text = "本日は土曜・休業中ダイヤです"
         default:
             nowTime.backgroundColor = #colorLiteral(red: 1, green: 0.7692273855, blue: 0.8850077987, alpha: 1)
+            nowTime.text = "本日は休日ダイヤです"
 // -----現在の時間を表示するラベル---------------------
         }
     }
     
     func update(){
         timetable.reloadData()
-        nowTime.text = delegate.getday("現在の時間 : HH:mm:ss")
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -75,10 +75,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let delegate = UIApplication.shared.delegate as! AppDelegate
         cell.textLabel?.text = delegate.table[indexPath.row]
         cell.textLabel?.font = UIFont(name: "Arial", size: 24)
-        
-//        if indexPath.row == delegate.rowofRidableBusTableNumber(delegate.table){
-//            cell.backgroundColor = #colorLiteral(red: 1, green: 0.9076395035, blue: 0.8201603293, alpha: 1)
-//        }
+    
         return cell
     }
     
@@ -100,13 +97,28 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             // 0.5秒後に実行したい処理
             self.timetable.scrollToRow(at: scrollIndexpath as IndexPath, at: .top, animated: true)
         }
-// -----一番近い時間にスクロールする-------------------------
-        if delegate.destination == "from_jinryo"{
-            navigationBar.title = "神領発"
-        }else{
-            navigationBar.title = "中部大学発"
-        }
+        SetnavigationBar()
     }
+    
+    final func SetnavigationBar(){
+        var text = ""
+        if delegate.destination == "from_jinryo"{
+            text = "神領発"
+        }else{
+            text = "中部大学発"
+        }
+        
+        switch delegate.getday("E") {
+        case "月","火","水","木","金":
+            text = text + "(平日ダイヤ)"
+        case "土","休業中":
+            text = text + "(土曜・休業中ダイヤ)"
+        default:
+            text = text + "(休日ダイヤ)"
+        }
+        navigationBar.title = text
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
