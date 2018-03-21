@@ -507,7 +507,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="55" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tDX-no-I9u">
-                                <rect key="frame" x="0.0" y="140" width="320" height="379"/>
+                                <rect key="frame" x="0.0" y="108" width="320" height="411"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="dataSource" destination="Zdm-0J-xPl" id="X2b-Mb-jie"/>
@@ -525,13 +525,6 @@
                                     <action selector="selectorValueChanged:" destination="Zdm-0J-xPl" eventType="valueChanged" id="QZu-Gi-0JU"/>
                                 </connections>
                             </segmentedControl>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g0O-Gl-cJu">
-                                <rect key="frame" x="16" y="113" width="48" height="24"/>
-                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -541,22 +534,19 @@
                             <constraint firstItem="Xje-gF-pMT" firstAttribute="top" secondItem="wWL-bi-ABh" secondAttribute="bottom" constant="8" symbolic="YES" id="F4F-JH-4tQ"/>
                             <constraint firstItem="Xje-gF-pMT" firstAttribute="centerX" secondItem="tDX-no-I9u" secondAttribute="centerX" id="HlH-L6-fvi"/>
                             <constraint firstItem="tDX-no-I9u" firstAttribute="leading" secondItem="amg-ba-GSc" secondAttribute="leading" id="UYR-dr-7of"/>
-                            <constraint firstItem="tDX-no-I9u" firstAttribute="top" secondItem="g0O-Gl-cJu" secondAttribute="bottom" constant="3" id="W8c-TK-C96"/>
-                            <constraint firstItem="g0O-Gl-cJu" firstAttribute="top" secondItem="Xje-gF-pMT" secondAttribute="bottom" constant="13" id="odh-2j-J5Y"/>
-                            <constraint firstItem="Xje-gF-pMT" firstAttribute="leading" secondItem="g0O-Gl-cJu" secondAttribute="leading" id="vdI-Jt-HpZ"/>
+                            <constraint firstItem="tDX-no-I9u" firstAttribute="top" secondItem="Xje-gF-pMT" secondAttribute="bottom" constant="8" symbolic="YES" id="m7h-WW-AOI"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="TimeTable" id="5Hg-nf-lRj"/>
                     <connections>
                         <outlet property="navigationBar" destination="5Hg-nf-lRj" id="KeF-1P-b4z"/>
-                        <outlet property="nowTime" destination="g0O-Gl-cJu" id="N5s-SS-KeB"/>
                         <outlet property="selector" destination="Xje-gF-pMT" id="Wmq-cu-Ghu"/>
                         <outlet property="timetable" destination="tDX-no-I9u" id="jAv-m9-rsP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rC7-3i-ac4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-170.40000000000001" y="-188.45577211394306"/>
+            <point key="canvasLocation" x="-170.625" y="-189.08450704225353"/>
         </scene>
     </scenes>
     <resources>

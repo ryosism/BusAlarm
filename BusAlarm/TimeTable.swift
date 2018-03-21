@@ -12,7 +12,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     @IBOutlet weak var timetable: UITableView!
     @IBOutlet weak var selector: UISegmentedControl!
-    @IBOutlet weak var nowTime: UILabel!
     @IBOutlet weak var navigationBar: UINavigationItem!
     
     let delegate = UIApplication.shared.delegate as! AppDelegate
@@ -42,23 +41,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
         
         Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(ViewController.update), userInfo: nil, repeats: true)
-        
-// -----現在の時間を表示するラベル---------------------
-        print("return",delegate.rowofRidableBusTableNumber(delegate.table))
-        nowTime.font = UIFont(name: "Arial", size: 21)
-
-        switch delegate.getday("E") {
-        case "月","火","水","木","金":
-            nowTime.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
-            nowTime.text = "本日は平日ダイヤです"
-        case "土","休業中":
-            nowTime.backgroundColor = #colorLiteral(red: 0.4903988242, green: 0.8657205701, blue: 1, alpha: 1)
-            nowTime.text = "本日は土曜・休業中ダイヤです"
-        default:
-            nowTime.backgroundColor = #colorLiteral(red: 1, green: 0.7692273855, blue: 0.8850077987, alpha: 1)
-            nowTime.text = "本日は休日ダイヤです"
-// -----現在の時間を表示するラベル---------------------
-        }
     }
     
     func update(){
