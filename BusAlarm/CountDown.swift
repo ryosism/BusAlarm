@@ -65,7 +65,7 @@ class CountDown: UIViewController{
                 timeLabel.text = "中部大学発 ,\(depertureTime)発車"
             }
             // ----------------------------------------------------
-            let now = delegate.getnow()
+            let now = delegate.getnow("HH:mm:ss")
             //フォーマットの指定
             let formatter = DateFormatter()
             formatter.locale = NSLocale(localeIdentifier:"en_US") as Locale!

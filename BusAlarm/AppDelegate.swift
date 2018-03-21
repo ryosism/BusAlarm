@@ -67,11 +67,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return formatter.string(from: date as Date)
     }
 //    MARK: - 今の時間をNSDate形式で返す
-    func getnow() -> NSDate{
+    func getnow(_ format:String) -> NSDate{
          //フォーマットの指定
         let formatter = DateFormatter()
         formatter.locale = NSLocale(localeIdentifier:"en_US") as Locale!
-        formatter.dateFormat = "HH:mm:ss"
+        formatter.dateFormat = format
         formatter.timeZone = NSTimeZone(name:"GMT")! as TimeZone
         
         //現在時刻、TYOで取得
@@ -90,7 +90,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         formatter.dateFormat = "HH:mm"
         formatter.timeZone = NSTimeZone(name:"GMT")! as TimeZone
         
-        let now:NSDate = getnow()
+        let now:NSDate = getnow("HH:mm:ss")
         for (row, time) in table.enumerated(){ //emunerated()はfor文と同時に通し番号を発行する、今回の配列番号を返す関数にぴったり
             
             if time.contains(":"){
