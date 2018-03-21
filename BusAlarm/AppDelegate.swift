@@ -39,6 +39,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             filename = "holiday"
         }
         
+        // ここからさらにカレンダーに準拠した例外の日付でfilenameを変更させたい
+        // 今年度のバスカレンダーはよ
+        
         let path = Bundle.main.path(forResource: filename, ofType: "json")
         do{
             let jsonStr = try String(contentsOfFile: path!)
