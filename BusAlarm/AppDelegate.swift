@@ -40,7 +40,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         
         // ここからさらにカレンダーに準拠した例外の日付でfilenameを変更させたい
-        // 今年度のバスカレンダーはよ
+        let what_date:NSDate = getnow("MM/dd")
+        formatter.dateFormat = "MM/dd"
+        let param = formatter.date(from: "10/03")
+        print("param",param!)
+        
+        print("what_date",what_date)
+        
+        // ----------------------------------
         
         let path = Bundle.main.path(forResource: filename, ofType: "json")
         do{
