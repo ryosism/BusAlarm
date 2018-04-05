@@ -25,6 +25,7 @@
 		2002391A1F03645500C7771D /* nextButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 207153821EDA7B1F00005070 /* nextButton.png */; };
 		2002391B1F03645500C7771D /* prevButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 207153831EDA7B1F00005070 /* prevButton.png */; };
 		20112E921ED34A3600157CC3 /* satuaday.json in Resources */ = {isa = PBXBuildFile; fileRef = 20112E911ED34A3600157CC3 /* satuaday.json */; };
+		201DF39220747410003ED179 /* exceptionDate.json in Resources */ = {isa = PBXBuildFile; fileRef = 201DF39120747410003ED179 /* exceptionDate.json */; };
 		2071537D1EDA677700005070 /* holiday.json in Resources */ = {isa = PBXBuildFile; fileRef = 2071537C1EDA677700005070 /* holiday.json */; };
 		207153841EDA7B1F00005070 /* nextButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 207153821EDA7B1F00005070 /* nextButton.png */; };
 		207153851EDA7B1F00005070 /* prevButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 207153831EDA7B1F00005070 /* prevButton.png */; };
@@ -118,6 +119,7 @@
 		200239071F0362E800C7771D /* blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blue.png; sourceTree = "<group>"; };
 		200239081F0362E800C7771D /* blue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blue@2x.png"; sourceTree = "<group>"; };
 		20112E911ED34A3600157CC3 /* satuaday.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = satuaday.json; sourceTree = "<group>"; };
+		201DF39120747410003ED179 /* exceptionDate.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = exceptionDate.json; sourceTree = "<group>"; };
 		2071537C1EDA677700005070 /* holiday.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = holiday.json; sourceTree = "<group>"; };
 		207153821EDA7B1F00005070 /* nextButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nextButton.png; sourceTree = "<group>"; };
 		207153831EDA7B1F00005070 /* prevButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = prevButton.png; sourceTree = "<group>"; };
@@ -297,6 +299,7 @@
 			children = (
 				2085D9771EEABA80008D7AB6 /* BusAlarm.entitlements */,
 				20E64EE91F017AED0080DB0C /* AppDelegate.swift */,
+				201DF39120747410003ED179 /* exceptionDate.json */,
 				20E64EEA1F017AED0080DB0C /* CountDown.swift */,
 				20E64EEB1F017AED0080DB0C /* DepertureChanger.swift */,
 				20E64EEC1F017AED0080DB0C /* Settings.swift */,
@@ -536,6 +539,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				201DF39220747410003ED179 /* exceptionDate.json in Resources */,
 				2085D96A1EE9B8F8008D7AB6 /* school@2x.png in Resources */,
 				200239061F0362DE00C7771D /* red@2x.png in Resources */,
 				20F628671ED08472003879C7 /* LaunchScreen.storyboard in Resources */,

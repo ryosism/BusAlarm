@@ -19,6 +19,62 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var changeTime:String = "12:00"
     var filename:String = ""
     
+//    MARK: - exceptionDate.jsonを使って普段とは違う曜日のダイヤに切り替える
+    final func exceptionDateChecker(_ today:NSDate) -> String{
+        let now = getnow("MM/dd") //今日の日付
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MM/dd"
+        formatter.locale = NSLocale(localeIdentifier:"ja_JP") as Locale!
+
+        let path = Bundle.main.path(forResource: "exceptionDate", ofType: "json")
+        do{
+            let jsonStr = try String(contentsOfFile: path!)
+            let json = JSON.init(parseJSON: jsonStr)
+            
+            for date in json["holiday"] {
+                let jsonDate = date.1.rawString()!
+                var exceptionDate = formatter.date(from: jsonDate)! as NSDate//jsonからの日付
+                exceptionDate = (NSDate(timeInterval: 60*60*9, since: exceptionDate as Date))
+                
+                if exceptionDate == now{
+                    return "holiday"
+                }
+            }
+            for date in json["satuaday"] {
+                let jsonDate = date.1.rawString()!
+                var exceptionDate = formatter.date(from: jsonDate)! as NSDate//jsonからの日付
+                exceptionDate = (NSDate(timeInterval: 60*60*9, since: exceptionDate as Date))
+                
+                if exceptionDate == now{
+                    return "satuaday"
+                }
+            }
+            for date in json["rinzi"] {
+                let jsonDate = date.1.rawString()!
+                var exceptionDate = formatter.date(from: jsonDate)! as NSDate//jsonからの日付
+                exceptionDate = (NSDate(timeInterval: 60*60*9, since: exceptionDate as Date))
+                
+                if exceptionDate == now{
+                    // 臨時を知らせるポップアップが欲しいかも
+                    return filename
+                }
+            }
+            for date in json["closed"] {
+                let jsonDate = date.1.rawString()!
+                var exceptionDate = formatter.date(from: jsonDate)! as NSDate//jsonからの日付
+                exceptionDate = (NSDate(timeInterval: 60*60*9, since: exceptionDate as Date))
+                
+                if exceptionDate == now{
+                    // バスなしを知らせるポップアップが欲しいかも
+                    return filename
+                }
+            }
+        } catch{
+            return filename
+        }
+        return filename
+    }
+    
 //    MARK: - 曜日判定をしてjsonを読み込む、１次元配列にしてTimeTable.swiftで活用
     func loadJson(_ which_destination:String) -> [String] {
         
@@ -39,20 +95,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             filename = "holiday"
         }
         
-        // ここからさらにカレンダーに準拠した例外の日付でfilenameを変更させたい
+        // さらにカレンダーに準拠した例外の日付でfilenameを変更!
         let what_date:NSDate = getnow("MM/dd")
         formatter.dateFormat = "MM/dd"
-        let param = formatter.date(from: "10/03")
-        print("param",param!)
-        
-        print("what_date",what_date)
-        
+        filename = exceptionDateChecker(what_date)
+        print("filename = ",filename)
         // ----------------------------------
         
         let path = Bundle.main.path(forResource: filename, ofType: "json")
         do{
             let jsonStr = try String(contentsOfFile: path!)
-            let json =  JSON.parse(jsonStr)
+            let json =  JSON.init(parseJSON: jsonStr)
             
             switch which_destination {
             case "from_jinryo":

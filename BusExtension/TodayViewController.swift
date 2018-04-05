@@ -206,7 +206,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         let path = Bundle.main.path(forResource: filename, ofType: "json")
         do{
             let jsonStr = try String(contentsOfFile: path!)
-            let json =  JSON.parse(jsonStr)
+            let json =  JSON.init(parseJSON: jsonStr)
             
             switch which_destination {
             case "from_jinryo":
