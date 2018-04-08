@@ -68,7 +68,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
                 depertureLabel.text = "中部大学発 発車まで"
             }
 
-            let now = tTF.getnow("HH:mm:ss", true)
+            let now = tTF.getnow("HH:mm:ss", isString: false)
             //フォーマットの指定
             let formatter = DateFormatter()
             formatter.locale = NSLocale(localeIdentifier:"en_US") as Locale!
@@ -231,7 +231,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         formatter.dateFormat = "HH:mm"
         formatter.timeZone = NSTimeZone(name:"GMT")! as TimeZone
         
-        let now:NSDate = tTF.getnow("HH:mm:ss", true) as! NSDate
+        let now:NSDate = tTF.getnow("HH:mm:ss", isString: false) as! NSDate
         for (row, time) in table.enumerated(){ //emunerated()はfor文と同時に通し番号を発行する、今回の配列番号を返す関数にぴったり
             
             if time.contains(":"){

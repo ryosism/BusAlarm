@@ -9,7 +9,7 @@
 import UIKit
 
 class timeToolsFunctions{
-    func getnow(_ format:String, _ isString:Bool) -> Any{
+    func getnow(_ format:String, isString:Bool) -> Any{
 //            typeで返す型を決める
 //            0:NSDate
 //            1:String
