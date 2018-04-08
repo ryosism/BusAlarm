@@ -65,7 +65,8 @@ class CountDown: UIViewController{
                 timeLabel.text = "中部大学発 ,\(depertureTime)発車"
             }
             // ----------------------------------------------------
-            let now = delegate.getnow("HH:mm:ss")
+            let tTF = timeToolsFunctions.init()
+            let now = tTF.getnow("HH:mm:ss", false)
             //フォーマットの指定
             let formatter = DateFormatter()
             formatter.locale = NSLocale(localeIdentifier:"en_US") as Locale!
@@ -73,7 +74,7 @@ class CountDown: UIViewController{
             formatter.timeZone = NSTimeZone(name:"GMT")! as TimeZone
             let gettime:NSDate = formatter.date(from: depertureTime)! as NSDate
             
-            let span:Int = Int(gettime.timeIntervalSince(now as Date))
+            let span:Int = Int(gettime.timeIntervalSince(now as! Date))
             let hour:Int = Int(floor(Double(span/3600)))
             let minute:Int = (span-hour*3600)/60
             let second:Int = span-(hour*3600)-(minute*60)

@@ -26,6 +26,7 @@
 		2002391B1F03645500C7771D /* prevButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 207153831EDA7B1F00005070 /* prevButton.png */; };
 		20112E921ED34A3600157CC3 /* satuaday.json in Resources */ = {isa = PBXBuildFile; fileRef = 20112E911ED34A3600157CC3 /* satuaday.json */; };
 		201DF39220747410003ED179 /* exceptionDate.json in Resources */ = {isa = PBXBuildFile; fileRef = 201DF39120747410003ED179 /* exceptionDate.json */; };
+		20268043207A621300F6C474 /* timeToolsFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AD058A207A28CD0032F929 /* timeToolsFunctions.swift */; };
 		2071537D1EDA677700005070 /* holiday.json in Resources */ = {isa = PBXBuildFile; fileRef = 2071537C1EDA677700005070 /* holiday.json */; };
 		207153841EDA7B1F00005070 /* nextButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 207153821EDA7B1F00005070 /* nextButton.png */; };
 		207153851EDA7B1F00005070 /* prevButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 207153831EDA7B1F00005070 /* prevButton.png */; };
@@ -40,6 +41,7 @@
 		208C58201EEABEA400AFAADF /* bluebus.png in Resources */ = {isa = PBXBuildFile; fileRef = 208C581F1EEABEA400AFAADF /* bluebus.png */; };
 		208C58221EEABEAB00AFAADF /* redbus.png in Resources */ = {isa = PBXBuildFile; fileRef = 208C58211EEABEAB00AFAADF /* redbus.png */; };
 		208C58241EEABEBE00AFAADF /* school.png in Resources */ = {isa = PBXBuildFile; fileRef = 208C58231EEABEBE00AFAADF /* school.png */; };
+		20AD058B207A28CE0032F929 /* timeToolsFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AD058A207A28CD0032F929 /* timeToolsFunctions.swift */; };
 		20DA18331EDB4C6800EDD315 /* setting@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20DA18311EDB4C6800EDD315 /* setting@2x.png */; };
 		20DA18341EDB4C6800EDD315 /* timer@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20DA18321EDB4C6800EDD315 /* timer@2x.png */; };
 		20DA18361EDB4CF400EDD315 /* bus@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20DA18351EDB4CF400EDD315 /* bus@2x.png */; };
@@ -137,6 +139,7 @@
 		208C581F1EEABEA400AFAADF /* bluebus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bluebus.png; sourceTree = "<group>"; };
 		208C58211EEABEAB00AFAADF /* redbus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redbus.png; sourceTree = "<group>"; };
 		208C58231EEABEBE00AFAADF /* school.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = school.png; sourceTree = "<group>"; };
+		20AD058A207A28CD0032F929 /* timeToolsFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timeToolsFunctions.swift; sourceTree = "<group>"; };
 		20DA18311EDB4C6800EDD315 /* setting@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "setting@2x.png"; sourceTree = "<group>"; };
 		20DA18321EDB4C6800EDD315 /* timer@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "timer@2x.png"; sourceTree = "<group>"; };
 		20DA18351EDB4CF400EDD315 /* bus@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bus@2x.png"; sourceTree = "<group>"; };
@@ -299,6 +302,7 @@
 			children = (
 				2085D9771EEABA80008D7AB6 /* BusAlarm.entitlements */,
 				20E64EE91F017AED0080DB0C /* AppDelegate.swift */,
+				20AD058A207A28CD0032F929 /* timeToolsFunctions.swift */,
 				201DF39120747410003ED179 /* exceptionDate.json */,
 				20E64EEA1F017AED0080DB0C /* CountDown.swift */,
 				20E64EEB1F017AED0080DB0C /* DepertureChanger.swift */,
@@ -756,6 +760,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20268043207A621300F6C474 /* timeToolsFunctions.swift in Sources */,
 				20E64EE71F017A7C0080DB0C /* TodayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -768,6 +773,7 @@
 				9D0AB2851F10674300944250 /* PurcherAction.swift in Sources */,
 				20E64EF21F017AED0080DB0C /* TimeTable.swift in Sources */,
 				20F473271F0F9E3E006300F3 /* PurcherViewController.swift in Sources */,
+				20AD058B207A28CE0032F929 /* timeToolsFunctions.swift in Sources */,
 				20E64EF01F017AED0080DB0C /* DepertureChanger.swift in Sources */,
 				20E64EF11F017AED0080DB0C /* Settings.swift in Sources */,
 				20E64EEF1F017AED0080DB0C /* CountDown.swift in Sources */,

@@ -21,7 +21,6 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     @IBOutlet weak var icon4: UIImageView!
     @IBOutlet weak var icon5: UIImageView!
     
-    
     var destination:String = "from_jinryo"
     let ud:UserDefaults = UserDefaults.init(suiteName: "group.ryosism.busalarm")!
     let formatter = DateFormatter()
@@ -258,7 +257,8 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         formatter.dateFormat = "HH:mm"
         formatter.timeZone = NSTimeZone(name:"GMT")! as TimeZone
         
-        let now:NSDate = getnow("HH:mm:ss")
+        let tTF = timeToolsFunctions.init()
+        let now:NSDate = tTF.getnow("HH:mm:ss", true) as! NSDate
         for (row, time) in table.enumerated(){ //emunerated()はfor文と同時に通し番号を発行する、今回の配列番号を返す関数にぴったり
             
             if time.contains(":"){
