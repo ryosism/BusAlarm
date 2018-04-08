@@ -15,6 +15,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet weak var navigationBar: UINavigationItem!
     
     let delegate = UIApplication.shared.delegate as! AppDelegate
+    let busTools = BusTools.init()
+    let tTF = timeToolsFunctions.init()
     
     override func viewWillAppear(_ animated: Bool) {
 //        この１文でテーブルビューセルのIDがなくてクラッシュする問題を解消できる
@@ -32,9 +34,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        delegate.table = delegate.loadJson(delegate.destination)
+        delegate.table = busTools.loadJson(delegate.destination)
 
-        let scrollIndexpath:IndexPath = IndexPath.init(row: delegate.rowofRidableBusTableNumber(delegate.table), section: 0) as IndexPath
+        let scrollIndexpath:IndexPath = IndexPath.init(row: busTools.rowofRidableBusTableNumber(delegate.table), section: 0) as IndexPath
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
             // 0.5秒後に実行したい処理
             self.timetable.scrollToRow(at: scrollIndexpath as IndexPath, at: .top, animated: true)
@@ -65,15 +67,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         switch selector.selectedSegmentIndex {
         case 0:
             delegate.destination = "from_jinryo"
-            delegate.table = delegate.loadJson("from_jinryo")
+            delegate.table = busTools.loadJson("from_jinryo")
             timetable.reloadData()
         default:
             delegate.destination = "from_school"
-            delegate.table = delegate.loadJson("from_school")
+            delegate.table = busTools.loadJson("from_school")
             timetable.reloadData()
         }
 // -----一番近い時間にスクロールする-------------------------
-        let scrollIndexpath:IndexPath = IndexPath.init(row: delegate.rowofRidableBusTableNumber(delegate.table), section: 0) as IndexPath
+        let scrollIndexpath:IndexPath = IndexPath.init(row: busTools.rowofRidableBusTableNumber(delegate.table), section: 0) as IndexPath
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
             // 0.5秒後に実行したい処理
@@ -90,7 +92,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             text = "中部大学発"
         }
         
-        switch delegate.getday("E") {
+        switch tTF.getnow("E", isString: true) as! String {
         case "月","火","水","木","金":
             text = text + "(平日ダイヤ)"
         case "土","休業中":

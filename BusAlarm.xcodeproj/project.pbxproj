@@ -27,6 +27,8 @@
 		20112E921ED34A3600157CC3 /* satuaday.json in Resources */ = {isa = PBXBuildFile; fileRef = 20112E911ED34A3600157CC3 /* satuaday.json */; };
 		201DF39220747410003ED179 /* exceptionDate.json in Resources */ = {isa = PBXBuildFile; fileRef = 201DF39120747410003ED179 /* exceptionDate.json */; };
 		20268043207A621300F6C474 /* timeToolsFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AD058A207A28CD0032F929 /* timeToolsFunctions.swift */; };
+		20268046207A67EF00F6C474 /* BusTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20268045207A67EF00F6C474 /* BusTools.swift */; };
+		20268047207A6B9100F6C474 /* BusTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20268045207A67EF00F6C474 /* BusTools.swift */; };
 		2071537D1EDA677700005070 /* holiday.json in Resources */ = {isa = PBXBuildFile; fileRef = 2071537C1EDA677700005070 /* holiday.json */; };
 		207153841EDA7B1F00005070 /* nextButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 207153821EDA7B1F00005070 /* nextButton.png */; };
 		207153851EDA7B1F00005070 /* prevButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 207153831EDA7B1F00005070 /* prevButton.png */; };
@@ -122,6 +124,7 @@
 		200239081F0362E800C7771D /* blue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blue@2x.png"; sourceTree = "<group>"; };
 		20112E911ED34A3600157CC3 /* satuaday.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = satuaday.json; sourceTree = "<group>"; };
 		201DF39120747410003ED179 /* exceptionDate.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = exceptionDate.json; sourceTree = "<group>"; };
+		20268045207A67EF00F6C474 /* BusTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusTools.swift; sourceTree = "<group>"; };
 		2071537C1EDA677700005070 /* holiday.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = holiday.json; sourceTree = "<group>"; };
 		207153821EDA7B1F00005070 /* nextButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nextButton.png; sourceTree = "<group>"; };
 		207153831EDA7B1F00005070 /* prevButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = prevButton.png; sourceTree = "<group>"; };
@@ -302,6 +305,7 @@
 			children = (
 				2085D9771EEABA80008D7AB6 /* BusAlarm.entitlements */,
 				20E64EE91F017AED0080DB0C /* AppDelegate.swift */,
+				20268045207A67EF00F6C474 /* BusTools.swift */,
 				20AD058A207A28CD0032F929 /* timeToolsFunctions.swift */,
 				201DF39120747410003ED179 /* exceptionDate.json */,
 				20E64EEA1F017AED0080DB0C /* CountDown.swift */,
@@ -760,6 +764,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20268047207A6B9100F6C474 /* BusTools.swift in Sources */,
 				20268043207A621300F6C474 /* timeToolsFunctions.swift in Sources */,
 				20E64EE71F017A7C0080DB0C /* TodayViewController.swift in Sources */,
 			);
@@ -774,6 +779,7 @@
 				20E64EF21F017AED0080DB0C /* TimeTable.swift in Sources */,
 				20F473271F0F9E3E006300F3 /* PurcherViewController.swift in Sources */,
 				20AD058B207A28CE0032F929 /* timeToolsFunctions.swift in Sources */,
+				20268046207A67EF00F6C474 /* BusTools.swift in Sources */,
 				20E64EF01F017AED0080DB0C /* DepertureChanger.swift in Sources */,
 				20E64EF11F017AED0080DB0C /* Settings.swift in Sources */,
 				20E64EEF1F017AED0080DB0C /* CountDown.swift in Sources */,

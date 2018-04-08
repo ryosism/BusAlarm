@@ -27,12 +27,12 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     var changeTime:NSDate = NSDate(timeIntervalSinceReferenceDate: 43200)
     
     let tTF = timeToolsFunctions.init()
+    let busTools = BusTools.init()
     
     override func viewWillAppear(_ animated: Bool) {
         
         let table:[String] = ud.object(forKey: "loadJson") as! [String]
         let index:Int = ud.integer(forKey: "rowof")
-        print("index",index)
         
         formatter.locale = NSLocale(localeIdentifier:"en_US") as Locale!
         formatter.dateFormat = "HH:mm"
@@ -182,46 +182,6 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     func update(){
         viewWillAppear(true)
     }
-    
-    //    MARK: - 曜日判定をしてjsonを読み込む、１次元配列にしてTimeTable.swiftで活用
-    func loadJson(_ which_destination:String) -> [String] {
-        
-        var filename:String = ""
-        let date = NSDate()
-        let formatter = DateFormatter()
-        
-        //ロケールを設定する。
-        formatter.locale = NSLocale(localeIdentifier:"ja_JP") as Locale!
-        //フォーマットを設定する。
-        formatter.dateFormat = "E" //指定フォーマットだけど曜日だけしか指定しない
-        let what_day:String = formatter.string(from: date as Date) //曜日が漢字１文字で入る
-        switch what_day {
-        case "月","火","水","木","金":
-            filename = "weekday"
-        case "土","休業中":
-            filename = "satuaday"
-        default:
-            filename = "holiday"
-        }
-        
-        let path = Bundle.main.path(forResource: filename, ofType: "json")
-        do{
-            let jsonStr = try String(contentsOfFile: path!)
-            let json =  JSON.init(parseJSON: jsonStr)
-            
-            switch which_destination {
-            case "from_jinryo":
-                print("loadJson",json["from_jinryo"].arrayValue.map({$0.stringValue}))
-                return json["from_jinryo"].arrayValue.map({$0.stringValue})
-            default:
-                print("loadJson",json["from_school"].arrayValue.map({$0.stringValue}))
-                return json["from_school"].arrayValue.map({$0.stringValue})
-            }
-            
-        } catch{
-            return ["nil"]
-        }
-    }
     // MARK: - 次に乗れるバスの配列番号を返す
     func rowofRidableBusTableNumber(_ table:[String]) -> Int{
         
@@ -263,8 +223,8 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         // If there's an update, use NCUpdateResult.NewData
         
         let ud:UserDefaults = UserDefaults.init(suiteName: "group.ryosism.busalarm")!
-        ud.set(loadJson(destination), forKey: "loadJson")
-        ud.set(rowofRidableBusTableNumber(ud.object(forKey: "loadJson") as! [String]), forKey: "rowof")
+        ud.set(busTools.loadJson(destination), forKey: "loadJson")
+        ud.set(busTools.rowofRidableBusTableNumber(ud.object(forKey: "loadJson") as! [String]), forKey: "rowof")
         
         completionHandler(NCUpdateResult.newData)
     }

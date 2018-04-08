@@ -25,23 +25,26 @@ class CountDown: UIViewController{
 //    ボタン定義------------------------
     
     let delegate = UIApplication.shared.delegate as! AppDelegate
+    let busTools = BusTools.init()
+    let tTF = timeToolsFunctions.init()
     var nextPrevCount:Int = 0
     
     override func viewWillAppear(_ animated: Bool) {
         
-        let table:[String] = delegate.loadJson(delegate.destination)
+        let table:[String] = busTools.loadJson(delegate.destination)
+        
         switch delegate.filename {
         case "weekday":
-            dateLabel.text = delegate.getday("M月dd日(E) 平日ダイヤ")
+            dateLabel.text = tTF.getnow("M月dd日(E) 平日ダイヤ", isString: true) as? String
         case "satuaday":
-            dateLabel.text = delegate.getday("M月dd日(E) 土曜・休業中ダイヤ")
+            dateLabel.text = tTF.getnow("M月dd日(E) 土曜・休業中ダイヤ", isString: true) as? String
         case "holiday":
-            dateLabel.text = delegate.getday("M月dd日(E) 休日ダイヤ")
+            dateLabel.text = tTF.getnow("M月dd日(E) 休日ダイヤ", isString: true) as? String
         default:
-            dateLabel.text = delegate.getday("M月dd日(E)")
+            dateLabel.text = tTF.getnow("M月dd日(E)", isString: true) as? String
         }
         
-        let index:Int = delegate.rowofRidableBusTableNumber(table) + nextPrevCount
+        let index:Int = busTools.rowofRidableBusTableNumber(table) + nextPrevCount
         print("index",index)
         print("table.cont",table.count)
         if index == 0{
@@ -66,7 +69,7 @@ class CountDown: UIViewController{
             }
             // ----------------------------------------------------
             let tTF = timeToolsFunctions.init()
-            let now = tTF.getnow("HH:mm:ss", false)
+            let now = tTF.getnow("HH:mm:ss", isString: false)
             //フォーマットの指定
             let formatter = DateFormatter()
             formatter.locale = NSLocale(localeIdentifier:"en_US") as Locale!
