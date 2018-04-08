@@ -10,9 +10,9 @@ import UIKit
 
 class timeToolsFunctions{
     func getnow(_ format:String, isString:Bool) -> Any{
-//            typeで返す型を決める
-//            0:NSDate
-//            1:String
+//        isStringで返す型を決める
+//        true  : String
+//        false : NSDate
         
         let date = NSDate()
         let formatter = DateFormatter()
