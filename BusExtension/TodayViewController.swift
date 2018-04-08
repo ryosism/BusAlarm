@@ -26,6 +26,8 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     let formatter = DateFormatter()
     var changeTime:NSDate = NSDate(timeIntervalSinceReferenceDate: 43200)
     
+    let tTF = timeToolsFunctions.init()
+    
     override func viewWillAppear(_ animated: Bool) {
         
         let table:[String] = ud.object(forKey: "loadJson") as! [String]
@@ -66,7 +68,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
                 depertureLabel.text = "中部大学発 発車まで"
             }
 
-            let now = getnow("HH:mm:ss")
+            let now = tTF.getnow("HH:mm:ss", true)
             //フォーマットの指定
             let formatter = DateFormatter()
             formatter.locale = NSLocale(localeIdentifier:"en_US") as Locale!
@@ -74,7 +76,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
             formatter.timeZone = NSTimeZone(name:"GMT")! as TimeZone
             let gettime:NSDate = formatter.date(from: depertureTime)! as NSDate
             
-            let span:Int = Int(gettime.timeIntervalSince(now as Date))
+            let span:Int = Int(gettime.timeIntervalSince(now as! Date))
             let hour:Int = Int(floor(Double(span/3600)))
             let minute:Int = (span-hour*3600)/60
             let second:Int = span-(hour*3600)-(minute*60)
@@ -220,34 +222,6 @@ class TodayViewController: UIViewController, NCWidgetProviding {
             return ["nil"]
         }
     }
-    
-    //    MARK: - 今の時間を指定フォーマットにしてString型で返す
-    func getday(_ format:String) -> String!{
-        let date = NSDate()
-        let formatter = DateFormatter()
-        
-        //ロケールを設定する。
-        formatter.locale = NSLocale(localeIdentifier:"ja_JP") as Locale!
-        //フォーマットを設定する。
-        formatter.dateFormat = format //指定フォーマット
-        return formatter.string(from: date as Date)
-    }
-    //    MARK: - 今の時間をNSDate形式で返す
-    func getnow(_ format:String) -> NSDate{
-        //フォーマットの指定
-        let formatter = DateFormatter()
-        formatter.locale = NSLocale(localeIdentifier:"en_US") as Locale!
-        formatter.dateFormat = "HH:mm:ss"
-        formatter.timeZone = NSTimeZone(name:"GMT")! as TimeZone
-        
-        //現在時刻、TYOで取得
-        let current:NSDate = (NSDate(timeInterval: 60*60*9, since: NSDate() as Date))
-        let currentString:String = formatter.string(from: current as Date)
-        let now:NSDate = formatter.date(from: currentString)! as NSDate
-        
-        return now as NSDate
-    }
-    
     // MARK: - 次に乗れるバスの配列番号を返す
     func rowofRidableBusTableNumber(_ table:[String]) -> Int{
         
@@ -257,7 +231,6 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         formatter.dateFormat = "HH:mm"
         formatter.timeZone = NSTimeZone(name:"GMT")! as TimeZone
         
-        let tTF = timeToolsFunctions.init()
         let now:NSDate = tTF.getnow("HH:mm:ss", true) as! NSDate
         for (row, time) in table.enumerated(){ //emunerated()はfor文と同時に通し番号を発行する、今回の配列番号を返す関数にぴったり
             
