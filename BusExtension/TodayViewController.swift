@@ -182,33 +182,6 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     func update(){
         viewWillAppear(true)
     }
-    // MARK: - 次に乗れるバスの配列番号を返す
-    func rowofRidableBusTableNumber(_ table:[String]) -> Int{
-        
-        //フォーマットの指定
-        let formatter = DateFormatter()
-        formatter.locale = NSLocale(localeIdentifier:"en_US") as Locale!
-        formatter.dateFormat = "HH:mm"
-        formatter.timeZone = NSTimeZone(name:"GMT")! as TimeZone
-        
-        let now:NSDate = tTF.getnow("HH:mm:ss", isString: false) as! NSDate
-        for (row, time) in table.enumerated(){ //emunerated()はfor文と同時に通し番号を発行する、今回の配列番号を返す関数にぴったり
-            
-            if time.contains(":"){
-                let gettime:NSDate = formatter.date(from: time)! as NSDate
-                print("row",row,"now",now,"gettime",gettime)
-                let compare:ComparisonResult = now.compare(gettime as Date)
-                if compare == .orderedAscending{
-                    
-                    if row != 0 && table[row-1].contains("約"){
-                        return row-1
-                    }
-                    return row
-                }
-            }
-        }
-        return table.count-1
-    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
