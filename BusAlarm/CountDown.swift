@@ -83,25 +83,28 @@ class CountDown: UIViewController{
             let second:Int = span-(hour*3600)-(minute*60)
             
             print("span",span)
-            発車まで残り.text = "発車まで残り"
             発車まで残り.font = UIFont.boldSystemFont(ofSize: 25)
 
             countDownLabel.isHidden = false
             
             switch span {
             case 3600...2560000:
+                発車まで残り.text = "発車まで残り"
                 countDownLabel.text = "\(hour)時間 \(minute)分 \(second)秒後"
                 countDownLabel.font = UIFont.boldSystemFont(ofSize: 32)
                 countDownLabel.textColor = UIColor.black
             case 0...3599:
+                発車まで残り.text = "発車まで残り"
                 countDownLabel.text = "\(minute)分 \(second)秒後"
                 countDownLabel.font = UIFont.boldSystemFont(ofSize: 40)
                 countDownLabel.textColor = UIColor.black
             case -3599 ... -1:
+                発車まで残り.text = "発車済み"
                 countDownLabel.text = "\(-1*minute)分 \(-1*second)秒前"
                 countDownLabel.font = UIFont.boldSystemFont(ofSize: 40)
                 countDownLabel.textColor = UIColor.gray
             case -2560000 ... -3600:
+                発車まで残り.text = "発車済み"
                 countDownLabel.text = "\(-1*hour)時間 \(-1*minute)分 \(-1*second)秒前"
                 countDownLabel.font = UIFont.boldSystemFont(ofSize: 32)
                 countDownLabel.textColor = UIColor.gray
