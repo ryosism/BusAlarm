@@ -29,6 +29,7 @@
 		20268043207A621300F6C474 /* TimeToolsFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AD058A207A28CD0032F929 /* TimeToolsFunctions.swift */; };
 		20268046207A67EF00F6C474 /* BusTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20268045207A67EF00F6C474 /* BusTools.swift */; };
 		20268047207A6B9100F6C474 /* BusTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20268045207A67EF00F6C474 /* BusTools.swift */; };
+		2026804C207E5FB900F6C474 /* exceptionDate.json in Resources */ = {isa = PBXBuildFile; fileRef = 201DF39120747410003ED179 /* exceptionDate.json */; };
 		2071537D1EDA677700005070 /* holiday.json in Resources */ = {isa = PBXBuildFile; fileRef = 2071537C1EDA677700005070 /* holiday.json */; };
 		207153841EDA7B1F00005070 /* nextButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 207153821EDA7B1F00005070 /* nextButton.png */; };
 		207153851EDA7B1F00005070 /* prevButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 207153831EDA7B1F00005070 /* prevButton.png */; };
@@ -519,6 +520,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2026804C207E5FB900F6C474 /* exceptionDate.json in Resources */,
 				20E64EFB1F02C9520080DB0C /* holiday.json in Resources */,
 				200239121F03644900C7771D /* bluebus@2x.png in Resources */,
 				20E64EF31F029CDB0080DB0C /* train.png in Resources */,
