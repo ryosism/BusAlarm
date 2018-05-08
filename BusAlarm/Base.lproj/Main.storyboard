@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -325,13 +326,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8Uv-kr-CDh">
-                                <rect key="frame" x="0.0" y="72" width="320" height="151"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="160"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="151" id="yk7-fN-rAs"/>
+                                    <constraint firstAttribute="width" secondItem="8Uv-kr-CDh" secondAttribute="height" multiplier="2:1" id="D3q-gF-H4z"/>
                                 </constraints>
                             </imageView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FT7-iv-iMT">
-                                <rect key="frame" x="0.0" y="231" width="320" height="87"/>
+                                <rect key="frame" x="0.0" y="232" width="320" height="87"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="87" id="Ugf-hw-0xb"/>
+                                </constraints>
                                 <connections>
                                     <segue destination="YPs-7D-wi7" kind="embed" id="ZsP-6q-dMP"/>
                                 </connections>
@@ -339,13 +343,13 @@
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="8Uv-kr-CDh" firstAttribute="trailing" secondItem="FT7-iv-iMT" secondAttribute="trailing" id="3es-hF-cLE"/>
-                            <constraint firstItem="8Uv-kr-CDh" firstAttribute="top" secondItem="eVU-rM-7Yg" secondAttribute="bottom" constant="8" symbolic="YES" id="C3h-YS-ppP"/>
-                            <constraint firstItem="8Uv-kr-CDh" firstAttribute="leading" secondItem="Od8-e1-jQp" secondAttribute="leading" id="DFy-fh-BdL"/>
-                            <constraint firstItem="QvV-FJ-sw0" firstAttribute="top" secondItem="FT7-iv-iMT" secondAttribute="bottom" constant="201" id="Scf-2X-H1L"/>
-                            <constraint firstItem="FT7-iv-iMT" firstAttribute="top" secondItem="8Uv-kr-CDh" secondAttribute="bottom" constant="8" symbolic="YES" id="blm-k0-j9z"/>
-                            <constraint firstAttribute="trailing" secondItem="8Uv-kr-CDh" secondAttribute="trailing" id="d0d-cC-Oih"/>
-                            <constraint firstItem="8Uv-kr-CDh" firstAttribute="leading" secondItem="FT7-iv-iMT" secondAttribute="leading" id="qXQ-53-X5m"/>
+                            <constraint firstItem="FT7-iv-iMT" firstAttribute="top" secondItem="8Uv-kr-CDh" secondAttribute="bottom" constant="8" id="4wy-nr-TmZ"/>
+                            <constraint firstAttribute="trailing" secondItem="FT7-iv-iMT" secondAttribute="trailing" id="P0a-Bu-Pfu"/>
+                            <constraint firstItem="8Uv-kr-CDh" firstAttribute="leading" secondItem="Od8-e1-jQp" secondAttribute="leading" id="Xd4-2i-i2x"/>
+                            <constraint firstAttribute="trailing" secondItem="8Uv-kr-CDh" secondAttribute="trailing" id="YJF-td-3fW"/>
+                            <constraint firstItem="FT7-iv-iMT" firstAttribute="top" secondItem="8Uv-kr-CDh" secondAttribute="bottom" constant="8" id="gLR-k4-YEY"/>
+                            <constraint firstItem="8Uv-kr-CDh" firstAttribute="top" secondItem="eVU-rM-7Yg" secondAttribute="bottom" id="tRQ-Bq-iH2"/>
+                            <constraint firstItem="FT7-iv-iMT" firstAttribute="leading" secondItem="Od8-e1-jQp" secondAttribute="leading" id="yIm-Xb-qty"/>
                         </constraints>
                     </view>
                     <connections>
@@ -439,7 +443,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ker-jm-8j6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1297.5" y="2163.9084507042253"/>
+            <point key="canvasLocation" x="1299" y="2135"/>
         </scene>
         <!--設定-->
         <scene sceneID="oA7-dM-R8i">
