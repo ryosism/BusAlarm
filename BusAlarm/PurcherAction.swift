@@ -13,6 +13,7 @@ class PurcherAction: UITableViewController {
     @IBOutlet weak var yen240: UIButton!
     @IBOutlet weak var restoreButton: UIButton!
     
+    let okAction = UIAlertAction(title: "OK", style: .default) { action in }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,9 +34,14 @@ class PurcherAction: UITableViewController {
 
     @IBAction func yen240Pushed(_ sender: Any) {
         print("240yen")
+        let purchaseAlert: UIAlertController = UIAlertController(title: "購入処理が完了しました", message: "ありがとうございます！", preferredStyle: .alert)
+        purchaseAlert.addAction(okAction)
+        present(purchaseAlert, animated: true, completion: nil)
     }
     @IBAction func restoreButtonPushed(_ sender: Any) {
         print("restore")
+        let restoreAlert: UIAlertController = UIAlertController(title: "購入情報を復元しました", message: "ありがとうございます！", preferredStyle: .alert)
+        restoreAlert.addAction(okAction)
+        present(restoreAlert, animated: true, completion: nil)
     }
-
 }
