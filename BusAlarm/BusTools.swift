@@ -12,7 +12,7 @@ import SwiftyJSON
 class BusTools{
     
     var filename:String = ""
-    let tTF = timeToolsFunctions.init()
+    let TTF = TimeToolsFunctions.init()
     
     // MARK: - 次に乗れるバスの配列番号を返す
     func rowofRidableBusTableNumber(_ table:[String]) -> Int{
@@ -22,7 +22,7 @@ class BusTools{
         formatter.dateFormat = "HH:mm"
         formatter.timeZone = NSTimeZone(name:"GMT")! as TimeZone
         
-        let now:NSDate = tTF.getnow("HH:mm:ss", isString: false) as! NSDate
+        let now:NSDate = TTF.getnow("HH:mm:ss", isString: false) as! NSDate
         for (row, time) in table.enumerated(){ //emunerated()はfor文と同時に通し番号を発行する、今回の配列番号を返す関数にぴったり
             
             if time.contains(":"){
@@ -41,7 +41,7 @@ class BusTools{
     
     //    MARK: - exceptionDate.jsonを使って普段とは違う曜日のダイヤに切り替える
     final func exceptionDateChecker(_ today:NSDate) -> String{
-        let now = tTF.getnow("HH:mm:ss", isString: false) as! NSDate
+        let now = TTF.getnow("HH:mm:ss", isString: false) as! NSDate
         let formatter = DateFormatter()
         formatter.dateFormat = "MM/dd"
         formatter.locale = NSLocale(localeIdentifier:"ja_JP") as Locale!
@@ -116,7 +116,7 @@ class BusTools{
         }
         
         // さらにカレンダーに準拠した例外の日付でfilenameを変更!
-        let what_date:NSDate = tTF.getnow("HH:mm:ss", isString: false) as! NSDate
+        let what_date:NSDate = TTF.getnow("HH:mm:ss", isString: false) as! NSDate
         formatter.dateFormat = "MM/dd"
         filename = exceptionDateChecker(what_date)
         // ----------------------------------

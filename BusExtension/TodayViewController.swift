@@ -26,7 +26,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     let formatter = DateFormatter()
     var changeTime:NSDate = NSDate(timeIntervalSinceReferenceDate: 43200)
     
-    let tTF = timeToolsFunctions.init()
+    let TTF = TimeToolsFunctions.init()
     let busTools = BusTools.init()
     
     override func viewWillAppear(_ animated: Bool) {
@@ -68,7 +68,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
                 depertureLabel.text = "中部大学発 発車まで"
             }
 
-            let now = tTF.getnow("HH:mm:ss", isString: false)
+            let now = TTF.getnow("HH:mm:ss", isString: false)
             //フォーマットの指定
             let formatter = DateFormatter()
             formatter.locale = NSLocale(localeIdentifier:"en_US") as Locale!

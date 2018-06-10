@@ -1,5 +1,5 @@
 //
-//  timeToolsFunctions.swift
+//  TimeToolsFunctions.swift
 //  BusAlarm
 //
 //  Created by 祖父江亮 on 2018/04/08.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class timeToolsFunctions{
+class TimeToolsFunctions{
     func getnow(_ format:String, isString:Bool) -> Any{
 //        isStringで返す型を決める
 //        true  : String

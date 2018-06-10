@@ -16,7 +16,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     let delegate = UIApplication.shared.delegate as! AppDelegate
     let busTools = BusTools.init()
-    let tTF = timeToolsFunctions.init()
+    let TTF = TimeToolsFunctions.init()
     
     override func viewWillAppear(_ animated: Bool) {
 //        この１文でテーブルビューセルのIDがなくてクラッシュする問題を解消できる
@@ -92,7 +92,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             text = "中部大学発"
         }
         
-        switch tTF.getnow("E", isString: true) as! String {
+        switch TTF.getnow("E", isString: true) as! String {
         case "月","火","水","木","金":
             text = text + "(平日ダイヤ)"
         case "土","休業中":

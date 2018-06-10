@@ -26,7 +26,7 @@ class CountDown: UIViewController{
     
     let delegate = UIApplication.shared.delegate as! AppDelegate
     let busTools = BusTools.init()
-    let tTF = timeToolsFunctions.init()
+    let TTF = TimeToolsFunctions.init()
     var nextPrevCount:Int = 0
     
     override func viewWillAppear(_ animated: Bool) {
@@ -35,13 +35,13 @@ class CountDown: UIViewController{
         
         switch delegate.filename {
         case "weekday":
-            dateLabel.text = tTF.getnow("M月dd日(E) 平日ダイヤ", isString: true) as? String
+            dateLabel.text = TTF.getnow("M月dd日(E) 平日ダイヤ", isString: true) as? String
         case "satuaday":
-            dateLabel.text = tTF.getnow("M月dd日(E) 土曜・休業中ダイヤ", isString: true) as? String
+            dateLabel.text = TTF.getnow("M月dd日(E) 土曜・休業中ダイヤ", isString: true) as? String
         case "holiday":
-            dateLabel.text = tTF.getnow("M月dd日(E) 休日ダイヤ", isString: true) as? String
+            dateLabel.text = TTF.getnow("M月dd日(E) 休日ダイヤ", isString: true) as? String
         default:
-            dateLabel.text = tTF.getnow("M月dd日(E)", isString: true) as? String
+            dateLabel.text = TTF.getnow("M月dd日(E)", isString: true) as? String
         }
         
         let index:Int = busTools.rowofRidableBusTableNumber(table) + nextPrevCount
@@ -68,8 +68,8 @@ class CountDown: UIViewController{
                 timeLabel.text = "中部大学発 ,\(depertureTime)発車"
             }
             // ----------------------------------------------------
-            let tTF = timeToolsFunctions.init()
-            let now = tTF.getnow("HH:mm:ss", isString: false)
+            let TTF = TimeToolsFunctions.init()
+            let now = TTF.getnow("HH:mm:ss", isString: false)
             //フォーマットの指定
             let formatter = DateFormatter()
             formatter.locale = NSLocale(localeIdentifier:"en_US") as Locale!
