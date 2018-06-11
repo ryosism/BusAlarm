@@ -20,6 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var filename:String = ""
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
         let ud:UserDefaults = UserDefaults.init(suiteName: "group.ryosism.busalarm")!
         ud.set(destination, forKey: "destination")
         
@@ -28,11 +29,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         formatter.dateFormat = "HH:mm"
         formatter.timeZone = NSTimeZone(name:"GMT")! as TimeZone
         
-        //現在時刻、TYOで取得
+        //MARK:- 現在時刻、TYOで取得
         let current:NSDate = (NSDate(timeInterval: 60*60*9, since: NSDate() as Date))
         let currentString:String = formatter.string(from: current as Date)
         let now:NSDate = formatter.date(from: currentString)! as NSDate
-//      ここのchangeTimeはuserDefaultに入ってるデータを使う
+        //ここのchangeTimeはuserDefaultに入ってるデータを使う
         if ud.string(forKey: "changeTime") != nil{
             let changeTime:NSDate = formatter.date(from: ud.string(forKey: "changeTime")!)! as NSDate
             
