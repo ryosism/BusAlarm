@@ -33,6 +33,9 @@
 		2071537D1EDA677700005070 /* holiday.json in Resources */ = {isa = PBXBuildFile; fileRef = 2071537C1EDA677700005070 /* holiday.json */; };
 		207153841EDA7B1F00005070 /* nextButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 207153821EDA7B1F00005070 /* nextButton.png */; };
 		207153851EDA7B1F00005070 /* prevButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 207153831EDA7B1F00005070 /* prevButton.png */; };
+		207B70C62143CA8200A2850E /* BusToolsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207B70C52143CA8200A2850E /* BusToolsTest.swift */; };
+		207B70C72143CD8800A2850E /* TimeToolsFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AD058A207A28CD0032F929 /* TimeToolsFunctions.swift */; };
+		207B70C82143D07200A2850E /* BusTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20268045207A67EF00F6C474 /* BusTools.swift */; };
 		2085D9501EE94725008D7AB6 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2085D94F1EE94725008D7AB6 /* NotificationCenter.framework */; };
 		2085D9561EE94725008D7AB6 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2085D9541EE94725008D7AB6 /* MainInterface.storyboard */; };
 		2085D95A1EE94725008D7AB6 /* BusExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2085D94E1EE94725008D7AB6 /* BusExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -66,7 +69,6 @@
 		20F628621ED08472003879C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20F628601ED08472003879C7 /* Main.storyboard */; };
 		20F628641ED08472003879C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20F628631ED08472003879C7 /* Assets.xcassets */; };
 		20F628671ED08472003879C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20F628651ED08472003879C7 /* LaunchScreen.storyboard */; };
-		20F628721ED08472003879C7 /* BusAlarmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F628711ED08472003879C7 /* BusAlarmTests.swift */; };
 		20F6287D1ED08472003879C7 /* BusAlarmUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F6287C1ED08472003879C7 /* BusAlarmUITests.swift */; };
 		20F6288D1ED1678E003879C7 /* weekday.json in Resources */ = {isa = PBXBuildFile; fileRef = 20F6288C1ED1678E003879C7 /* weekday.json */; };
 		20F6288F1ED19E39003879C7 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20F6288E1ED19E39003879C7 /* SwiftyJSON.framework */; };
@@ -129,6 +131,7 @@
 		2071537C1EDA677700005070 /* holiday.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = holiday.json; sourceTree = "<group>"; };
 		207153821EDA7B1F00005070 /* nextButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nextButton.png; sourceTree = "<group>"; };
 		207153831EDA7B1F00005070 /* prevButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = prevButton.png; sourceTree = "<group>"; };
+		207B70C52143CA8200A2850E /* BusToolsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusToolsTest.swift; sourceTree = "<group>"; };
 		2085D94E1EE94725008D7AB6 /* BusExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BusExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		2085D94F1EE94725008D7AB6 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		2085D9551EE94725008D7AB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
@@ -332,6 +335,7 @@
 			children = (
 				20F628711ED08472003879C7 /* BusAlarmTests.swift */,
 				20F628731ED08472003879C7 /* Info.plist */,
+				207B70C52143CA8200A2850E /* BusToolsTest.swift */,
 			);
 			path = BusAlarmTests;
 			sourceTree = "<group>";
@@ -792,7 +796,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20F628721ED08472003879C7 /* BusAlarmTests.swift in Sources */,
+				207B70C72143CD8800A2850E /* TimeToolsFunctions.swift in Sources */,
+				207B70C62143CA8200A2850E /* BusToolsTest.swift in Sources */,
+				207B70C82143D07200A2850E /* BusTools.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

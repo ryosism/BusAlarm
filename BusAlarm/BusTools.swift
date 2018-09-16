@@ -12,7 +12,7 @@ import SwiftyJSON
 class BusTools{
     
     var filename:String = ""
-    let TTF = TimeToolsFunctions.init()
+    let TTF = TimeToolsFunctions()
     
     // MARK: - 次に乗れるバスの配列番号を返す
     func rowofRidableBusTableNumber(_ table:[String]) -> Int{
@@ -40,8 +40,8 @@ class BusTools{
     }
     
     //    MARK: - exceptionDate.jsonを使って普段とは違う曜日のダイヤに切り替える
-    final func exceptionDateChecker(_ today:NSDate) -> String{
-        let now = TTF.getnow("HH:mm:ss", isString: false) as! NSDate
+    final func exceptionDateChecker(today:NSDate, filename:String) -> String{
+        
         let formatter = DateFormatter()
         formatter.dateFormat = "MM/dd"
         formatter.locale = NSLocale(localeIdentifier:"ja_JP") as Locale!
@@ -52,39 +52,35 @@ class BusTools{
             let json = JSON.init(parseJSON: jsonStr)
             
             for date in json["holiday"] {
-                let jsonDate = date.1.rawString()!
-                var exceptionDate = formatter.date(from: jsonDate)! as NSDate//jsonからの日付
-                exceptionDate = (NSDate(timeInterval: 60*60*9, since: exceptionDate as Date))
+                let exceptionDate:String = date.1.rawString()!
+                let todayString:String = formatter.string(from: today as Date)
                 
-                if exceptionDate == now{
+                if exceptionDate == todayString{
                     return "holiday"
                 }
             }
             for date in json["satuaday"] {
-                let jsonDate = date.1.rawString()!
-                var exceptionDate = formatter.date(from: jsonDate)! as NSDate//jsonからの日付
-                exceptionDate = (NSDate(timeInterval: 60*60*9, since: exceptionDate as Date))
-                
-                if exceptionDate == now{
+                let exceptionDate:String = date.1.rawString()!
+                let todayString:String = formatter.string(from: today as Date)
+
+                if exceptionDate == todayString {
                     return "satuaday"
                 }
             }
             for date in json["rinzi"] {
-                let jsonDate = date.1.rawString()!
-                var exceptionDate = formatter.date(from: jsonDate)! as NSDate//jsonからの日付
-                exceptionDate = (NSDate(timeInterval: 60*60*9, since: exceptionDate as Date))
+                let exceptionDate:String = date.1.rawString()!
+                let todayString:String = formatter.string(from: today as Date)
                 
-                if exceptionDate == now{
+                if exceptionDate == todayString{
                     // 臨時を知らせるポップアップが欲しいかも
                     return filename
                 }
             }
             for date in json["closed"] {
-                let jsonDate = date.1.rawString()!
-                var exceptionDate = formatter.date(from: jsonDate)! as NSDate//jsonからの日付
-                exceptionDate = (NSDate(timeInterval: 60*60*9, since: exceptionDate as Date))
+                let exceptionDate:String = date.1.rawString()!
+                let todayString:String = formatter.string(from: today as Date)
                 
-                if exceptionDate == now{
+                if exceptionDate == todayString{
                     // バスなしを知らせるポップアップが欲しいかも
                     return filename
                 }
@@ -115,11 +111,15 @@ class BusTools{
             filename = "holiday"
         }
         
+        print("fileName is ... \(filename)")
+        
         // さらにカレンダーに準拠した例外の日付でfilenameを変更!
-        let what_date:NSDate = TTF.getnow("HH:mm:ss", isString: false) as! NSDate
-        formatter.dateFormat = "MM/dd"
-        filename = exceptionDateChecker(what_date)
-        // ----------------------------------
+        let what_date:NSDate = TTF.getnow("MM/dd", isString: false) as! NSDate
+//        formatter.dateFormat = "MM/dd"
+        filename = exceptionDateChecker(today: what_date, filename: filename)
+        // ----------------------------------
+        
+        print("fileName is ... \(filename)")
         
         let path = Bundle.main.path(forResource: filename, ofType: "json")
         do{
