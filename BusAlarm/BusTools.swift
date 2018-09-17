@@ -73,7 +73,7 @@ class BusTools{
                 
                 if exceptionDate == todayString{
                     // 臨時を知らせるポップアップが欲しいかも
-                    return filename
+                    return "holiday"
                 }
             }
             for date in json["closed"] {
@@ -82,7 +82,7 @@ class BusTools{
                 
                 if exceptionDate == todayString{
                     // バスなしを知らせるポップアップが欲しいかも
-                    return filename
+                    return "holiday"
                 }
             }
         } catch{
