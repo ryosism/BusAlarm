@@ -13,11 +13,12 @@ import SwiftyJSON
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    let busStatus = BusStatus.shared
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         let ud:UserDefaults = UserDefaults.init(suiteName: "group.ryosism.busalarm")!
-        ud.set(destination, forKey: "destination")
+        ud.set(busStatus.destination, forKey: "destination")
         
         let formatter = DateFormatter()
         formatter.locale = NSLocale(localeIdentifier:"en_US") as Locale!
@@ -34,10 +35,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
             let compare:ComparisonResult = now.compare(changeTime as Date)
             if compare == .orderedAscending{
-                destination = "from_jinryo"
+                busStatus.destination = "from_jinryo"
                 print("from_jinryo")
             }else{
-                destination = "from_school"
+                busStatus.destination = "from_school"
                 print("from_school")
             }
         }
