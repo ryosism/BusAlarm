@@ -14,11 +14,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     
-    var table:[String] = [""]
-    var destination:String = "from_jinryo"
-    var changeTime:String = "12:00"
-    var filename:String = ""
-    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         let ud:UserDefaults = UserDefaults.init(suiteName: "group.ryosism.busalarm")!
@@ -68,7 +63,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
 
     }
+}
 
-
+// singleton
+class BusStatus {
+    private init() {}
+    static let shared = BusStatus()
+    
+    var filename:String = ""
+    var table:[String] = [""]
+    var destination:String = "from_jinryo"
+    var changeTime:String = "12:00"
 }
 

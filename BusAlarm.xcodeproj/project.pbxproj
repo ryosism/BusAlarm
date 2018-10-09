@@ -28,14 +28,12 @@
 		201DF39220747410003ED179 /* exceptionDate.json in Resources */ = {isa = PBXBuildFile; fileRef = 201DF39120747410003ED179 /* exceptionDate.json */; };
 		20268043207A621300F6C474 /* TimeToolsFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AD058A207A28CD0032F929 /* TimeToolsFunctions.swift */; };
 		20268046207A67EF00F6C474 /* BusTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20268045207A67EF00F6C474 /* BusTools.swift */; };
-		20268047207A6B9100F6C474 /* BusTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20268045207A67EF00F6C474 /* BusTools.swift */; };
 		2026804C207E5FB900F6C474 /* exceptionDate.json in Resources */ = {isa = PBXBuildFile; fileRef = 201DF39120747410003ED179 /* exceptionDate.json */; };
 		2071537D1EDA677700005070 /* holiday.json in Resources */ = {isa = PBXBuildFile; fileRef = 2071537C1EDA677700005070 /* holiday.json */; };
 		207153841EDA7B1F00005070 /* nextButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 207153821EDA7B1F00005070 /* nextButton.png */; };
 		207153851EDA7B1F00005070 /* prevButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 207153831EDA7B1F00005070 /* prevButton.png */; };
 		207B70C62143CA8200A2850E /* BusToolsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207B70C52143CA8200A2850E /* BusToolsTest.swift */; };
 		207B70C72143CD8800A2850E /* TimeToolsFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AD058A207A28CD0032F929 /* TimeToolsFunctions.swift */; };
-		207B70C82143D07200A2850E /* BusTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20268045207A67EF00F6C474 /* BusTools.swift */; };
 		2085D9501EE94725008D7AB6 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2085D94F1EE94725008D7AB6 /* NotificationCenter.framework */; };
 		2085D9561EE94725008D7AB6 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2085D9541EE94725008D7AB6 /* MainInterface.storyboard */; };
 		2085D95A1EE94725008D7AB6 /* BusExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2085D94E1EE94725008D7AB6 /* BusExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -72,6 +70,11 @@
 		20F6287D1ED08472003879C7 /* BusAlarmUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F6287C1ED08472003879C7 /* BusAlarmUITests.swift */; };
 		20F6288D1ED1678E003879C7 /* weekday.json in Resources */ = {isa = PBXBuildFile; fileRef = 20F6288C1ED1678E003879C7 /* weekday.json */; };
 		20F6288F1ED19E39003879C7 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20F6288E1ED19E39003879C7 /* SwiftyJSON.framework */; };
+		20F6DCC92166F3CC001B82B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E64EE91F017AED0080DB0C /* AppDelegate.swift */; };
+		20F6DCCA2166F43D001B82B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E64EE91F017AED0080DB0C /* AppDelegate.swift */; };
+		20F6DCCB2166F44D001B82B8 /* TimeTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E64EED1F017AED0080DB0C /* TimeTable.swift */; };
+		20F6DCCD2166F574001B82B8 /* BusTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20268045207A67EF00F6C474 /* BusTools.swift */; };
+		20F6DCCE2166F58A001B82B8 /* BusTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20268045207A67EF00F6C474 /* BusTools.swift */; };
 		3177B5FCCA6C4D3B38C2E860 /* Pods_BusAlarm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07EDFB528CA6CB61BFCDF109 /* Pods_BusAlarm.framework */; };
 		32BEB21BB9128503EC5E3608 /* Pods_BusExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EB6EE6AA60832E045EDDBB3 /* Pods_BusExtension.framework */; };
 		48393EE919A2F6DE01FCDACC /* Pods_BusAlarmUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFAC0D96F7308D10BF1121CB /* Pods_BusAlarmUITests.framework */; };
@@ -308,21 +311,21 @@
 			isa = PBXGroup;
 			children = (
 				2085D9771EEABA80008D7AB6 /* BusAlarm.entitlements */,
+				20F628631ED08472003879C7 /* Assets.xcassets */,
 				20E64EE91F017AED0080DB0C /* AppDelegate.swift */,
 				20268045207A67EF00F6C474 /* BusTools.swift */,
 				20AD058A207A28CD0032F929 /* TimeToolsFunctions.swift */,
-				201DF39120747410003ED179 /* exceptionDate.json */,
 				20E64EEA1F017AED0080DB0C /* CountDown.swift */,
 				20E64EEB1F017AED0080DB0C /* DepertureChanger.swift */,
 				20E64EEC1F017AED0080DB0C /* Settings.swift */,
 				20E64EED1F017AED0080DB0C /* TimeTable.swift */,
 				20F473261F0F9E3E006300F3 /* PurcherViewController.swift */,
 				9D0AB2841F10674300944250 /* PurcherAction.swift */,
+				201DF39120747410003ED179 /* exceptionDate.json */,
 				20F6288C1ED1678E003879C7 /* weekday.json */,
 				20112E911ED34A3600157CC3 /* satuaday.json */,
 				2071537C1EDA677700005070 /* holiday.json */,
 				20F628601ED08472003879C7 /* Main.storyboard */,
-				20F628631ED08472003879C7 /* Assets.xcassets */,
 				20F628651ED08472003879C7 /* LaunchScreen.storyboard */,
 				20F628681ED08472003879C7 /* Info.plist */,
 				20E64EE81F017AEC0080DB0C /* BusAlarm-Bridging-Header.h */,
@@ -770,7 +773,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20268047207A6B9100F6C474 /* BusTools.swift in Sources */,
+				20F6DCCD2166F574001B82B8 /* BusTools.swift in Sources */,
+				20F6DCCA2166F43D001B82B8 /* AppDelegate.swift in Sources */,
 				20268043207A621300F6C474 /* TimeToolsFunctions.swift in Sources */,
 				20E64EE71F017A7C0080DB0C /* TodayViewController.swift in Sources */,
 			);
@@ -796,9 +800,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20F6DCC92166F3CC001B82B8 /* AppDelegate.swift in Sources */,
+				20F6DCCB2166F44D001B82B8 /* TimeTable.swift in Sources */,
 				207B70C72143CD8800A2850E /* TimeToolsFunctions.swift in Sources */,
+				20F6DCCE2166F58A001B82B8 /* BusTools.swift in Sources */,
 				207B70C62143CA8200A2850E /* BusToolsTest.swift in Sources */,
-				207B70C82143D07200A2850E /* BusTools.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

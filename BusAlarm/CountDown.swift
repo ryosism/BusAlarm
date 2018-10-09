@@ -24,16 +24,16 @@ class CountDown: UIViewController{
 
 //    ボタン定義------------------------
     
-    let delegate = UIApplication.shared.delegate as! AppDelegate
+    let busStatus = BusStatus.shared
     let busTools = BusTools.init()
     let TTF = TimeToolsFunctions.init()
     var nextPrevCount:Int = 0
     
     override func viewWillAppear(_ animated: Bool) {
         
-        let table:[String] = busTools.loadJson(delegate.destination)
+        let table:[String] = busTools.loadJson(busStatus.destination)
         
-        switch delegate.filename {
+        switch busStatus.filename {
         case "weekday":
             dateLabel.text = TTF.getnow("M月dd日(E) 平日ダイヤ", isString: true) as? String
         case "satuaday":
@@ -62,7 +62,7 @@ class CountDown: UIViewController{
         print("depertureTime",depertureTime)
         
         if depertureTime.contains(":") {
-            if delegate.destination == "from_jinryo"{
+            if busStatus.destination == "from_jinryo"{
                 timeLabel.text = "神領発 ,\(depertureTime)発車"
             }else{
                 timeLabel.text = "中部大学発 ,\(depertureTime)発車"
@@ -112,7 +112,7 @@ class CountDown: UIViewController{
                 break
             }
         }else{ //約3~5分間隔で運行の表示なら
-            if delegate.destination == "from_jinryo"{
+            if busStatus.destination == "from_jinryo"{
                 timeLabel.text = "神領発"
             }else{
                 timeLabel.text = "中部大学発"
@@ -145,10 +145,10 @@ class CountDown: UIViewController{
     
     @IBAction func changeDeperturePushed(_ sender: Any) {
         nextPrevCount = 0
-        if delegate.destination == "from_jinryo"{
-            delegate.destination = "from_school"
+        if busStatus.destination == "from_jinryo"{
+            busStatus.destination = "from_school"
         }else{
-            delegate.destination = "from_jinryo"
+            busStatus.destination = "from_jinryo"
         }
         viewWillAppear(true)
     }

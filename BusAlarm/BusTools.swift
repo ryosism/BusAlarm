@@ -9,11 +9,12 @@
 import UIKit
 import SwiftyJSON
 
-class BusTools{
+class BusTools: UIViewController {
     
     var filename:String = ""
     let TTF = TimeToolsFunctions()
-    
+    let busStatus = BusStatus.shared
+    let okAction = UIAlertAction(title: "OK", style: .default) { action in }
     // MARK: - 次に乗れるバスの配列番号を返す
     func rowofRidableBusTableNumber(_ table:[String]) -> Int{
         //フォーマットの指定
@@ -73,6 +74,12 @@ class BusTools{
                 
                 if exceptionDate == todayString{
                     // 臨時を知らせるポップアップが欲しいかも
+                    let purchaseDoneAlert: UIAlertController = UIAlertController(
+                        title: "臨時バスダイヤです",
+                        message: "随時時刻表を確認してください",
+                        preferredStyle: .alert)
+                    purchaseDoneAlert.addAction(okAction)
+                    present(purchaseDoneAlert, animated: true, completion: nil)
                     return "holiday"
                 }
             }
@@ -82,6 +89,12 @@ class BusTools{
                 
                 if exceptionDate == todayString{
                     // バスなしを知らせるポップアップが欲しいかも
+                    let purchaseDoneAlert: UIAlertController = UIAlertController(
+                        title: "本日は運行なしです",
+                        message: "12/31~1/3は特別ダイヤです",
+                        preferredStyle: .alert)
+                    purchaseDoneAlert.addAction(okAction)
+                    present(purchaseDoneAlert, animated: true, completion: nil)
                     return "holiday"
                 }
             }
@@ -110,13 +123,11 @@ class BusTools{
         default:
             filename = "holiday"
         }
-        
-        print("fileName is ... \(filename)")
-        
         // さらにカレンダーに準拠した例外の日付でfilenameを変更!
         let what_date:NSDate = TTF.getnow("MM/dd", isString: false) as! NSDate
 //        formatter.dateFormat = "MM/dd"
         filename = exceptionDateChecker(today: what_date, filename: filename)
+        busStatus.filename = filename
         // ----------------------------------
         
         print("fileName is ... \(filename)")
@@ -139,3 +150,11 @@ class BusTools{
     }
 
 }
+
+
+
+
+
+
+
+

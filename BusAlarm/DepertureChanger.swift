@@ -10,7 +10,7 @@ import UIKit
 
 class depertureChanger: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource{
     
-    let delegate = UIApplication.shared.delegate as! AppDelegate
+    let busStatus = BusStatus.shared
     
     let time:[String] = ["07:00","08:00","09:00","10:00","11:00","12:00","13:00","14:00","15:00","16:00","17:00","18:00","19:00","20:00","21:00","22:00"]
     
@@ -34,10 +34,10 @@ class depertureChanger: UIViewController, UIPickerViewDelegate, UIPickerViewData
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        delegate.changeTime = time[row]
-        print(delegate.changeTime)
+        busStatus.changeTime = time[row]
+        print(busStatus.changeTime)
         let ud:UserDefaults = UserDefaults.init(suiteName: "group.ryosism.busalarm")!
-        ud.set(delegate.changeTime, forKey: "changeTime")
+        ud.set(busStatus.changeTime, forKey: "changeTime")
     }
     
     override func didReceiveMemoryWarning() {

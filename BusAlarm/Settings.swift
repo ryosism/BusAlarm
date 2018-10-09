@@ -11,10 +11,10 @@ import UIKit
 class settings: UITableViewController {
     
     @IBOutlet weak var changeTimeLabel: UILabel!
-    let delegate = UIApplication.shared.delegate as! AppDelegate
+    let busStatus = BusStatus.shared
     
     override func viewWillAppear(_ animated: Bool) {
-        changeTimeLabel.text = delegate.changeTime
+        changeTimeLabel.text = busStatus.changeTime
     }
     
     override func viewDidLoad() {

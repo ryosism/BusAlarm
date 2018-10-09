@@ -14,15 +14,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet weak var selector: UISegmentedControl!
     @IBOutlet weak var navigationBar: UINavigationItem!
     
-    let delegate = UIApplication.shared.delegate as! AppDelegate
+    let busStatus = BusStatus.shared
     let busTools = BusTools.init()
     let TTF = TimeToolsFunctions.init()
-    
+
     override func viewWillAppear(_ animated: Bool) {
 //        この１文でテーブルビューセルのIDがなくてクラッシュする問題を解消できる
         timetable.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         
-        if delegate.destination == "from_jinryo"{
+        if busStatus.destination == "from_jinryo"{
             selector.selectedSegmentIndex = 0
         }else{
             selector.selectedSegmentIndex = 1
@@ -34,9 +34,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        delegate.table = busTools.loadJson(delegate.destination)
+        busStatus.table = busTools.loadJson(busStatus.destination)
 
-        let scrollIndexpath:IndexPath = IndexPath.init(row: busTools.rowofRidableBusTableNumber(delegate.table), section: 0) as IndexPath
+        let scrollIndexpath:IndexPath = IndexPath.init(row: busTools.rowofRidableBusTableNumber(busStatus.table), section: 0) as IndexPath
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
             // 0.5秒後に実行したい処理
             self.timetable.scrollToRow(at: scrollIndexpath as IndexPath, at: .top, animated: true)
@@ -50,14 +50,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return delegate.table.count
+            return busStatus.table.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = timetable.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        let delegate = UIApplication.shared.delegate as! AppDelegate
-        cell.textLabel?.text = delegate.table[indexPath.row]
+        cell.textLabel?.text = busStatus.table[indexPath.row]
         cell.textLabel?.font = UIFont(name: "Arial", size: 24)
     
         return cell
@@ -66,16 +65,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func selectorValueChanged(_ sender: UISegmentedControl) {
         switch selector.selectedSegmentIndex {
         case 0:
-            delegate.destination = "from_jinryo"
-            delegate.table = busTools.loadJson("from_jinryo")
+            busStatus.destination = "from_jinryo"
+            busStatus.table = busTools.loadJson("from_jinryo")
             timetable.reloadData()
         default:
-            delegate.destination = "from_school"
-            delegate.table = busTools.loadJson("from_school")
+            busStatus.destination = "from_school"
+            busStatus.table = busTools.loadJson("from_school")
             timetable.reloadData()
         }
 // -----一番近い時間にスクロールする-------------------------
-        let scrollIndexpath:IndexPath = IndexPath.init(row: busTools.rowofRidableBusTableNumber(delegate.table), section: 0) as IndexPath
+        let scrollIndexpath:IndexPath = IndexPath.init(row: busTools.rowofRidableBusTableNumber(busStatus.table), section: 0) as IndexPath
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
             // 0.5秒後に実行したい処理
@@ -86,19 +85,21 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     final func SetnavigationBar(){
         var text = ""
-        if delegate.destination == "from_jinryo"{
+        if busStatus.destination == "from_jinryo"{
             text = "神領発"
         }else{
             text = "中部大学発"
         }
         
-        switch TTF.getnow("E", isString: true) as! String {
-        case "月","火","水","木","金":
+        switch busStatus.filename {
+        case "weekday":
             text = text + "(平日ダイヤ)"
-        case "土","休業中":
+        case "satuaday":
             text = text + "(土曜・休業中ダイヤ)"
-        default:
+        case "holiday":
             text = text + "(休日ダイヤ)"
+        default:
+            break
         }
         navigationBar.title = text
     }
