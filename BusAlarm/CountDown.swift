@@ -43,6 +43,12 @@ class CountDown: UIViewController{
         default:
             dateLabel.text = TTF.getnow("M月dd日(E)", isString: true) as? String
         }
+        if busStatus.trueBusSchedule == "rinzi"{
+            dateLabel.text = TTF.getnow("M月dd日(E) 臨時バスダイヤ", isString: true) as? String
+        }
+        if busStatus.trueBusSchedule == "closed"{
+            dateLabel.text = TTF.getnow("M月dd日(E) バス休業中", isString: true) as? String
+        }
         
         let index:Int = busTools.rowofRidableBusTableNumber(table) + nextPrevCount
         print("index",index)
@@ -120,6 +126,15 @@ class CountDown: UIViewController{
             発車まで残り.text = depertureTime
             発車まで残り.font = UIFont.boldSystemFont(ofSize: 30)
             countDownLabel.isHidden = true
+        }
+        
+        if busStatus.trueBusSchedule == "rinzi" || busStatus.trueBusSchedule == "closed"{
+            発車まで残り.isHidden = true
+            countDownLabel.isHidden = true
+            timeLabel.isHidden = true
+            nextTrain.isEnabled = false
+            prevTrain.isEnabled = false
+            changeDeperture.isEnabled = false
         }
     }
     
