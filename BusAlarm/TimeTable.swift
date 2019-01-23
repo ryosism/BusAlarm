@@ -41,7 +41,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             selector.isEnabled = false
             // バスなしを知らせるポップアップが欲しいかも
             let closedAlert: UIAlertController = UIAlertController(
-                title: "バスは閉業中です",
+                title: "バスは急gよう中です",
                 message: "12/29~1/3は年末年始休業です",
                 preferredStyle: .alert)
             closedAlert.addAction(okAction)
@@ -134,7 +134,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             text = "本日は臨時ダイヤです"
         }
         if busStatus.trueBusSchedule == "closed"{
-            text = "本日はバス閉業中です"
+            text = "本日はバス休業中です"
         }
         navigationBar.title = text
     }
