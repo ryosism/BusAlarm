@@ -14,7 +14,6 @@ class BusTools: UIViewController {
     var filename:String = ""
     let TTF = TimeToolsFunctions()
     let busStatus = BusStatus.shared
-    let okAction = UIAlertAction(title: "OK", style: .default) { action in }
     // MARK: - 次に乗れるバスの配列番号を返す
     func rowofRidableBusTableNumber(_ table:[String]) -> Int{
         //フォーマットの指定
@@ -57,6 +56,7 @@ class BusTools: UIViewController {
                 let todayString:String = formatter.string(from: today as Date)
                 
                 if exceptionDate == todayString{
+                    busStatus.trueBusSchedule = "holiday"
                     return "holiday"
                 }
             }
@@ -65,6 +65,7 @@ class BusTools: UIViewController {
                 let todayString:String = formatter.string(from: today as Date)
 
                 if exceptionDate == todayString {
+                    busStatus.trueBusSchedule = "satuaday"
                     return "satuaday"
                 }
             }
@@ -73,13 +74,9 @@ class BusTools: UIViewController {
                 let todayString:String = formatter.string(from: today as Date)
                 
                 if exceptionDate == todayString{
-                    // 臨時を知らせるポップアップが欲しいかも
-                    let purchaseDoneAlert: UIAlertController = UIAlertController(
-                        title: "臨時バスダイヤです",
-                        message: "随時時刻表を確認してください",
-                        preferredStyle: .alert)
-                    purchaseDoneAlert.addAction(okAction)
-                    present(purchaseDoneAlert, animated: true, completion: nil)
+                    print("rinzi detected.")
+                    // Note: 臨時のバス時刻表がないのでひとまず休日ダイヤを表示させる
+                    busStatus.trueBusSchedule = "rinzi"
                     return "holiday"
                 }
             }
@@ -88,13 +85,8 @@ class BusTools: UIViewController {
                 let todayString:String = formatter.string(from: today as Date)
                 
                 if exceptionDate == todayString{
-                    // バスなしを知らせるポップアップが欲しいかも
-                    let purchaseDoneAlert: UIAlertController = UIAlertController(
-                        title: "本日は運行なしです",
-                        message: "12/31~1/3は特別ダイヤです",
-                        preferredStyle: .alert)
-                    purchaseDoneAlert.addAction(okAction)
-                    present(purchaseDoneAlert, animated: true, completion: nil)
+                    // Note: 臨時のバス時刻表がないのでひとまず休日ダイヤを表示させる
+                    busStatus.trueBusSchedule = "closed"
                     return "holiday"
                 }
             }
@@ -126,6 +118,8 @@ class BusTools: UIViewController {
         // さらにカレンダーに準拠した例外の日付でfilenameを変更!
         let what_date:NSDate = TTF.getnow("MM/dd", isString: false) as! NSDate
 //        formatter.dateFormat = "MM/dd"
+        
+        busStatus.trueBusSchedule = filename
         filename = exceptionDateChecker(today: what_date, filename: filename)
         busStatus.filename = filename
         // ----------------------------------

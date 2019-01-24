@@ -17,10 +17,36 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     let busStatus = BusStatus.shared
     let busTools = BusTools.init()
     let TTF = TimeToolsFunctions.init()
+    let okAction = UIAlertAction(title: "OK", style: .default) { action in }
 
     override func viewWillAppear(_ animated: Bool) {
 //        この１文でテーブルビューセルのIDがなくてクラッシュする問題を解消できる
         timetable.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        
+        busStatus.table = busTools.loadJson(busStatus.destination)
+        
+        if busStatus.trueBusSchedule == "rinzi"{
+            busStatus.table = []
+            selector.isEnabled = false
+            // 臨時を知らせるポップアップが欲しいかも
+            let rinziAlert: UIAlertController = UIAlertController(
+                title: "臨時バスダイヤです",
+                message: "大学のサイトで発車時刻を確認してください",
+                preferredStyle: .alert)
+            rinziAlert.addAction(okAction)
+            present(rinziAlert, animated: true, completion: nil)
+        }
+        if busStatus.trueBusSchedule == "closed"{
+            busStatus.table = []
+            selector.isEnabled = false
+            // バスなしを知らせるポップアップが欲しいかも
+            let closedAlert: UIAlertController = UIAlertController(
+                title: "バスは閉業中です",
+                message: "12/29~1/3は年末年始休業です",
+                preferredStyle: .alert)
+            closedAlert.addAction(okAction)
+            present(closedAlert, animated: true, completion: nil)
+        }
         
         if busStatus.destination == "from_jinryo"{
             selector.selectedSegmentIndex = 0
@@ -34,12 +60,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        busStatus.table = busTools.loadJson(busStatus.destination)
-
-        let scrollIndexpath:IndexPath = IndexPath.init(row: busTools.rowofRidableBusTableNumber(busStatus.table), section: 0) as IndexPath
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-            // 0.5秒後に実行したい処理
-            self.timetable.scrollToRow(at: scrollIndexpath as IndexPath, at: .top, animated: true)
+        // バスのダイヤが臨時か閉鎖中ならtableにデータが載っていないので、自動スクロールは動作させない
+        if busStatus.table.count != 1{
+            let scrollIndexpath:IndexPath = IndexPath.init(row: busTools.rowofRidableBusTableNumber(busStatus.table), section: 0) as IndexPath
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                // 0.5秒後に実行したい処理
+                self.timetable.scrollToRow(at: scrollIndexpath as IndexPath, at: .top, animated: true)
+            }
         }
         
         Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(ViewController.update), userInfo: nil, repeats: true)
@@ -67,6 +94,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         case 0:
             busStatus.destination = "from_jinryo"
             busStatus.table = busTools.loadJson("from_jinryo")
+            
             timetable.reloadData()
         default:
             busStatus.destination = "from_school"
@@ -100,6 +128,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             text = text + "(休日ダイヤ)"
         default:
             break
+        }
+        
+        if busStatus.trueBusSchedule == "rinzi"{
+            text = "本日は臨時ダイヤです"
+        }
+        if busStatus.trueBusSchedule == "closed"{
+            text = "本日はバス閉業中です"
         }
         navigationBar.title = text
     }

@@ -72,6 +72,7 @@ class BusStatus {
     static let shared = BusStatus()
     
     var filename:String = ""
+    var trueBusSchedule:String = ""
     var table:[String] = [""]
     var destination:String = "from_jinryo"
     var changeTime:String = "12:00"

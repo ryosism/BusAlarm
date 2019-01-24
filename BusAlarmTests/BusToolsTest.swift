@@ -13,16 +13,16 @@ class BusToolsTest: XCTestCase {
     let busTools = BusTools()
     
     let testDates:[TestCase] = [
-        TestCase(date: NSDate.init(timeIntervalSinceReferenceDate: 0), exceptedFileName: "closed"),
+        TestCase(date: NSDate.init(timeIntervalSinceReferenceDate: 0), exceptedFileName: "holiday"),
         // weekday
         TestCase(date: NSDate.init(timeIntervalSinceReferenceDate: 60*60*24*12), exceptedFileName: "someday"),
         // satuaday
         TestCase(date: NSDate.init(timeIntervalSinceReferenceDate: 60*60*24*8), exceptedFileName: "someday"),
         // holiday
         TestCase(date: NSDate.init(timeIntervalSinceReferenceDate: 60*60*24*9), exceptedFileName: "someday"),
-        TestCase(date: NSDate.init(timeIntervalSinceReferenceDate: 60*60*24*16), exceptedFileName: "satuaday"),
-        TestCase(date: NSDate.init(timeIntervalSinceReferenceDate: 60*60*24*3), exceptedFileName: "holiday"),
-        TestCase(date: NSDate.init(timeIntervalSinceReferenceDate: 60*60*24*23), exceptedFileName: "rinzi")
+        TestCase(date: NSDate.init(timeIntervalSinceReferenceDate: 60*60*24*15.5), exceptedFileName: "satuaday"),
+        TestCase(date: NSDate.init(timeIntervalSinceReferenceDate: 60*60*24*3.5), exceptedFileName: "holiday"),
+        TestCase(date: NSDate.init(timeIntervalSinceReferenceDate: 60*60*24*23.5), exceptedFileName: "holiday")
     ]
     
     override func setUp() {
