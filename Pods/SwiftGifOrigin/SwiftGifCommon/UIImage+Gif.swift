@@ -20,6 +20,16 @@ extension UIImageView {
         }
     }
 
+    @available(iOS 9.0, *)
+    public func loadGif(asset: String) {
+        DispatchQueue.global().async {
+            let image = UIImage.gif(asset: asset)
+            DispatchQueue.main.async {
+                self.image = image
+            }
+        }
+    }
+
 }
 
 extension UIImage {
@@ -67,12 +77,26 @@ extension UIImage {
         return gif(data: imageData)
     }
 
+    @available(iOS 9.0, *)
+    public class func gif(asset: String) -> UIImage? {
+        // Create source from assets catalog
+        guard let dataAsset = NSDataAsset(name: asset) else {
+            print("SwiftGif: Cannot turn image named \"\(asset)\" into NSDataAsset")
+            return nil
+        }
+
+        return gif(data: dataAsset.data)
+    }
+
     internal class func delayForImageAtIndex(_ index: Int, source: CGImageSource!) -> Double {
         var delay = 0.1
 
         // Get dictionaries
         let cfProperties = CGImageSourceCopyPropertiesAtIndex(source, index, nil)
         let gifPropertiesPointer = UnsafeMutablePointer<UnsafeRawPointer?>.allocate(capacity: 0)
+        defer {
+            gifPropertiesPointer.deallocate()
+        }
         if CFDictionaryGetValueIfPresent(cfProperties, Unmanaged.passUnretained(kCGImagePropertyGIFDictionary).toOpaque(), gifPropertiesPointer) == false {
             return delay
         }
@@ -89,9 +113,9 @@ extension UIImage {
                 Unmanaged.passUnretained(kCGImagePropertyGIFDelayTime).toOpaque()), to: AnyObject.self)
         }
 
-        delay = delayObject as? Double ?? 0
-
-        if delay < 0.1 {
+        if let delayObject = delayObject as? Double, delayObject > 0 {
+            delay = delayObject
+        } else {
             delay = 0.1 // Make sure they're not too fast
         }
 

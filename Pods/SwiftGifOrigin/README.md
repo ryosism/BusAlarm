@@ -13,6 +13,10 @@ let jeremyGif = UIImage.gif(name: "jeremy")
 // A UIImageView with async loading
 let imageView = UIImageView()
 imageView.loadGif(name: "jeremy")
+
+// A UIImageView with async loading from asset catalog(from iOS9)
+let imageView = UIImageView()
+imageView.loadGif(asset: "jeremy")
 ```
 
 ## Installation
@@ -30,7 +34,7 @@ platform :ios, '9.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-    pod 'SwiftGifOrigin', '~> 1.6.1'
+    pod 'SwiftGifOrigin', '~> 1.7.0'
 end
 ```
 
@@ -49,7 +53,7 @@ brew install carthage
 Add the following line to your `Cartfile` to add SwiftGif:
 
 ```ogdl
-github "bahlo/SwiftGif" ~> 1.6.1
+github "bahlo/SwiftGif" ~> 1.7.0
 ```
 
 Run `carthage update` to build the framework and drag the built
@@ -63,6 +67,18 @@ Easy, it does the following:
 2. Find the greatest common divisor
 3. Add frames accordingly to the greatest common divisor to an array
 4. Create an animated UIImage with the frames
+
+## Testing
+
+```
+$ xcodebuild \
+  -project SwiftGif.xcodeproj \
+  -scheme SwiftGif \
+  -sdk iphonesimulator \
+  -destination "platform=iOS Simulator,name=iPhone 8" \
+  build test \
+  CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY=""
+```
 
 # Inspiration
 This project is heavily inspired by [uiimage-from-animated-gif](https://github.com/mayoff/uiimage-from-animated-gif).

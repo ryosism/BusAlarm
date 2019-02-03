@@ -179,7 +179,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         super.viewDidLoad()
         Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(TodayViewController.update), userInfo: nil, repeats: true)
     }
-    func update(){
+    @objc func update(){
         viewWillAppear(true)
     }
     

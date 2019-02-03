@@ -46,7 +46,7 @@ class PurcherAction: UITableViewController {
         NotificationCenter.default.post(name: NSNotification.Name(rawValue: "donePurchase"), object: nil)
     }
     
-    final func donePurchase(){
+    @objc final func donePurchase(){
         print("done")
         let purchaseDoneAlert: UIAlertController = UIAlertController(
             title: "購入処理が完了しました",

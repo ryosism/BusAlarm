@@ -1,15 +1,20 @@
 PODS:
-  - SwiftGifOrigin (1.6.1)
-  - SwiftyJSON (3.1.4)
+  - SwiftGifOrigin (1.7.0)
+  - SwiftyJSON (4.2.0)
 
 DEPENDENCIES:
   - SwiftGifOrigin
   - SwiftyJSON
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - SwiftGifOrigin
+    - SwiftyJSON
+
 SPEC CHECKSUMS:
-  SwiftGifOrigin: d6679d3ebe9df2e049a84bc52582635107b581f6
-  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+  SwiftGifOrigin: fbd6cf37afcfcf97a5c3db996ddc0492e5c5c145
+  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
 
 PODFILE CHECKSUM: 73a08a419af6a2f10840e5b0016f29cdc3752088
 
-COCOAPODS: 1.2.1
+COCOAPODS: 1.5.3
