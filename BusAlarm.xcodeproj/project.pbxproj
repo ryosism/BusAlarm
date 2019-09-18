@@ -497,10 +497,9 @@
 			};
 			buildConfigurationList = 20F628541ED08472003879C7 /* Build configuration list for PBXProject "BusAlarm" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
 				Base,
 			);
